@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2017-09-14T05:03:36.000Z</updated>
+  <updated>2017-09-15T00:46:11.000Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -21,18 +21,23 @@
     <link href="http://girin-dev.github.io/2017/09/14/170914-TIL/"/>
     <id>http://girin-dev.github.io/2017/09/14/170914-TIL/</id>
     <published>2017-09-14T04:57:42.000Z</published>
-    <updated>2017-09-14T05:03:36.000Z</updated>
+    <updated>2017-09-15T00:46:11.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h1><h1 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h1><h1 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h1><ul><li><p>Fastcampus FDS 6기(HTML&amp;CSS)</p><ul><li>Activity : 자습시간. 어제 못다한 TIL 작성과 계획 작성</li><li><p>HTML &amp; CSS</p><ul><li>background</li><li>animation</li><li>nth-child</li><li>form의 필수 3요소<ol><li>form</li><li>fieldset - form 영역임을 알려주는 그룹 태그</li><li>legend - form의 이름을 지정해주는 태그</li></ol></li><li>input<ul><li>input-label 또는 input title=””</li><li>크로스 브라우징에 특히 신경써야 하는 부분</li></ul></li></ul></li><li><p><a href="https://github.com/girin-dev/seulbinim.github.io/commits/master" target="_blank" rel="external">실습 내용</a></p></li><li><a href="https://github.com/girin-dev/homework/tree/master/170914" target="_blank" rel="external">170914  과제</a></li></ul></li><li><p>Vue.js</p><ul><li>환경설정</li><li>Vue 시작, MVVM패턴</li><li>인스턴스와 Vue 라이프싸이클</li><li><a href="https://github.com/girin-dev/learnVuejs" target="_blank" rel="external">https://github.com/girin-dev/learnVuejs</a></li></ul></li></ul><h1 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h1><ul><li>김데레사님과 나의 차이점<ul><li>김데레사님은 코딩 전에 디자인 맵(손으로 그린 계획도)을 짜고, 큰 얼개부터 css 작업을 시작함. 다양한 태그 활용.</li><li>반면 나는 디자인 맵이고 뭐고 바로 코딩 들어가고, 손대기 쉬운 조그만 것(input의 width 같은 것)부터 css작업을 시작함.</li><li>어렵고 잘 몰라도 그냥 디자인 맵 그리는 연습과 큰 그림부터 잡아가는 연습을 하자.</li></ul></li><li>MDN 도큐먼트들을 보니 아직 한국어로 번역되지 않은 부분이 많았다. 오픈소스 개발에 참여하고 싶은데 번역부터 시작해도 괜찮을 것 같다.</li><li>로그인 요소를 직접 만들며 알아간다는 느낌이 많이 든다.</li><li>Atom Editor 시작할 때 등장하는 welcome탭을 설정으로 비활성화 시켰다. <a href="http://naradesign.net/wp/2016/10/12/2212/" target="_blank" rel="external">http://naradesign.net/wp/2016/10/12/2212/</a></li></ul><h1 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h1><ul><li>Activity</li><li>수업 복습 및 정리</li><li>과제</li></ul><h2 id="참고-사이트"><a href="#참고-사이트" class="headerlink" title="참고 사이트"></a>참고 사이트</h2><ul><li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank" rel="external">시멘틱 마크업</a></li><li><a href="http://wit.nts-corp.com/2015/04/16/3538" target="_blank" rel="external">네이밍 방법론(BEM 등)</a></li><li><a href="https://codepen.io/-__-/pen/NxMpGq?q=form%20animation&amp;limit=all&amp;order=popularity&amp;depth=everything&amp;show_forks=false" target="_blank" rel="external">CSS을 활용한 애니메이션들 - codepen</a></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h1&gt;&lt;h1 id=&quot;느낀-점&quot;&gt;&lt;a href=&quot;#느낀-점&quot; class=&quot;headerlink&quot; title=&quot;느
+        &lt;h1 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Fastcampus FDS 6기(HTML&amp;amp;CSS)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
       
     
     </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
     
     
       <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
@@ -44,7 +49,7 @@
     <link href="http://girin-dev.github.io/2017/09/13/170913-TIL/"/>
     <id>http://girin-dev.github.io/2017/09/13/170913-TIL/</id>
     <published>2017-09-13T01:04:10.000Z</published>
-    <updated>2017-09-14T05:06:00.000Z</updated>
+    <updated>2017-09-14T09:30:07.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h1><ul><li>Fastcampus FDS 6기(HTML&amp;CSS)<ul><li>Activity : 하노이의 탑 마무리</li><li>공통 &amp; 시멘틱 마크업<ul><li>시멘틱 마크업을 하는 이유</li><li>논리적 구조 설계의 방법론</li><li>enter와 공백 이슈</li><li>변수, 함수 등의 네이밍에서 자신만의 규칙 만들기</li></ul></li><li>HTML &amp; CSS<ul><li>논리적으로 의미가 있지만 디자인적으로 보이지 말아야 할 요소 처리(invisible things)</li><li>버튼 등 클릭요소에 사용자 편의성 높이기</li><li>enter와 공백 이슈</li><li>position, font, line-height, text-shadow, outline, white-space, inline-block,   ::before/::after</li><li>inline과 부모의 사이즈의 상관관계</li><li>icon font의 활용</li><li>CSS를 활용한 애니메이션 효과(key-frame)과 크롬의 performance check</li><li>jquery 맛보기: focusin(), focusout(), hover()</li></ul></li><li>복습 과제</li><li><a href="https://github.com/girin-dev/seulbinim.github.io" target="_blank" rel="external">수업내용</a>, <a href="https://github.com/girin-dev/homework/tree/master/170913" target="_blank" rel="external">과제 170913</a></li></ul></li></ul><h1 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h1><ul><li>하노이의 탑<ul><li>조교님께서 엑셀을 이용한 힌트를 알려주셨다. 한 번 시간내서 재도전해봐야겠다.</li></ul></li><li>지하철을 타고 집에 가다가 과제에 대한 해결 방법(jquery)이 번뜩나서 그 자리에서 맥북을 켜서 해결했다. 뭔가 버려지는 시간을 현명하게 활용한 것 같아서 기분이 좋았다.</li><li>Vue.js 공부를 하지 못했다. 어제 애플 키노트를 보느라 밤을 새서 그런지 피곤해서 그런지 잠들어 버렸다. 다음부턴 빼놓지 말고 하자.</li><li>md(MarkDown)문서는 Atom Editor로 작성하고 있는데 켤 때마다 자꾸 Welcome탭 같은 쓸데없는게 나온다. 귀찮은데. 빨리 고쳐야지.</li><li>기술을 배우러 와서 이론만 공부하는 느낌이다.(가르쳐주는게 그렇다는게 아니라 내 공부가.) 스스로 복습하고 응용하는 연습을 더 많이 해야겠다.</li></ul><h1 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h1><ul><li>Activity</li><li>Fastcampus FDS 수업 + 과제</li><li>Vue.js 30분</li><li>수업 정리</li></ul>]]></content>
     
@@ -58,6 +63,8 @@
       
     
     </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
     
     
       <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
