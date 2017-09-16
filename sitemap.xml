@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://girin-dev.github.io/2017/09/15/170915-TIL/</loc>
+    
+    <lastmod>2017-09-16T14:29:58.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://girin-dev.github.io/2017/09/12/170912-TIL/</loc>
+    
+    <lastmod>2017-09-16T14:28:47.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://girin-dev.github.io/2017/09/14/170914-TIL/</loc>
     
-    <lastmod>2017-09-15T00:53:57.000Z</lastmod>
+    <lastmod>2017-09-15T09:03:29.000Z</lastmod>
     
   </url>
   
@@ -12,13 +26,6 @@
     <loc>http://girin-dev.github.io/2017/09/13/170913-TIL/</loc>
     
     <lastmod>2017-09-14T09:30:07.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://girin-dev.github.io/2017/09/13/170912-TIL/</loc>
-    
-    <lastmod>2017-09-12T18:31:47.000Z</lastmod>
     
   </url>
   
