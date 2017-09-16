@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2017-09-16T14:29:58.000Z</updated>
+  <updated>2017-09-16T14:33:22.000Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://girin-dev.github.io/2017/09/15/170915-TIL/"/>
     <id>http://girin-dev.github.io/2017/09/15/170915-TIL/</id>
     <published>2017-09-15T08:26:42.000Z</published>
-    <updated>2017-09-16T14:29:58.000Z</updated>
+    <updated>2017-09-16T14:33:22.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="170915-Today-I-Learned"><a href="#170915-Today-I-Learned" class="headerlink" title="170915 - Today I Learned"></a>170915 - Today I Learned</h1><h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><h3 id="Fastcampus"><a href="#Fastcampus" class="headerlink" title="Fastcampus"></a>Fastcampus</h3><ul><li>Scrum<ul><li>1주일간 배운 바를 정리, 공유</li></ul></li><li>HTML &amp; CSS<ul><li>title과 alt의 차이와 활용 예시(약도)</li><li>margin의 겹침 이슈</li><li>용어 정의 태그 <dl><dt><dd></dd></dt></dl></li><li>Vertical rhythm</li><li>flex-fieldset과 webkit 기반 브라우저 버그</li><li>vertical-align</li><li>calc() 에서 빼기 연산할 때 띄어쓰기 유의</li><li><a href="https://github.com/girin-dev/seulbinim.github.io/commits/master" target="_blank" rel="external">실습 내용</a></li></ul></li><li>Vue.js<ul><li>Vue 컴포넌트의 정의와 문법</li><li>전역 컴포넌트, 지역 컴포넌트</li></ul></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul><li>레이아웃을 짜는데 조금씩 자신감이 붙었다. 아직 자세한 차이까지는 모르지만 주말동안 배운 내용을 정리하고 실습 응용하면서 확실히 해야지.</li><li>저번에 배운 구조선택자를 다시 한번 복습해야겠다. nth-child() 이 괄호 안에 1,2,3 말고도 다양한 타입이 들어갈 수 있으니 연습해보자.</li><li>css 애니메이션 연습하기</li><li>글씨의 위아래 배치공간에 대한 연습</li></ul><h2 id="주말동안-할-일"><a href="#주말동안-할-일" class="headerlink" title="주말동안 할 일"></a>주말동안 할 일</h2><ul><li>주제별 내용 정리</li><li>블로그 css 손보고 route 알아보기</li><li>오픈소스 기여에 대해 생각해보기</li><li>다른 웹서비스 메인페이지 따라 만들어보기</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="170915-Today-I-Learned"><a href="#170915-Today-I-Learned" class="headerlink" title="170915 - Today I Learned"></a>170915 - Today I Learned</h1><h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Fastcampus<ul><li>Scrum<ul><li>1주일간 배운 바를 정리, 공유</li></ul></li><li>HTML &amp; CSS<ul><li>title과 alt의 차이와 활용 예시(약도)</li><li>margin의 겹침 이슈</li><li>용어 정의 태그 <dl><dt><dd></dd></dt></dl></li><li>Vertical rhythm</li><li>flex-fieldset과 webkit 기반 브라우저 버그</li><li>vertical-align</li><li>calc() 에서 빼기 연산할 때 띄어쓰기 유의</li><li><a href="https://github.com/girin-dev/seulbinim.github.io/commits/master" target="_blank" rel="external">실습 내용</a></li></ul></li><li>Vue.js<ul><li>Vue 컴포넌트의 정의와 문법</li><li>전역 컴포넌트, 지역 컴포넌트</li></ul></li></ul></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul><li>레이아웃을 짜는데 조금씩 자신감이 붙었다. 아직 자세한 차이까지는 모르지만 주말동안 배운 내용을 정리하고 실습 응용하면서 확실히 해야지.</li><li>저번에 배운 구조선택자를 다시 한번 복습해야겠다. nth-child() 이 괄호 안에 1,2,3 말고도 다양한 타입이 들어갈 수 있으니 연습해보자.</li><li>css 애니메이션 연습하기</li><li>글씨의 위아래 배치공간에 대한 연습</li></ul><h2 id="주말동안-할-일"><a href="#주말동안-할-일" class="headerlink" title="주말동안 할 일"></a>주말동안 할 일</h2><ul><li>주제별 내용 정리</li><li>블로그 css 손보고 route 알아보기</li><li>오픈소스 기여에 대해 생각해보기</li><li>다른 웹서비스 메인페이지 따라 만들어보기</li></ul>]]></content>
     
     <summary type="html">
     
