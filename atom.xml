@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2017-09-17T16:54:14.000Z</updated>
+  <updated>2017-09-18T22:11:20.000Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>170918-TIL</title>
+    <link href="http://girin-dev.github.io/2017/09/18/170918-TIL/"/>
+    <id>http://girin-dev.github.io/2017/09/18/170918-TIL/</id>
+    <published>2017-09-18T08:35:47.000Z</published>
+    <updated>2017-09-18T22:11:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>Fastcampus</p><ul><li>Activity</li><li><p>HTML &amp; CSS</p><ul><li>group2의 notice, pds, news 제작</li><li><p>\<time> 시간을 나타내는 HTML 태그</time></p><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">time</span> <span class="attr">datatime</span>=<span class="string">"2017-09-18T17:35:47"</span>&gt;</span>2017.09.18<span class="tag">&lt;/<span class="name">time</span>&gt;</span></div></pre></td></tr></table></figure></li><li><p>\<figure> 설명을 나타내는 HTML 태그</figure></p><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">figure</span> <span class="attr">class</span>=<span class="string">"[클래스명]"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"[이미지 주소]"</span> <span class="attr">alt</span>=<span class="string">"[대체 텍스트]"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">figcaption</span>&gt;</span>설명<span class="tag">&lt;/<span class="name">figcaption</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">figure</span>&gt;</span></div></pre></td></tr></table></figure></li><li><p>inline요소와 block요소(<a href="http://pshweb.tistory.com/entry/블록요소와-인라인요소" target="_blank" rel="external">참고</a>)</p><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span>inline 요소인 a태그 안에 block요소인 div를 넣으면 문법오류<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span> <span class="attr">style</span>=<span class="string">"display: inline-block;"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span>a태그의 display 속성값을 block이나 inline-block으로 바꾸면 가능하나 권장하지 않음.<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div></pre></td></tr></table></figure></li><li><p>text overflow 일반적으로 같이 쓰이는 CSS 코드</p><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">white-space</span>: <span class="selector-tag">nowrap</span>;</div><div class="line"><span class="comment">/* 줄바꿈 차단: inline요소가 블록을 넘어가도 줄바꿈을 하지 않음*/</span></div><div class="line"><span class="selector-tag">overflow</span>: <span class="selector-tag">hidden</span>;</div><div class="line"><span class="comment">/* 블록을 넘어간 요소를 invisible 처리함 */</span></div><div class="line"><span class="selector-tag">text-overflow</span>: <span class="selector-tag">ellipsis</span>;</div><div class="line"><span class="comment">/* overflow:hidden;을 통해 invisible 처리된 내용을 말줄임으로 바꿈 */</span></div></pre></td></tr></table></figure></li><li><p>on( ) method 멀티 이벤트를 가능하게 하는 jquery method</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">tab.click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  $(<span class="keyword">this</span>).parent().addClass(<span class="string">'board-active'</span>).siblings().removeClass(<span class="string">'board-active'</span>);</div><div class="line">&#125;);</div><div class="line">tab.focusin(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  $(<span class="keyword">this</span>).parent().addClass(<span class="string">'board-active'</span>).siblings().removeClass(<span class="string">'board-active'</span>);</div><div class="line">&#125;);</div><div class="line"><span class="comment">// 위 두 코드를 아래처럼 하나로 표현 가능</span></div><div class="line">tab.on(<span class="string">'click focusin'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  $(<span class="keyword">this</span>).parent().addClass(<span class="string">'board-active'</span>).siblings().removeClass(<span class="string">'board-active'</span>);</div><div class="line">&#125;)</div></pre></td></tr></table></figure></li></ul></li><li><p>기타</p><ul><li>jquery의 css속성은 가급적 쓰지 말 것.</li><li>(CSS)클릭 속성 부여 cursor: pointer;</li><li>Hiring이나 프로젝트에서 모듈화는 중요.</li></ul></li></ul></li><li>Grid 학습<ul><li><a href="http://cssgridgarden.com/#ko" target="_blank" rel="external">gridgarden</a> 클리어</li></ul></li><li>과제<ul><li>group2의 notice, pds 복습 <a href="https://github.com/girin-dev/homework/tree/master/170918" target="_blank" rel="external">Github</a></li></ul></li><li>Vue.js<ul><li>상-하위 컴포넌트 간 데이터 전달 방법</li><li>props<h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2></li></ul></li><li>여전히 시멘틱 마크업이 부족하다. 꼭 빼먹는 태그 한 두개씩 있거나 논리적인 구조를 짜는데 어려움을 겪는다.</li><li>오늘 한 일에 코드를 많이 넣어봤는데 이 방법이 더 나은 것 같다.</li><li>jquery가 조금 손에 익는 듯 하다.</li><li>HTML과 CSS는 배울수록 느끼는 것이지만 세부적인 규칙이 많고, 구현 방법이 정말 다양하다. 이건 프론트엔드를 어렵게 만들기도 하고 더 매력적으로 만들기도 하는 것 같다.</li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>강의 복습과 정리</li><li>이전 과제들 정리</li><li>gird 복습 정리하고 적용해보기</li><li>Vue.js</li><li>다른 웹서비스 메인페이지 따라 만들어보기</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Fastcampus&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Activity&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
   
   <entry>
     <title>170916~170917-TIL</title>
