@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 170919-TIL · 기린개발의 일지</title><meta name="description" content="170919-TIL - Girin-dev"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://girin-dev.github.io/atom.xml" title="기린개발의 일지"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/categories/" target="_self" class="nav-list-link">CATEGORY</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="https://github.com/girin-dev" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">170919-TIL</h1><div class="post-info">2017년 9월 19일</div><div class="post-content"><h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul>
+<li><p>Fastcampus</p>
+<ul>
+<li>Activity<ul>
+<li>9월 15일 과제 해설(음수마진, 9개의 정사각형 배치)</li>
+</ul>
+</li>
+<li>HTML &amp; CSS<ul>
+<li>IR기법(Image Replacement)<ol>
+<li><code>overflow:hidden</code>과 <code>box-sizing: border-box</code> 활용</li>
+<li><code>&lt;span&gt;</code> 활용</li>
+<li>sprite 기법: 이미지와 <code>background-position</code> 활용</li>
+</ol>
+<ul>
+<li>참고<ul>
+<li>Web standard Darum <a href="http://ui.daum.net/convention/css/css_ir" target="_blank" rel="external">http://ui.daum.net/convention/css/css_ir</a></li>
+<li>NULI <a href="http://nuli.navercorp.com/sharing/blog/post/1132804" target="_blank" rel="external">http://nuli.navercorp.com/sharing/blog/post/1132804</a></li>
+<li>유니버설 디자인을 위한 실전 UI(HTML/CSS)개발 가이드 <a href="http://naradesign.net/open_content/lecture/wp/#section20" target="_blank" rel="external">http://naradesign.net/open_content/lecture/wp/#section20</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>폰트 단위 <code>em / rem / px / %</code></li>
+<li><code>line-height</code></li>
+<li><a href="http://fontawesome.io" target="_blank" rel="external">font awesome</a></li>
+</ul>
+</li>
+<li><p>WAI-ARIA</p>
+<ul>
+<li>Web Accessibility Initiative Accessible Rich Internet Applications</li>
+<li>웹 접근성</li>
+<li><p>규칙</p>
+<ul>
+<li><p>ARIA 역할과 HTML5 요소를 중복하지 않는다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- 올바른 경우  --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">nav</span>&gt;</span><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">role</span>=<span class="string">"navigation"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- 올바르지 않은 경우 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">nav</span> <span class="attr">role</span>=<span class="string">"navigation"</span>&gt;</span><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>요소 기능의 변경은 제한된다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- h1의 기능은 heading이지 button이 아니다. --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">role</span>=<span class="string">"button"</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>키보드 사용 보장해야 한다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">tabindex</span>=<span class="string">"0"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>적절한 레이블을 제공해야 한다.</p>
+</li>
+</ul>
+</li>
+<li>참고자료<ul>
+<li>WCAG 가이드라인 : <a href="http://www.w3c.or.kr/Translation/WCAG20/" target="_blank" rel="external">http://www.w3c.or.kr/Translation/WCAG20/</a></li>
+<li>한국형 웹컨텐츠 접근성지침 : <a href="http://wah.or.kr" target="_blank" rel="external">http://wah.or.kr</a></li>
+<li>적용사례연집 : <a href="http://wah.or.kr/board/boardView.asp?page=1&amp;brd_sn=5&amp;brd_idx=1019" target="_blank" rel="external">http://wah.or.kr/board/boardView.asp?page=1&amp;brd_sn=5&amp;brd_idx=1019</a></li>
+<li>개요 및 인증심사 방안 : <a href="https://github.com/seulbinim/aria/blob/master/WAI-ARIA%20%E1%84%80%E1%85%A2%E1%84%8B%E1%85%AD%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%8C%E1%85%B3%E1%86%BC%20%E1%84%89%E1%85%B5%E1%86%B7%E1%84%89%E1%85%A1%20%E1%84%87%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%A1%E1%86%AB" target="_blank" rel="external">https://github.com/seulbinim/aria/blob/master/WAI-ARIA%20%E1%84%80%E1%85%A2%E1%84%8B%E1%85%AD%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%8C%E1%85%B3%E1%86%BC%20%E1%84%89%E1%85%B5%E1%86%B7%E1%84%89%E1%85%A1%20%E1%84%87%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%A1%E1%86%AB</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>웹서비스 메인페이지 따라 만들기<ul>
+<li><a href="https://github.com/girin-dev/practice_others" target="_blank" rel="external">watcha</a><ul>
+<li>today-boxoffice-list 마크업</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul>
+<li>WAI-ARIA를 공부하며 접근성이라는 웹의 정신을 다시금 떠올렸다. 디자이너는 서비스와 상품을 적절히 디자인하는 것이지 예술을 하는게 아니라는 점이 인상적이었다.</li>
+<li>ir기법 중 sprite에 대해 확실히 공부했다. 다른 방법도 더 찾아봐야겠다.</li>
+<li><a href="http://nuli.navercorp.com/sharing/blog/post/1132804" target="_blank" rel="external">title 속성에 대한 국내 표준과 해외 표준이 다른건가?</a> 데레사님께 여쭤봐야겠다.</li>
+<li>마크업이 정말 어렵다. 모호한 기능이나 어떤 태그로 처리해야 할지 모를때가 많다. 그냥 모르겠으면 <code>div</code>로 처리하고 있는데 이게 맞는지 모르겠다. <code>span</code>을 써야할지 <code>p</code>를 써야할지 <code>div</code>를 써야할지 헷갈릴때도 많고 무엇보다 시멘틱 마크업 태그를 전부 알지 못하는 게 큰 것 같다.</li>
+<li>의외로 카페에서 공부가 잘 된다.</li>
+</ul>
+<h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul>
+<li>강의 복습과 정리</li>
+<li>이전 과제들 정리</li>
+<li>grid 복습 정리하고 적용해보기</li>
+<li>Vue.js</li>
+<li>다른 웹서비스 메인페이지 따라 만들어보기</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2017/09/18/170918-TIL/" class="next">다음글</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'girin-dev';
+var disqus_identifier = '2017/09/19/170919-TIL/';
+var disqus_title = '170919-TIL';
+var disqus_url = 'http://girin-dev.github.io/2017/09/19/170919-TIL/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//girin-dev.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 <a href="http://girin-dev.github.io">Girin-dev</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>

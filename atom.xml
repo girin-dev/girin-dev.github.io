@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2017-09-19T01:01:02.000Z</updated>
+  <updated>2017-09-20T01:21:47.000Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>170919-TIL</title>
+    <link href="http://girin-dev.github.io/2017/09/19/170919-TIL/"/>
+    <id>http://girin-dev.github.io/2017/09/19/170919-TIL/</id>
+    <published>2017-09-19T13:41:23.000Z</published>
+    <updated>2017-09-20T01:21:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>Fastcampus</p><ul><li>Activity<ul><li>9월 15일 과제 해설(음수마진, 9개의 정사각형 배치)</li></ul></li><li>HTML &amp; CSS<ul><li>IR기법(Image Replacement)<ol><li><code>overflow:hidden</code>과 <code>box-sizing: border-box</code> 활용</li><li><code>&lt;span&gt;</code> 활용</li><li>sprite 기법: 이미지와 <code>background-position</code> 활용</li></ol><ul><li>참고<ul><li>Web standard Darum <a href="http://ui.daum.net/convention/css/css_ir" target="_blank" rel="external">http://ui.daum.net/convention/css/css_ir</a></li><li>NULI <a href="http://nuli.navercorp.com/sharing/blog/post/1132804" target="_blank" rel="external">http://nuli.navercorp.com/sharing/blog/post/1132804</a></li><li>유니버설 디자인을 위한 실전 UI(HTML/CSS)개발 가이드 <a href="http://naradesign.net/open_content/lecture/wp/#section20" target="_blank" rel="external">http://naradesign.net/open_content/lecture/wp/#section20</a></li></ul></li></ul></li><li>폰트 단위 <code>em / rem / px / %</code></li><li><code>line-height</code></li><li><a href="http://fontawesome.io" target="_blank" rel="external">font awesome</a></li></ul></li><li><p>WAI-ARIA</p><ul><li>Web Accessibility Initiative Accessible Rich Internet Applications</li><li>웹 접근성</li><li><p>규칙</p><ul><li><p>ARIA 역할과 HTML5 요소를 중복하지 않는다.</p><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- 올바른 경우  --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">nav</span>&gt;</span><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">role</span>=<span class="string">"navigation"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- 올바르지 않은 경우 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">nav</span> <span class="attr">role</span>=<span class="string">"navigation"</span>&gt;</span><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></div></pre></td></tr></table></figure></li><li><p>요소 기능의 변경은 제한된다.</p><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- h1의 기능은 heading이지 button이 아니다. --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">role</span>=<span class="string">"button"</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div></pre></td></tr></table></figure></li><li><p>키보드 사용 보장해야 한다.</p><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">tabindex</span>=<span class="string">"0"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></li><li><p>적절한 레이블을 제공해야 한다.</p></li></ul></li><li>참고자료<ul><li>WCAG 가이드라인 : <a href="http://www.w3c.or.kr/Translation/WCAG20/" target="_blank" rel="external">http://www.w3c.or.kr/Translation/WCAG20/</a></li><li>한국형 웹컨텐츠 접근성지침 : <a href="http://wah.or.kr" target="_blank" rel="external">http://wah.or.kr</a></li><li>적용사례연집 : <a href="http://wah.or.kr/board/boardView.asp?page=1&amp;brd_sn=5&amp;brd_idx=1019" target="_blank" rel="external">http://wah.or.kr/board/boardView.asp?page=1&amp;brd_sn=5&amp;brd_idx=1019</a></li><li>개요 및 인증심사 방안 : <a href="https://github.com/seulbinim/aria/blob/master/WAI-ARIA%20%E1%84%80%E1%85%A2%E1%84%8B%E1%85%AD%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%8C%E1%85%B3%E1%86%BC%20%E1%84%89%E1%85%B5%E1%86%B7%E1%84%89%E1%85%A1%20%E1%84%87%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%A1%E1%86%AB" target="_blank" rel="external">https://github.com/seulbinim/aria/blob/master/WAI-ARIA%20%E1%84%80%E1%85%A2%E1%84%8B%E1%85%AD%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%8C%E1%85%B3%E1%86%BC%20%E1%84%89%E1%85%B5%E1%86%B7%E1%84%89%E1%85%A1%20%E1%84%87%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%A1%E1%86%AB</a></li></ul></li></ul></li></ul></li><li>웹서비스 메인페이지 따라 만들기<ul><li><a href="https://github.com/girin-dev/practice_others" target="_blank" rel="external">watcha</a><ul><li>today-boxoffice-list 마크업</li></ul></li></ul></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul><li>WAI-ARIA를 공부하며 접근성이라는 웹의 정신을 다시금 떠올렸다. 디자이너는 서비스와 상품을 적절히 디자인하는 것이지 예술을 하는게 아니라는 점이 인상적이었다.</li><li>ir기법 중 sprite에 대해 확실히 공부했다. 다른 방법도 더 찾아봐야겠다.</li><li><a href="http://nuli.navercorp.com/sharing/blog/post/1132804" target="_blank" rel="external">title 속성에 대한 국내 표준과 해외 표준이 다른건가?</a> 데레사님께 여쭤봐야겠다.</li><li>마크업이 정말 어렵다. 모호한 기능이나 어떤 태그로 처리해야 할지 모를때가 많다. 그냥 모르겠으면 <code>div</code>로 처리하고 있는데 이게 맞는지 모르겠다. <code>span</code>을 써야할지 <code>p</code>를 써야할지 <code>div</code>를 써야할지 헷갈릴때도 많고 무엇보다 시멘틱 마크업 태그를 전부 알지 못하는 게 큰 것 같다.</li><li>의외로 카페에서 공부가 잘 된다.</li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>강의 복습과 정리</li><li>이전 과제들 정리</li><li>grid 복습 정리하고 적용해보기</li><li>Vue.js</li><li>다른 웹서비스 메인페이지 따라 만들어보기</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Fastcampus&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Activity&lt;ul&gt;
+&lt;li&gt;9월 1
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
   
   <entry>
     <title>170918-TIL</title>
