@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 170920-TIL · 기린개발의 일지</title><meta name="description" content="170920-TIL - Girin-dev"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://girin-dev.github.io/atom.xml" title="기린개발의 일지"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/categories/" target="_self" class="nav-list-link">CATEGORY</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="https://github.com/girin-dev" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">170920-TIL</h1><div class="post-info">2017년 9월 20일</div><div class="post-content"><h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul>
+<li><p>Fastcampus</p>
+<ul>
+<li>Activity<ul>
+<li>자습: 일과계획 정리</li>
+</ul>
+</li>
+<li><p>HTML &amp; CSS</p>
+<ul>
+<li><code>&lt;footer&gt;</code>는 제목(헤딩태그 <code>&lt;h1&gt;..&lt;h6&gt;</code>)을 갖지 않는다.</li>
+<li><code>&lt;address&gt;</code> footer 안에서 사용하며 주소, 연락처 등의 정보를 기입할 때 쓰며, 종종 저작권 정보를 함께 넣어주기도 한다.</li>
+<li><p>인용구 HTML과 CSS</p>
+<ul>
+<li><p><code>&lt;q&gt;</code> 인용구에 쓰는 HTML5 태그</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"slogan-content"</span>&gt;</span></div><div class="line"></div><div class="line">  <span class="comment">&lt;!-- q태그의 cite 속성값으로 출처를 기입한다. --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">q</span> <span class="attr">cite</span>=<span class="string">"http://w3.org/WAI/"</span>&gt;</span></div><div class="line">    The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect.</div><div class="line">  <span class="tag">&lt;/<span class="name">q</span>&gt;</span></div><div class="line">  Tim Berners - Lee , W3C Director and inventor of the World Wide Web</div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- article 내부의 footer로 출처를 기재하여 스크립트화해서 이용할 수 있다.(공유하거나 퍼가거나 등등) --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">footer</span> <span class="attr">class</span>=<span class="string">"readable-hidden"</span>&gt;</span>출처 : WAI - http://w3.org/WAI/<span class="tag">&lt;/<span class="name">footer</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p><code>&lt;q&gt;</code>태그를 쓰게 되면 자동으로 인용구 앞뒤로 <code>&quot;</code>가 붙게 되는데 CSS 속성 <code>quote:&quot;[인용구 앞에 들어갈 문구]&quot; &quot;[인용구 뒤에 들어갈 문구]&quot;</code> 를 통해 수정 가능</p>
+</li>
+</ul>
+</li>
+<li><p>CSS의 구체성 이슈</p>
+<ul>
+<li>세부 속성값을 정하는 속성의 경우엔 아래 재정의했다고 하더라도 해당 세부 속상만이 변경될 뿐 본 속성 자체가 무시되지 않는다.<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.div</span> &#123;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#ccc</span> <span class="built_in">linear-gradient</span>(to bottom, #eee, #ccc);</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.div</span> &#123;</div><div class="line">  <span class="attribute">background-color</span>: pink;</div><div class="line">&#125;</div><div class="line"><span class="comment">/* 코드는 위에서 아래로 읽어나기 때문에 항상 뒤에 적힌 코드를 적용하기 때문에, 이 경우 앞의 .background가 .background-color에 의해 무시된다고 생각하기 쉽다.  */</span></div><div class="line"><span class="comment">/* 따라서 본 코드는 backgrond의 color 속성을 pink로 바꿔준 것일 뿐이고 linear-gradient는 그대로 남아 적용된다.(전자의 background의 color 속성값은 그라디언트를 지원하지 않는 환경일 때 나타나는 배경색을 의미.) */</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><code>font</code> 속성 정리</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.div</span> &#123;</div><div class="line">  <span class="attribute">font-weight</span>: bold;</div><div class="line">  <span class="attribute">font-style</span>: italic;</div><div class="line">  <span class="comment">/* 대문자 자체는 유지하되 크기를 소문자 크기로 줄여주는 기능 */</span></div><div class="line">  <span class="attribute">font-variant</span>: small-caps;</div><div class="line">  <span class="attribute">font-size</span>: <span class="number">16px</span>;</div><div class="line">  <span class="attribute">line-height</span>: <span class="number">1.5</span>;</div><div class="line">  <span class="attribute">font-family</span>: <span class="string">"Noto Sans Bold"</span>;</div><div class="line"></div><div class="line">  <span class="comment">/* 속기법 순서유의 */</span></div><div class="line">  <span class="comment">/* font: weight | style | variant | size / height | font-family */</span></div><div class="line">  <span class="attribute">font</span>: bold italic small-caps <span class="number">16px</span> / <span class="number">1.5</span> <span class="string">"Noto Sans Bold"</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><code>transition</code> 속성 정리</p>
+<ul>
+<li><code>@keyframe</code>보다 훨씬 쉽게 애니메이션 효과를 줄 수 있는 속성<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.div</span> &#123;</div><div class="line">    <span class="comment">/* 적용할 속성명 */</span></div><div class="line">    <span class="attribute">transition-property</span>: all;</div><div class="line">    <span class="comment">/* 지속 시간 */</span></div><div class="line">    <span class="attribute">transition-duration</span>: <span class="number">0s</span>;</div><div class="line">    <span class="comment">/* 애니메이션 동작 효과 */</span></div><div class="line">    <span class="attribute">transition-timing-function</span>: ease;</div><div class="line">    <span class="comment">/* 효과 지연 시간 */</span></div><div class="line">    <span class="attribute">transition-delay</span>: <span class="number">0s</span>;</div><div class="line"></div><div class="line">    <span class="comment">/* 속기법 */</span></div><div class="line">    <span class="comment">/* transition: property name | duration | timing function | delay */</span></div><div class="line">    <span class="attribute">transition</span>: margin-left <span class="number">4s</span> ease-in-out <span class="number">1s</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><code>ol</code>의 <code>li</code> 숫자 커스터마이징 방식: li 숫자를 직접 고치고 커스텀하는 방법은 없다.</p>
+<ol>
+<li><code>list-style-type: none</code> : 스크립트 리더가 읽어주지 못해 접근성이 떨어지는 방식</li>
+<li><code>overflow: hidden</code> 활용 : 추천 방식, 숫자 입력시 <code>counter-increment</code> 속성 활용</li>
+</ol>
+</li>
+<li>수직 가운데 배열하기<ul>
+<li><code>transform</code> 속성 활용</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul>
+<li><code>@keyframe</code>으로 하면 코드도 길고 복잡해지는데 <code>transition</code>으로 하니까 매우 간단하게 구현할 수 있다. 회전이나 여러 다른 속성도 있다고 하니 꼭 챙겨봐야겠다. 편하지만 복잡한 애니메이션은 역시 <code>@keyframe</code>이나 JavaScript에서 구현 가능할 것 같다.</li>
+<li>언뜻 보기에는 <code>background-color</code>가 더 복잡해보이지만 그저 <code>background</code>의 세부 속성 중 하나일 뿐…</li>
+<li>할 일을 써놓고 실천을 하지 못하는 날이 잦다. 목표를 줄이든지, 실천을 늘리든지 하나만 하자</li>
+</ul>
+<h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul>
+<li>강의 복습과 정리</li>
+<li>이전 과제들 정리</li>
+<li>grid 복습 정리하고 적용해보기</li>
+<li>Vue.js</li>
+<li>다른 웹서비스 메인페이지 따라 만들어보기</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2017/09/19/170919-TIL/" class="next">다음글</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'girin-dev';
+var disqus_identifier = '2017/09/20/170920-TIL/';
+var disqus_title = '170920-TIL';
+var disqus_url = 'http://girin-dev.github.io/2017/09/20/170920-TIL/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//girin-dev.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 <a href="http://girin-dev.github.io">Girin-dev</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
