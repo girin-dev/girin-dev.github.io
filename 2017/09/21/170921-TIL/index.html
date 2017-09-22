@@ -32,14 +32,18 @@
 </li>
 <li><p><code>background</code></p>
 <ul>
-<li>css를 통해 이미지를 배경처리하여 집어넣는 방법</li>
+<li>css를 통해 이미지를 배경처리하여 집어넣는 방법 (때때로 이미지 배경이나 장식을 마크업으로 처리하는게 유리할 떄도 있다. 이때 <code>alt=&quot;&quot;</code>로 주는 걸 잊지 말자.)</li>
 <li>반응형 디자인에서는 박스 사이즈에 따라 이미지의 크기도 변동되어야 한다.</li>
-<li><code>contain</code>과 <code>cover</code><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.div</span> &#123;</div><div class="line"><span class="attribute">background</span>: orange <span class="built_in">url</span>(<span class="string">"images/logo.png"</span>) no-repeat <span class="number">0</span> <span class="number">0</span>/[<span class="number">100%</span> <span class="number">100%</span> / cover / contain 중 택<span class="number">1</span>]; </div><div class="line">&#125;</div><div class="line"><span class="comment">/* cover는 가로 기준으로 채우기, contain은 세로 기준으로 채우기 */</span></div></pre></td></tr></table></figure>
+<li><code>contain</code>과 <code>cover</code><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.div</span> &#123;</div><div class="line"><span class="attribute">background</span>: orange <span class="built_in">url</span>(<span class="string">"images/logo.png"</span>) no-repeat <span class="number">0</span> <span class="number">0</span>/[<span class="number">100%</span> <span class="number">100%</span> / cover / contain 중 택<span class="number">1</span>];</div><div class="line">&#125;</div><div class="line"><span class="comment">/* cover는 가로 기준으로 채우기, contain은 세로 기준으로 채우기 */</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
-<li><p>한 css 문서 내에서 분기하는 내부분기와 css 파일을 분리하여 분기하는 외부분기. 외부분기는 복수의 css파일을 다 불러온다는 점 때문에 성능과 속도가 저하되어 내부분기를 선호. 그러나 대규모 프로젝트에서는 유지보수 관리 등의 이유로 외부분기를 쓰기도 한다.</p>
+<li><p>Golden Grid System</p>
+<ul>
+<li>2, 4, 6, 8, 12, 24 column으로 나누는 grid 시스템</li>
+</ul>
 </li>
+<li>한 css 문서 내에서 분기하는 내부분기와 css 파일을 분리하여 분기하는 외부분기. 외부분기는 복수의 css파일을 다 불러온다는 점 때문에 성능과 속도가 저하되어 내부분기를 선호. 그러나 대규모 프로젝트에서는 유지보수 관리 등의 이유로 외부분기를 쓰기도 한다.</li>
 <li>그러나 사실 그 정도의 대규모 프로젝트라면 애초에 유동형 웹디자인을 하기 보다 모바일용과 데스크탑용 웹을 따로 만든다.</li>
 <li><code>RWD</code>와 <code>AWD</code><ul>
 <li><code>RWD</code>: Responsible Web Design. 미디어쿼리를 활용해 화면이나 기기스크린의 크기 등을 이용해 화면 분기, 대개 모바일~테블릿~데스크탑 등 유동적으로 나타남.</li>
@@ -59,13 +63,15 @@
 <li>해결방안<ol>
 <li><code>srcset</code>과 <code>src</code> 속성 활용</li>
 <li><code>&lt;picture&gt;</code>태그 활용(ie11 미지원)</li>
-<li><code>@media only screen and (min-device-pixel-ratio:2)</code><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2></li>
+<li><code>@media only screen and (min-device-pixel-ratio:2)</code></li>
 </ol>
 </li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+<h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul>
 <li>오픈소스 기여<ul>
 <li>처음으로 기술 레퍼런스 오픈소스에 기여해봤다. MDN web docs의 <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/Video" target="_blank" rel="external"><code>&lt;video&gt;</code> 태그 레퍼런스</a>에 번역 중 실수로 지워지지 않은 영문을 삭제했고, 몇몇 부분을 원문 어감에 맞게 수정했다. 별 건 아니지만 반영되면 좋겠다. 기술적 기여를 하고 싶다.</li>
 </ul>
@@ -78,6 +84,7 @@
 <li>강의 복습과 정리</li>
 <li>Vue.js</li>
 <li>다른 웹서비스 메인페이지 따라 만들어보기</li>
+<li>시험 복습</li>
 </ul>
 </div></article></div></main><footer><div class="paginator"><a href="/2017/09/20/170920-TIL/" class="next">다음글</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'girin-dev';
 var disqus_identifier = '2017/09/21/170921-TIL/';
