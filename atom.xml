@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2017-09-22T00:42:43.000Z</updated>
+  <updated>2017-09-24T12:43:49.000Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>170923-170924-TIL</title>
+    <link href="http://girin-dev.github.io/2017/09/23/170923-170924-TIL/"/>
+    <id>http://girin-dev.github.io/2017/09/23/170923-170924-TIL/</id>
+    <published>2017-09-23T04:21:23.000Z</published>
+    <updated>2017-09-24T12:43:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><a href="https://www.facebook.com/groups/botgroup/permalink/677725575757942/" target="_blank" rel="external">주말에 끝내는 챗봇</a> 참석<ul><li>챗봇에 대한 간략한 정보와 챗봇을 개발, 배포할 수 있는 Azure Bot Framework 소개</li><li>챗봇을 사용하는 스타트업들<ul><li>날씨 알림형: <a href="https://www.facebook.com/hiponcho/" target="_blank" rel="external">판초(pancho)</a></li><li>개인별 추천형: H&amp;M, Skyscanner, <a href="https://www.kayak.co.kr/messenger" target="_blank" rel="external">카약</a></li><li>공공기관형, GS Shop 등 홈쇼핑, <a href="http://verticalplatform.kr/archives/7944" target="_blank" rel="external">조이의 채널서비스</a></li></ul></li><li>챗봇의 형식<ol><li>사용자 인풋을 받아 스크립트 처리 후 echo (분노 챗봇 새새)</li><li>자연어 처리를 통해 사용자 의도(intent) 파악 후 대답 (Jill Watson 수업 조교 봇)</li><li>단순한 Q&amp;A (쇼핑몰과 카페 등 소규모 사업장)</li></ol></li><li>좋은 봇의 기준<ol><li>최소한의 단계로 사용자의 문제를 해결하는가?</li><li>대체 경험보다 더 낫고 빠르고 쉽게 사용자의 문제를 해결하는가? (트리구조는 안 좋은 예시)</li><li>사용자가 자연스럽게 그 봇을 사용할 때 무엇을 해야하는지 알고 있는가? (봇이 사전에 알려주는 방법이 있음)</li></ol></li><li><a href="https://dev.botframework.com/" target="_blank" rel="external">Azure Bot Framework</a><ul><li>웹 소스를 제공하여 타 웹사이트에 <code>iframe</code>을 이용해 부착 가능</li><li>서버 구축은 C#이나 Node.js를 통해 지원</li></ul></li><li><a href="https://www.luis.ai/home" target="_blank" rel="external">LUIS</a><ul><li>Language Understanding Intelligent Service</li><li>MS에서 만든 자연어 처리 API</li></ul></li><li>참고 사이트<ul><li>챗봇 개발의 이해 <a href="http://jincrom.tistory.com/61" target="_blank" rel="external">http://jincrom.tistory.com/61</a></li><li>챗봇 개발의 생태계 <a href="https://brunch.co.kr/@pilsogood/2" target="_blank" rel="external">https://brunch.co.kr/@pilsogood/2</a><br>*</li></ul></li></ul></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul><li>주말에 끝내는 챗봇<ul><li>챗봇이라는 세계를 처음 만났다. 의외로 많은 사람들이 사용하고 있는 서비스였고 최근 인공지능의 등장과 함께 시너지효과도 일으킬 수 있는 유망있는 세계인 것 같다. 신세계를 만난 기분이었다. 특히 고인을 그대로 챗봇으로 만들어 소통한다는 걸 본 것은 무척 기이한 경험었다.</li><li>그러나 컨퍼런스 자체는 주제와 타겟이 불명확했다. 챗봇에 대한 설명인지, 개발하는 방법을 알려주는건지, 아니면 그냥 Azure를 홍보하는건지 알 수 없었다. 또 청자가 개발자면 개발자, 사업자면 사업자, 학생이면 학생이어야 할텐데 모든 사람들이 짬뽕되어 특히 구체적인 깊은 개발 이야기가 나올때 아마 많은 사람들이 이해하지 못했을 것 같다.</li><li>2차 컨퍼런스는 실제 개발을 할 거라고 하는데.. 갈지 말지 고민된다. 사실 혼자 공부해서 개발할 수도 있을 것 같은데.. 딱히 Azure Bot Framework가 메리트 있는지도 모르겠고…</li></ul></li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>패캠강의 복습 및 정리</li><li>이전 과제 분석</li><li>왓챠와 디에디트 진행</li><li>Vue.js 강의</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/botgrou
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>170922-TIL</title>
+    <link href="http://girin-dev.github.io/2017/09/22/170922-TIL/"/>
+    <id>http://girin-dev.github.io/2017/09/22/170922-TIL/</id>
+    <published>2017-09-22T09:16:51.000Z</published>
+    <updated>2017-09-24T12:43:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>Fastcampus  </p><ul><li>Activity</li><li><p>HTML &amp; CSS</p><ul><li><code>position: sitcky</code> (ie11 미지원, 여러 브라우저 부분적 지원)</li><li>polyfil<br>우회적으로 적용하는 방법이라는 뜻. 보통 스크립트를 활용.</li><li><p><code>transform: rotate([0~360]deg);</code></p><ul><li>요소 회전시키기<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.div</span> &#123;</div><div class="line">  <span class="comment">/*(+)시계방향, (-)반시계방향*/</span></div><div class="line">  <span class="comment">/*시계방향 90도 회전*/</span></div><div class="line">  <span class="attribute">transform</span>: <span class="built_in">rotate</span>(90deg);</div><div class="line">  <span class="comment">/* 회전기준점을 좌측 하단으로 설정 */</span></div><div class="line">  <span class="attribute">transform-origin</span>: bottom left;</div><div class="line">&#125;</div></pre></td></tr></table></figure></li></ul></li><li><p>반응형 웹디자인 예제 완성</p></li><li>HTML &amp; CSS 수업 종료<h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2></li></ul></li></ul></li><li>HTML &amp; CSS 수업 종료<ul><li>김데레사님의 2주동안의 강의는 정말 만족스러웠다. 실습시간이 부족했던 것이 조금 걸리지만 코스의 특성상 어쩔 수 없는 측면도 있었을 것 같다. 배운 것을 바탕으로 HTML과 CSS는 스스로 공부하는 수 밖에 없다.<br>*</li><li>그만큼 JavaScript에 집중하는 것도 중요하다.</li></ul></li></ul><h2 id="주말동안-할-일"><a href="#주말동안-할-일" class="headerlink" title="주말동안 할 일"></a>주말동안 할 일</h2><ul><li>패캠강의 복습 및 정리</li><li>이전 과제 분석</li><li>왓챠와 디에디트 진행</li><li>Vue.js 강의</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Fastcampus  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Activity&lt;/li&gt;
+&lt;li&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
   
   <entry>
     <title>170921-TIL</title>
