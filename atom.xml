@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2017-09-27T18:08:22.197Z</updated>
+  <updated>2017-09-27T18:18:04.010Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://girin-dev.github.io/2017/09/27/170927-TIL/"/>
     <id>http://girin-dev.github.io/2017/09/27/170927-TIL/</id>
     <published>2017-09-27T10:08:12.000Z</published>
-    <updated>2017-09-27T18:08:22.197Z</updated>
+    <updated>2017-09-27T18:18:04.010Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>커맨드 라인 연습<ul><li>장고걸스 튜토리얼: <a href="https://tutorial.djangogirls.org/ko/intro_to_command_line/" target="_blank" rel="external">커맨드라인 시작하기</a></li><li><code>whoami</code> 사용자 이름 출력</li><li><code>rm -r [폴더명]</code> 폴더(디렉토리) 삭제</li><li><code>cp</code> 파일 복사</li><li><code>mv</code> 파일 이동</li><li>명령어 모음 <a href="https://ss64.com" target="_blank" rel="external">https://ss64.com</a></li></ul></li><li>JavaScript<ul><li>반복문 활용 문제 13개 풀이 및 발표</li><li>7~10과 예습<ul><li>Object</li><li>Immutability</li><li>Function-level</li><li>Prototye</li></ul></li><li>4~6과 복습</li></ul></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul><li>같은 학생들끼리 알고리즘을 푸는 시간이 무척 즐거웠다. 따로 알고리즘 스터디를 하고 싶을 정도이다. 물론 때마침 토요일 스터디를 모집하는 글이 뜨긴 했는데, 토요일에 시간이 날지 모르겠어서 일단은 유보중… 스쿨 내에서 자바스크립트에 집중하는 알고리즘 스터디를 해보는 것도 좋겠다.</li><li>첫 self-study 시간과 미션 시간을 보냈는데, 굉장히 만족스러웠다.</li><li>같은 학생들끼리 점심도 먹고 커피도 마시면서 간단한 네트워킹 시간을 가질 수 있었다. 도시락을 먹는 것도 좋은데 종종 이런 시간도 가질 필요가 있겠다. 마침 내일은 치킨을 먹는다고 하니 더 친해지고 많은 정보를 공유하고 싶다.</li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>반복문 활용 알고리즘 문제 13개 풀이</li><li>복습과 예습</li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>커맨드 라인 연습<ul><li>장고걸스 튜토리얼: <a href="https://tutorial.djangogirls.org/ko/intro_to_command_line/" target="_blank" rel="external">커맨드라인 시작하기</a></li><li><code>whoami</code> 사용자 이름 출력</li><li><code>rm -r [폴더명]</code> 폴더(디렉토리) 삭제</li><li><code>cp</code> 파일 복사</li><li><code>mv</code> 파일 이동</li><li>명령어 모음 <a href="https://ss64.com" target="_blank" rel="external">https://ss64.com</a></li></ul></li><li>JavaScript<ul><li>반복문 활용 문제 13개 풀이 및 발표</li><li>7~10과 예습<ul><li>Object</li><li>Immutability</li><li>Function-level</li><li>Prototye</li></ul></li><li>4~6과 복습</li></ul></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul><li>같은 학생들끼리 알고리즘을 푸는 시간이 무척 즐거웠다. 따로 알고리즘 스터디를 하고 싶을 정도이다. 물론 때마침 토요일 스터디를 모집하는 글이 뜨긴 했는데, 토요일에 시간이 날지 모르겠어서 일단은 유보중… 스쿨 내에서 자바스크립트에 집중하는 알고리즘 스터디를 해보는 것도 좋겠다.</li><li>첫 self-study 시간과 미션 시간을 보냈는데, 굉장히 만족스러웠다.</li><li>같은 학생들끼리 점심도 먹고 커피도 마시면서 간단한 네트워킹 시간을 가질 수 있었다. 도시락을 먹는 것도 좋은데 종종 이런 시간도 가질 필요가 있겠다. 마침 내일은 치킨을 먹는다고 하니 더 친해지고 많은 정보를 공유하고 싶다.</li><li>맥북을 <code>high sierra</code>로 업데이트 했다. git관련 명령어가 잘 먹지 않아서 검색해보니 <code>Xcode Command Line Tools</code> 의존성 이슈가 발생하는 경우라고 한다. 예전에 <code>OS X El Capitan</code>에서 <code>macOS Sierra</code> 업데이트할 때도 이런 일이 있었다던데 매 업데이트마다 신경써줘야 하는 것 같다. (<a href="http://redutan.github.io/2015/10/05/osx-after-update-git-error" target="_blank" rel="external">http://redutan.github.io/2015/10/05/osx-after-update-git-error</a>)</li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>반복문 활용 알고리즘 문제 13개 풀이</li><li>복습과 예습</li></ul>]]></content>
     
     <summary type="html">
     
