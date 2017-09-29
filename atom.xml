@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2017-09-27T18:18:04.010Z</updated>
+  <updated>2017-09-29T00:38:48.124Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>170928-TIL</title>
+    <link href="http://girin-dev.github.io/2017/09/28/170928-TIL/"/>
+    <id>http://girin-dev.github.io/2017/09/28/170928-TIL/</id>
+    <published>2017-09-28T01:18:19.000Z</published>
+    <updated>2017-09-29T00:38:48.124Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Activity<ul><li>CLI 명령어</li></ul></li><li>채용정보<ul><li>중요한 건 <code>이론</code>과 <code>기본지식</code> =&gt; 왜 이렇게 쓰는가?<ul><li>AWS, Git &amp; Github, HTTP, RESTful AP<ul><li>아니 적어도 풀네임 정도라도 알자.</li></ul></li><li>언어 / 환경 / 구조(앵귤러?리엑트? 뭘 써봤으며 왜 그걸 썼니?) /</li><li><strong>Webpack</strong>, Grunt, Gulp, Browserify 도구 경험</li><li>협업능력: 나의 요구사항, 상대의 요구사항을 잘 이해하고 반영할 수 있는가? 문서 작성, 주석 등…</li></ul></li><li>개발자에게 질문하는 법<ul><li><a href="https://www.kjwon15.net/wordpress/articles/free/517" target="_blank" rel="external">국문</a></li><li><a href="https://codingkilledthecat.wordpress.com/2012/06/26/how-to-ask-for-programming-help/" target="_blank" rel="external">영문</a></li></ul></li></ul></li><li>JavaScript<ul><li>객체(Object)<ul><li>객체란?</li><li><strong>객체 생성 방법</strong><ol><li>객체 리터럴</li><li><code>Objcet()</code> 생성자 함수</li><li>생성자 함수</li></ol></li><li>객체 프로퍼티 접근</li><li>pass-by-reference</li><li>pass-by-value</li><li>객체의 분류</li></ul></li><li>함수 (Function)<ul><li>함수 정의</li><li><strong>함수 생성 방법 (중요)</strong><ol><li>함수 선언식</li><li>함수 표현식</li><li><code>Function()</code> 생성자 함수</li></ol></li><li>함수 호이스팅</li><li>First-class object(일급객체)</li><li>매개변수(parameter, 인자)</li><li>반환값</li><li>함수 객체의 프로퍼티</li><li>함수의 다양한 형태</li></ul></li><li><strong><code>Prototype</code></strong> 맛보기</li></ul></li><li>반복문 예제 13문<ul><li><code>*</code> 역-정삼각형 만들기</li><li>예제 12번, 13번을 함수화하기</li></ul></li><li>예습<ul><li>Prototype</li><li>Scope</li><li>this</li></ul></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul><li>개발자로의 취업에 있어서 가장 중요한 건 <code>코딩테스트</code>와 <code>면접</code>. 이를 위해서 이론 공부가 필수적이다. 예전에는 ‘그냥 만들면 되는거 아냐?’, ‘포트폴리오 잘 만들면 그게 곧 실력이지’ 라고 생각했는데 현실은 전혀 달랐던 것 같다. 생각하면 할수록 컴공 부전공을 하지 않은게 후회된다. 하지만 지금이라도 열심히 해야지.</li><li><code>Prototype</code> 부분이 이해가 안가서 팀원 선화님과 계속 서로 설명해가면서 이해하려 노력했고, 최종적으로 선생님의 설명을 들었을때 서로의 대화가 유익했다는 것을 깨달았다. 개발자들끼리 소통하고 정보를 공유하는 것이 실력향상과 개념이해에도 좋은 영향을 끼치는 것 같다.</li><li>별로 역-정삼각형을 만다는 것은 이미 지난 수요일(27일)에 완성했으나 이것을 함수화하는 것은 또 차원이 다른 문제였다. 아예 생성원리를 다시 고민해서 새로 코딩을 해야 한다.</li><li>스쿨 멤버들과 치킨을 먹었다. 선생님과 조교님도 함께 먹었는데 정작 이걸 주도한 매니저님은 못 오셔서 아쉬웠다.</li><li>지금은 JavaScript를 하는데도 시간이 모자란다. Vue.js나 마크업css는 주말로 옮기고, 오히려 여유가 조금 생기면 알고리즘 문제를 하루에 하나씩이라도 풀어봐야겠다.</li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li><code>*</code> 역-정삼각형 만들기 함수화 풀이</li><li>예습하고 복습 및 정리</li><li>과제</li><li>주말과 추석 계획 세우기</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Activity&lt;ul&gt;
+&lt;li&gt;CLI 명령어&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;채용
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
   
   <entry>
     <title>170927-TIL</title>
@@ -48,9 +78,9 @@
     <link href="http://girin-dev.github.io/2017/09/26/JavaScript-04/"/>
     <id>http://girin-dev.github.io/2017/09/26/JavaScript-04/</id>
     <published>2017-09-26T10:32:37.000Z</published>
-    <updated>2017-09-27T18:11:39.811Z</updated>
+    <updated>2017-09-28T06:19:53.384Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="JavaScript-04-자료형과-변수-Data-type-amp-Variable"><a href="#JavaScript-04-자료형과-변수-Data-type-amp-Variable" class="headerlink" title="JavaScript 04. 자료형과 변수(Data type &amp; Variable)"></a>JavaScript 04. 자료형과 변수(Data type &amp; Variable)</h1><ul><li>프로그래밍이란<br><strong>변수</strong>를 통해 값을 저장, 참조하고<br><strong>연산자</strong>로 값을 연산, 평가하고<br><strong>조건문과 반복문</strong>에 의한 흐름제어로 데이터 흐름을 제어하고<br><strong>함수</strong>로 재사용이 가능한 구문의 집합을 만들며<br><strong>객체, 배열</strong> 등으로 자료를 구조화하는 것  </li><li>변수<ul><li>변수에 값을 할당한다는 것은 OS가 값을 저장하기 위해 메모리 공간을 확보하는 것을 말한다. JavaScript의 경우 <code>undefined</code>라는 변수값을 통해 확보하는데 이를 초기화라고 한다.</li><li>결국 변수라는 것은 값이 할당된 메모리의 주소(Memory address)에 접근하기 위해 사람이 이해할 수 있는 언어로 지정한 이름표(식별자, identifier). 실제 위치틑 0x00…. 식의 16진수 숫자로 나타난다.</li></ul></li><li>변수값 할당과 재할당<ul><li>할당 : <code>undefined</code>로 할당되어 있던 메모리 위치를 다른 위치에 할당한 변수값의 위치로 가르키게 함 (참조). 이때 <code>undefined</code>는 바로 사라지지 않고 적절한 때에 삭제됨(<a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Memory_Management" target="_blank" rel="external">가비지 콜렉션</a></li><li>재할당 : 기존에 할당된 값을 바꾸는 것이 아니라 다른 위치에 값을 입력하고 그 위치로 재할당하는 것(참조를 바꿈)</li><li>변경불가한 값에 해당(immutable value)</li></ul></li><li>자료형은 이러한 변수를 할당할 때, 값의 종류에 따라 확보해야할 메모리 크기가 다르기 때문에 나타나는 분류이다.</li></ul><h2 id="기본자료형-Primitive-Data-Type"><a href="#기본자료형-Primitive-Data-Type" class="headerlink" title="기본자료형 (Primitive Data Type)"></a>기본자료형 (Primitive Data Type)</h2><ul><li>변경 불가능한 값(immutable value)</li><li><strong>pass-by-value</strong><br>값은 값으로 복사되어 전달되지, 변경되지 않는다.</li></ul><ol><li><code>boolean</code><br><code>true</code>/<code>false</code> 두 가지 값을 가질 수 있고<br><code>null</code>, <code>undefined</code>, 숫자 0은 <code>false</code>로 간주된다.</li><li><code>null</code><br>오직 <code>null</code> 값만을 갖는다. <code>null</code> 값은 참조정보를 제거한다, 변수값이 할당되어 있는 메모리 주소를 제거한다 정도의 의미. 참조가 없어진 메모리 영역은 마찬가지로 가비지 콜렉션 수행.</li><li><code>undefined</code><br>값이 할당되지 않은 변수가 가진 값. 선언되었으나 할당이 되지 않았을 경우.</li><li><code>Number</code><br>JavaScript는 오로지 하나의 숫자 자료형만 존재.<br><code>+/- Infinity</code>, <code>NaN</code>을 포함</li><li><code>String</code><br>문자열 타입으로 텍스트 데이터 사용.<br><strong>유사배열</strong> 로서 인덱스를 통해 접근가능하나 변경할 수 없고 오직 read만 가능하다.</li><li><code>Symbol</code><br>ES6에 새롭게 추가된 자료형으로 애플리케이션 전체에서 유일하며 변경 불가능한(immutable) 기본 자료형(primitive)이다. 주로 객체의 프로퍼티 키(property key)로 사용한다.</li></ol><h2 id="객체형-Object-type-참조형"><a href="#객체형-Object-type-참조형" class="headerlink" title="객체형 (Object type, 참조형)"></a>객체형 (Object type, 참조형)</h2><ul><li>객체는 데이터와 그 데이터에 관련되는 동작(절차,방법,기능)을 모두 포함할 수 있는 개념적 존재.</li><li>프로퍼티(property, 이름과 값을 갖는 데이터)와 메소드(method, 동작을 의미)를 포함하는 독립적 주체</li><li><strong>pass-by-reference</strong></li></ul><h2 id="변수"><a href="#변수" class="headerlink" title="변수"></a>변수</h2><ul><li>변수명 명명규칙<ul><li>목적과 기능에 맞고 알아보기 쉽게 짓기</li><li>대소문자 구분 가능 주의</li><li>첫글자는 영문자(특수문자 제외), underscore ( _ ), 또는 달러 기호($)만 가능</li></ul></li><li>변수의 중복 선언<ul><li>사용 가능하다 비추.</li></ul></li><li>변수 선언시 var 생략 허용<ul><li>사용가능하지만 의도치 않게 변수를 전역화할 수 있음. 비추.</li></ul></li><li>동적 타이핑 (Dynamic Typing)<ul><li>변수의 타입설정이 필요없이 할당되는 과정에서 자동으로 자료형이 결정되는 구조.</li></ul></li><li>변수 호이스팅(Variable Hoisting)<ul><li>변수 선언의 3단계<ol><li>선언 단계</li><li>초기화 단계</li><li>할당 단계</li></ol></li><li>선언단계와 초기화단계는 한번에 이루어짐. 이 단계는 한줄한줄 읽어가면서 var을 만날 때 하는것이 아니라 자바스크립트 전체 문서를 쫙 읽은 다음에 변수 선언문을 싹 뽑아서 이 단계를 실행한 뒤 한줄한줄 읽어나간다. 이것이 변수 호이스팅.</li><li>변수 선언문의 위치가 별로 중요하지 않으나 가급적 변수 이용문(?) 보다 위에, 그리고 문서 맨 위에 위치시키는 것이 좋다. 이것은 ESLint의 규칙이기도 하다.</li></ul></li><li>var 키워드로 선언된 변수의 문제점<ul><li>Function-level scope, var 생략 허용, 중복 선언 허용, 변수 호이스팅 등 JavaScript의 특징이 전역 변수의 남발, 의도치 않은 변수값 변경 등의 문제를 발생시킴.</li><li>복잡성, 성능이슈, 상호의존성 등 여러 면에서 변수의 범위는 좁을수록 좋다. 전역변수는 남발하지 말 것.</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="JavaScript-04-자료형과-변수-Data-type-amp-Variable"><a href="#JavaScript-04-자료형과-변수-Data-type-amp-Variable" class="headerlink" title="JavaScript 04. 자료형과 변수(Data type &amp; Variable)"></a>JavaScript 04. 자료형과 변수(Data type &amp; Variable)</h1><ul><li>프로그래밍이란<br><strong>변수</strong>를 통해 값을 저장, 참조하고<br><strong>연산자</strong>로 값을 연산, 평가하고<br><strong>조건문과 반복문</strong>에 의한 흐름제어로 데이터 흐름을 제어하고<br><strong>함수</strong>로 재사용이 가능한 구문의 집합을 만들며<br><strong>객체, 배열</strong> 등으로 자료를 구조화하는 것  </li><li>변수<ul><li>변수에 값을 할당한다는 것은 OS가 값을 저장하기 위해 메모리 공간을 확보하는 것을 말한다. JavaScript의 경우 <code>undefined</code>라는 변수값을 통해 확보하는데 이를 초기화라고 한다.</li><li>결국 변수라는 것은 값이 할당된 메모리의 주소(Memory address)에 접근하기 위해 사람이 이해할 수 있는 언어로 지정한 이름표(식별자, identifier). 실제 위치틑 0x00…. 식의 16진수 숫자로 나타난다.</li></ul></li><li>변수값 할당과 재할당<ul><li>할당 : <code>undefined</code>로 할당되어 있던 메모리 위치를 다른 위치에 할당한 변수값의 위치로 가르키게 함 (참조). 이때 <code>undefined</code>는 바로 사라지지 않고 적절한 때에 삭제됨(<a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Memory_Management" target="_blank" rel="external">가비지 콜렉션</a></li><li>재할당 : 기존에 할당된 값을 바꾸는 것이 아니라 다른 위치에 값을 입력하고 그 위치로 재할당하는 것(참조를 바꿈)</li><li>변경불가한 값에 해당(immutable value)</li></ul></li><li>자료형은 이러한 변수를 할당할 때, 값의 종류에 따라 확보해야할 메모리 크기가 다르기 때문에 나타나는 분류이다.</li></ul><h2 id="기본자료형-Primitive-Data-Type"><a href="#기본자료형-Primitive-Data-Type" class="headerlink" title="기본자료형 (Primitive Data Type)"></a>기본자료형 (Primitive Data Type)</h2><ul><li>변경 불가능한 값(immutable value)</li><li><strong>pass-by-value</strong><br>값은 값으로 복사되어 전달되지, 변경되지 않는다.</li></ul><ol><li><code>boolean</code><br><code>true</code>/<code>false</code> 두 가지 값을 가질 수 있고<br><code>null</code>, <code>undefined</code>, 숫자 0은 <code>false</code>로 간주된다.</li><li><code>null</code><br>오직 <code>null</code> 값만을 갖는다. <code>null</code> 값은 참조정보를 제거한다, 변수값이 할당되어 있는 메모리 주소를 제거한다 정도의 의미. 참조가 없어진 메모리 영역은 마찬가지로 가비지 콜렉션 수행.</li><li><code>undefined</code><br>값이 할당되지 않은 변수가 가진 값. 선언되었으나 할당이 되지 않았을 경우.</li><li><code>Number</code><br>JavaScript는 오로지 하나의 숫자 자료형만 존재.<br><code>+/- Infinity</code>, <code>NaN</code>을 포함</li><li><code>String</code><br>문자열 타입으로 텍스트 데이터 사용.<br><strong>유사배열</strong> 로서 인덱스를 통해 접근가능하나 변경할 수 없고 오직 read만 가능하다.</li><li><code>Symbol</code><br>ES6에 새롭게 추가된 자료형으로 애플리케이션 전체에서 유일하며 변경 불가능한(immutable) 기본 자료형(primitive)이다. 주로 객체의 프로퍼티 키(property key)로 사용한다.</li></ol><h2 id="객체형-Object-type-참조형"><a href="#객체형-Object-type-참조형" class="headerlink" title="객체형 (Object type, 참조형)"></a>객체형 (Object type, 참조형)</h2><ul><li>객체는 데이터와 그 데이터에 관련되는 동작(절차,방법,기능)을 모두 포함할 수 있는 개념적 존재.</li><li>프로퍼티(property, 이름과 값을 갖는 데이터)와 메소드(method, 동작을 의미)를 포함하는 독립적 주체</li><li><strong>pass-by-reference</strong></li></ul><h2 id="변수"><a href="#변수" class="headerlink" title="변수"></a>변수</h2><ul><li>변수명 명명규칙<ul><li>목적과 기능에 맞고 알아보기 쉽게 짓기</li><li>대소문자 구분 가능 주의</li><li>첫글자는 영문자(특수문자 제외), underscore ( _ ), 또는 달러 기호($)만 가능</li></ul></li><li>변수의 중복 선언<ul><li>사용 가능하다 비추.</li></ul></li><li>변수 선언시 var 생략 허용<ul><li>사용가능하지만 의도치 않게 변수를 전역화할 수 있음. 비추.</li></ul></li><li>동적 타이핑 (Dynamic Typing)<ul><li>변수의 타입설정이 필요없이 할당되는 과정에서 자동으로 자료형이 결정되는 구조.</li></ul></li><li>변수 호이스팅(Variable Hoisting)<ul><li>변수 선언의 3단계<ol><li>선언 단계 (VO(variable object)에서 이루어짐)</li><li>초기화 단계</li><li>할당 단계</li></ol></li><li>선언단계와 초기화단계는 한번에 이루어짐. 이 단계는 한줄한줄 읽어가면서 var을 만날 때 하는것이 아니라 자바스크립트 전체 문서를 쫙 읽은 다음에 변수 선언문을 싹 뽑아서 이 단계를 실행한 뒤 한줄한줄 읽어나간다. 이것이 변수 호이스팅.</li><li>변수 선언문의 위치가 별로 중요하지 않으나 가급적 변수 이용문(?) 보다 위에, 그리고 문서 맨 위에 위치시키는 것이 좋다. 이것은 ESLint의 규칙이기도 하다.</li></ul></li><li>var 키워드로 선언된 변수의 문제점<ul><li>Function-level scope, var 생략 허용, 중복 선언 허용, 변수 호이스팅 등 JavaScript의 특징이 전역 변수의 남발, 의도치 않은 변수값 변경 등의 문제를 발생시킴.</li><li>복잡성, 성능이슈, 상호의존성 등 여러 면에서 변수의 범위는 좁을수록 좋다. 전역변수는 남발하지 말 것.</li></ul></li></ul>]]></content>
     
     <summary type="html">
     
@@ -73,7 +103,7 @@
     <link href="http://girin-dev.github.io/2017/09/26/170926-TIL/"/>
     <id>http://girin-dev.github.io/2017/09/26/170926-TIL/</id>
     <published>2017-09-26T09:27:47.000Z</published>
-    <updated>2017-09-27T18:13:51.377Z</updated>
+    <updated>2017-09-27T18:19:25.846Z</updated>
     
     <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>Activity</p><ul><li>터미널 명령어 학습<br><code>.</code> 현재 디렉토리<br><code>..</code> 상위(부모) 디렉토리<br><code>../..</code> 상위(부모)의 상위 디렉토리<br><code>~</code> (물결 tilde) 루트 디렉토리<br><code>pwd</code> (present working directory) 현재 디렉토리 표시<br><code>[명령어] --help</code> 명령어의 도움말 정보 표시<br><code>cat [파일명]</code> 해당 파일 보기<br><code>cat [파일1] &gt; [파일2]</code> 파일 1의 내용을 그대로 복사하여 파일2 만들기<br><code>man [명령어]</code> 해당 명령어의 메뉴얼 보기(–help와 비슷)</li></ul></li><li><p>JavaScript</p></li><li><a href="https://girin-dev.github.io/2017/09/26/JavaScript-04/">자료형과 변수 (Data type &amp; Variable)</a><ul><li>기본자료형 (Primitive Data Type)</li><li>객체형 (Object type, 참조형)</li><li>변수</li></ul></li><li>연산자(Operator)<ul><li>산술 연산자 (Arithmetic Operators)</li><li>대입 연산자 (Assignment Operators)</li><li>비교 연산자 (Comparison Operators)</li><li>논리 연산자 (Logical Operators)</li><li>단축 평가 (Short-Circuit Evaluation)</li><li>타입 연산자 (Type Operators)</li><li>!!</li></ul></li><li><p>제어문(Control Flow)</p><ul><li>블록 구문 (Block statement)</li><li>조건문 (Conditional statement)</li><li>반복문 (Loop)</li><li>평가(Evaluating)]</li></ul></li><li><p>유용한 플러그인</p><ul><li>auto rename</li><li>Beautify</li><li>bookmark</li><li>code runner (ctrl+alt+n)</li></ul></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2>]]></content>
     
