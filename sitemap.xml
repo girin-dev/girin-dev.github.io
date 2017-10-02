@@ -2,16 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://girin-dev.github.io/2017/09/28/170928-TIL/</loc>
+    <loc>http://girin-dev.github.io/2017/09/30/170930-171001-TIL/</loc>
     
-    <lastmod>2017-09-29T00:38:48.124Z</lastmod>
+    <lastmod>2017-10-02T02:45:42.910Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://girin-dev.github.io/2017/09/26/JavaScript-04/</loc>
     
-    <lastmod>2017-09-28T06:19:53.384Z</lastmod>
+    <lastmod>2017-10-02T02:41:03.673Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://girin-dev.github.io/2017/09/28/170928-TIL/</loc>
+    
+    <lastmod>2017-10-02T02:25:08.643Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://girin-dev.github.io/2017/10/01/Algorithm-iteration-easy/</loc>
+    
+    <lastmod>2017-10-02T02:20:19.787Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://girin-dev.github.io/2017/09/23/170923-170924-TIL/</loc>
+    
+    <lastmod>2017-10-01T06:44:31.547Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://girin-dev.github.io/2017/09/29/170929-TIL/</loc>
+    
+    <lastmod>2017-10-01T06:44:29.897Z</lastmod>
     
   </url>
   
@@ -40,13 +68,6 @@
     <loc>http://girin-dev.github.io/2017/09/25/170925-TIL/</loc>
     
     <lastmod>2017-09-26T01:31:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://girin-dev.github.io/2017/09/23/170923-170924-TIL/</loc>
-    
-    <lastmod>2017-09-25T01:27:34.000Z</lastmod>
     
   </url>
   

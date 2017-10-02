@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 170929-TIL · 기린개발의 일지</title><meta name="description" content="170929-TIL - Girin-dev"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://girin-dev.github.io/atom.xml" title="기린개발의 일지"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/categories/" target="_self" class="nav-list-link">CATEGORY</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="https://github.com/girin-dev" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">170929-TIL</h1><div class="post-info">2017년 9월 29일</div><div class="post-content"><h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul>
+<li><p>Activity</p>
+<ul>
+<li><a href="https://github.com/march23hare/FDS6Triangle" target="_blank" rel="external"><code>*</code> 역-정삼각형 만들기 함수화 풀이</a><ul>
+<li><code>반복문</code>을 활용한 풀이</li>
+<li><code>재귀함수</code>를 활용한 풀이</li>
+</ul>
+</li>
+<li><code>Git</code> fork 뜬 레포를 원본 레포로 최신화하는 방법<ul>
+<li>fork 뜬 레포를 직접 최신화하는 방법은 없음.</li>
+<li>로컬 영역에 clone 뜬 디렉토리를 원본 레포로 pull 받아 fork 뜬 레포로 push 하는 방법이 있음<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&gt; <span class="built_in">cd</span> [fork 뜬 레포를 pull 받은 로컬 디렉토리]</div><div class="line"></div><div class="line"><span class="comment"># 로컬 디렉토리에 원본 레포를 연결 후 pull</span></div><div class="line">&gt; git remote add upstream [원본 레포 주소]</div><div class="line">&gt; git pull upstream [브랜치명]</div><div class="line"></div><div class="line"><span class="comment"># 최신화 된 로컬 디렉토리를 fork 뜬 레포로 push</span></div><div class="line">&gt; git push origin master</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>JavaScript</p>
+<ul>
+<li>프로토타입과 객체지향(Prototype)<ul>
+<li>프로토타입 객체</li>
+<li>[[Prototype]] 프로퍼티 vs prototype 프로퍼티</li>
+<li>constructor 프로퍼티</li>
+<li>Prototype chain</li>
+<li>프로토타입 객체의 확장</li>
+<li>기본자료형(Primitive data type)의 확장</li>
+<li>프로토타입 객체의 변경</li>
+<li>포로토타입 체인 동작 조건</li>
+</ul>
+</li>
+<li>Scope<ul>
+<li>Global scope</li>
+<li>Non block-level scope</li>
+<li>Function scope</li>
+<li>암묵적 전역 (implied globals)</li>
+<li>Lexical scoping (Static scoping)</li>
+<li>변수명의 중복</li>
+<li>최소한의 전역변수 사용</li>
+<li>즉시실행함수를 이용한 전역변수 사용 억제</li>
+</ul>
+</li>
+<li>this<ul>
+<li>함수 호출 패턴과 this 바인딩</li>
+<li>함수 호출 패턴(Function Invocation Pattern)</li>
+<li>메소드 호출 패턴(Method Invocation Pattern)</li>
+<li>생성자 호출 패턴(Constructor Invocation Pattern)<ul>
+<li>생성자 함수 동작 방식</li>
+<li>객체 리터럴 방식과 생성자 함수 방식의 차이</li>
+<li>생성자 함수에 new 연산자를 붙이지 않고 호출할 경우</li>
+</ul>
+</li>
+<li>apply 호출 패턴(Apply Invocation Pattern)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>프로그래머 소양<ul>
+<li>진짜 실력은 버그가 발생했을 때 문제를 해결하는 능력</li>
+<li>자기가 짠 코드의 작동 원리를 모르면 절대 해결할 수 없음</li>
+<li>JavaScript built-in은 기본이고 Deepdive도 지속적 공부 필요.</li>
+</ul>
+</li>
+</ul>
+<h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul>
+<li>this 부분이 특히 어려워서 복습이 필수인 것 같다.</li>
+<li>prototype 부분은 처음엔 어려웠는데 한번 이해가 되니 기억도 잘나고 효과도 직접 설명할 수 있을 것 같다. this도 이럴 수 있도록 복습하자.</li>
+<li>추석 연휴동안 그동안 챙기지 못했던 부분과 정리하지 못했던 부분을 챙기고, 전체적인 복습을 하자.</li>
+<li>개발은 노력을 배신하지 않는 분야인 것 같다.</li>
+</ul>
+<h2 id="주말동안-할-일"><a href="#주말동안-할-일" class="headerlink" title="주말동안 할 일"></a>주말동안 할 일</h2><ul>
+<li>반복문 함수 마무리 후 제출</li>
+<li>주말, 추석 과제 및 복습</li>
+<li>poiemweb 인쇄 알아보기</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2017/09/30/170930-171001-TIL/" class="prev">이전글</a><a href="/2017/09/28/170928-TIL/" class="next">다음글</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'girin-dev';
+var disqus_identifier = '2017/09/29/170929-TIL/';
+var disqus_title = '170929-TIL';
+var disqus_url = 'http://girin-dev.github.io/2017/09/29/170929-TIL/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//girin-dev.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 <a href="http://girin-dev.github.io">Girin-dev</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
