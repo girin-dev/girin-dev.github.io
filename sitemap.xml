@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://girin-dev.github.io/2017/10/01/Algorithm-iteration-easy/</loc>
+    
+    <lastmod>2017-10-02T02:51:58.110Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://girin-dev.github.io/2017/09/30/170930-171001-TIL/</loc>
     
     <lastmod>2017-10-02T02:50:28.166Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://girin-dev.github.io/2017/09/28/170928-TIL/</loc>
     
     <lastmod>2017-10-02T02:25:08.643Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://girin-dev.github.io/2017/10/01/Algorithm-iteration-easy/</loc>
-    
-    <lastmod>2017-10-02T02:20:19.787Z</lastmod>
     
   </url>
   
