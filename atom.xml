@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2017-10-09T16:46:11.559Z</updated>
+  <updated>2017-10-09T16:49:53.059Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -17,19 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>JavaScript-11-this</title>
-    <link href="http://girin-dev.github.io/2017/10/09/JavaScript-11-this/"/>
-    <id>http://girin-dev.github.io/2017/10/09/JavaScript-11-this/</id>
+    <title>JavaScript 12. 함수 호출 패턴에 따라 결정되는 this</title>
+    <link href="http://girin-dev.github.io/2017/10/09/JavaScript-12-this/"/>
+    <id>http://girin-dev.github.io/2017/10/09/JavaScript-12-this/</id>
     <published>2017-10-09T04:34:31.000Z</published>
-    <updated>2017-10-09T16:46:11.559Z</updated>
+    <updated>2017-10-09T16:49:53.059Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="함수-호출-패턴에-따라-결정되는-this"><a href="#함수-호출-패턴에-따라-결정되는-this" class="headerlink" title="함수 호출 패턴에 따라 결정되는 this"></a>함수 호출 패턴에 따라 결정되는 this</h1><ul><li>일반적인 객체에는 this가 없고 함수객체에만 존재.</li><li>기본은 this가 전역객체(window/global)를 의미</li><li>이 두가지 빼고는 메소드와 생성자 함수일 때만 다름.</li></ul><h2 id="함수-호출-패턴과-this-바인딩"><a href="#함수-호출-패턴과-this-바인딩" class="headerlink" title="함수 호출 패턴과 this 바인딩"></a>함수 호출 패턴과 this 바인딩</h2><ul><li>아래 4가지 패턴에 따라 어떤 객체 this에 바인딩할지 결정.</li></ul><ol><li>함수 호출 패턴</li><li>매소드 호출 패턴</li><li>생성자 호출 패턴</li><li>apply 호출 패턴</li></ol><h2 id="함수-호출-패턴-Function-Invocation-Pattern"><a href="#함수-호출-패턴-Function-Invocation-Pattern" class="headerlink" title="함수 호출 패턴(Function Invocation Pattern)"></a>함수 호출 패턴(Function Invocation Pattern)</h2><ul><li>브라우저에서는 <code>window</code>, 서버(node.js)에서는 <code>global</code></li></ul><h2 id="메소드-호출-패턴-Method-Invocation-Pattern"><a href="#메소드-호출-패턴-Method-Invocation-Pattern" class="headerlink" title="메소드 호출 패턴(Method Invocation Pattern)"></a>메소드 호출 패턴(Method Invocation Pattern)</h2><ul><li>해당 메소드를 소유한 객체가 this</li></ul><h2 id="생성자-호출-패턴-Constructor-Invocation-Pattern"><a href="#생성자-호출-패턴-Constructor-Invocation-Pattern" class="headerlink" title="생성자 호출 패턴(Constructor Invocation Pattern)"></a>생성자 호출 패턴(Constructor Invocation Pattern)</h2><ul><li>생성자로 만든 함수라면 new를 넣어주자…</li><li>new 연산자와 함께 생성자 함수를 호출하면 자바스크립트가 알아서 빈 객체를 생성하고 함수 내부의 this 의 참조(원래 window)를 지우고 생성한 빈 객체를 참조하게 한다.  따라서 이때 this는 생성된 빈 객체~(this를 생성된 빈 객체에 바인딩한다.)</li><li><code>[앞] instanceof [뒤]</code>=&gt; ‘뒤’가 ‘앞’을 만든 주체니? 라는 뜻<br>callee 는 불림 당한 것<br>caller 는 부른 것</li></ul><h2 id="apply-호출-패턴-Apply-Invocation-Pattern"><a href="#apply-호출-패턴-Apply-Invocation-Pattern" class="headerlink" title="apply 호출 패턴(Apply Invocation Pattern)"></a>apply 호출 패턴(Apply Invocation Pattern)</h2><p>arguments는 아무거나 다 되는게 아니라 유사배열객체만 가능.<br>이번엔 this가 아니라 apply(arguments)를 this로 쓸게~ 라는 의미.<br>call()은 하는 일은 같다.</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="JavaScript-12-함수-호출-패턴에-따라-결정되는-this"><a href="#JavaScript-12-함수-호출-패턴에-따라-결정되는-this" class="headerlink" title="JavaScript 12. 함수 호출 패턴에 따라 결정되는 this"></a>JavaScript 12. 함수 호출 패턴에 따라 결정되는 this</h1><ul><li>일반적인 객체에는 this가 없고 함수객체에만 존재.</li><li>기본은 this가 전역객체(window/global)를 의미</li><li>이 두가지 빼고는 메소드와 생성자 함수일 때만 다름.</li></ul><h2 id="함수-호출-패턴과-this-바인딩"><a href="#함수-호출-패턴과-this-바인딩" class="headerlink" title="함수 호출 패턴과 this 바인딩"></a>함수 호출 패턴과 this 바인딩</h2><ul><li>아래 4가지 패턴에 따라 어떤 객체 this에 바인딩할지 결정.</li></ul><ol><li>함수 호출 패턴</li><li>매소드 호출 패턴</li><li>생성자 호출 패턴</li><li>apply 호출 패턴</li></ol><h2 id="함수-호출-패턴-Function-Invocation-Pattern"><a href="#함수-호출-패턴-Function-Invocation-Pattern" class="headerlink" title="함수 호출 패턴(Function Invocation Pattern)"></a>함수 호출 패턴(Function Invocation Pattern)</h2><ul><li>브라우저에서는 <code>window</code>, 서버(node.js)에서는 <code>global</code></li></ul><h2 id="메소드-호출-패턴-Method-Invocation-Pattern"><a href="#메소드-호출-패턴-Method-Invocation-Pattern" class="headerlink" title="메소드 호출 패턴(Method Invocation Pattern)"></a>메소드 호출 패턴(Method Invocation Pattern)</h2><ul><li>해당 메소드를 소유한 객체가 this</li></ul><h2 id="생성자-호출-패턴-Constructor-Invocation-Pattern"><a href="#생성자-호출-패턴-Constructor-Invocation-Pattern" class="headerlink" title="생성자 호출 패턴(Constructor Invocation Pattern)"></a>생성자 호출 패턴(Constructor Invocation Pattern)</h2><ul><li>생성자로 만든 함수라면 new를 넣어주자…</li><li>new 연산자와 함께 생성자 함수를 호출하면 자바스크립트가 알아서 빈 객체를 생성하고 함수 내부의 this 의 참조(원래 window)를 지우고 생성한 빈 객체를 참조하게 한다.  따라서 이때 this는 생성된 빈 객체~(this를 생성된 빈 객체에 바인딩한다.)</li><li><code>[앞] instanceof [뒤]</code>=&gt; ‘뒤’가 ‘앞’을 만든 주체니? 라는 뜻<br>callee 는 불림 당한 것<br>caller 는 부른 것</li></ul><h2 id="apply-호출-패턴-Apply-Invocation-Pattern"><a href="#apply-호출-패턴-Apply-Invocation-Pattern" class="headerlink" title="apply 호출 패턴(Apply Invocation Pattern)"></a>apply 호출 패턴(Apply Invocation Pattern)</h2><p>arguments는 아무거나 다 되는게 아니라 유사배열객체만 가능.<br>이번엔 this가 아니라 apply(arguments)를 this로 쓸게~ 라는 의미.<br>call()은 하는 일은 같다.</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;함수-호출-패턴에-따라-결정되는-this&quot;&gt;&lt;a href=&quot;#함수-호출-패턴에-따라-결정되는-this&quot; class=&quot;headerlink&quot; title=&quot;함수 호출 패턴에 따라 결정되는 this&quot;&gt;&lt;/a&gt;함수 호출 패턴에 따라 결정되는 th
+        &lt;h1 id=&quot;JavaScript-12-함수-호출-패턴에-따라-결정되는-this&quot;&gt;&lt;a href=&quot;#JavaScript-12-함수-호출-패턴에-따라-결정되는-this&quot; class=&quot;headerlink&quot; title=&quot;JavaScript 12. 함수 호출
       
     
     </summary>
@@ -67,19 +67,19 @@
   </entry>
   
   <entry>
-    <title>JavaScript-10-Prototype</title>
+    <title>JavaScript 10. 프로토타입과 객체지향 (Prototype)</title>
     <link href="http://girin-dev.github.io/2017/10/08/JavaScript-10-Prototype/"/>
     <id>http://girin-dev.github.io/2017/10/08/JavaScript-10-Prototype/</id>
     <published>2017-10-08T13:19:07.000Z</published>
-    <updated>2017-10-09T16:46:14.124Z</updated>
+    <updated>2017-10-09T16:49:19.114Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="프로토타입과-객체지향-Prototype"><a href="#프로토타입과-객체지향-Prototype" class="headerlink" title="프로토타입과 객체지향 (Prototype)"></a>프로토타입과 객체지향 (Prototype)</h1><ul><li>보통 객체지향언어는 클래스를 사용해서 상속으르 구현. 그러나 자바스크립트는 프로토타입으로 함.<h2 id="프로토타입-객체"><a href="#프로토타입-객체" class="headerlink" title="프로토타입 객체"></a>프로토타입 객체</h2></li><li>모든 객체의 prototype 종점은 Object.prototype<h2 id="Prototype-프로퍼티-vs-prototype-프로퍼티"><a href="#Prototype-프로퍼티-vs-prototype-프로퍼티" class="headerlink" title="[[Prototype]] 프로퍼티 vs prototype 프로퍼티"></a>[[Prototype]] 프로퍼티 vs prototype 프로퍼티</h2></li></ul><h2 id="constructor-프로퍼티"><a href="#constructor-프로퍼티" class="headerlink" title="constructor 프로퍼티"></a>constructor 프로퍼티</h2><ul><li>constructor는 생모를 찾아가는 과정<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">me.constructor</div><div class="line">=&gt; __proto__</div><div class="line">=&gt; Person.prototype.constructor === Person 생성자 함수</div></pre></td></tr></table></figure></li></ul><h2 id="Prototype-chain"><a href="#Prototype-chain" class="headerlink" title="Prototype chain"></a>Prototype chain</h2><ul><li>객체 리터럴로 생성한 인스턴스와 생성자 함수로 생성한 인스턴스는 prototype chain이 다르다. 따라서 prototype을 활용하고 싶다면 ‘생성자 함수를 통한 인스터스 생성’을 해야 한다.</li><li>왜 생성자 함수를 통한 인스턴스 생성을 해야하나? 라는 질문에 대한 답이 된다.<h2 id="프로토타입-객체의-확장"><a href="#프로토타입-객체의-확장" class="headerlink" title="프로토타입 객체의 확장"></a>프로토타입 객체의 확장</h2></li></ul><h2 id="기본자료형-Primitive-data-type-의-확장"><a href="#기본자료형-Primitive-data-type-의-확장" class="headerlink" title="기본자료형(Primitive data type)의 확장"></a>기본자료형(Primitive data type)의 확장</h2><ul><li>new String() -&gt; 문자열을 객체로 갖는 객체 생성자 함수.</li><li>문자열.constructor === String이 가능한 건 자바스크립트가 연관 객체(String())로 일시적으로 변환되어 프로토타입 객체를 공유하기 때문</li><li>기본자료형 뒤에 점을 찍고 메소드를 적으면 자바스크립트가 내부적으로 관련한 객체로 변환하여 작동시키고, 작동이 끝나면 다시 기본자료형으로 돌려놓음.</li><li>빌트인을 건드려서 관련 모든 인스턴스에 영향을 미칠 수 있는 나만의 메소드를 만들 수 있는데… 이것은 비추! 관대한 자바스크립트의 특성을 볼 수 있는 부분.(다른 언어들은 빌트인을 아예 못 건드리게 하는게 보통)</li></ul><h2 id="프로토타입-객체의-변경"><a href="#프로토타입-객체의-변경" class="headerlink" title="프로토타입 객체의 변경"></a>프로토타입 객체의 변경</h2><ul><li>자바스크립트는 클래스를 활용하는 자바와 같지 않은데… 자바처럼 쓸 수 없을까? 라는 생각으로 나온 꼼수. 이후에 ES6에서 클래스를 아예 추가해줬다. 물론 이것도 내부적으로는 프로토타입개념으로 작동</li><li>권장하는 방식은 아님</li><li>constructor 연결이 깨짐.<h2 id="프로토타입-체인-동작-조건"><a href="#프로토타입-체인-동작-조건" class="headerlink" title="프로토타입 체인 동작 조건"></a>프로토타입 체인 동작 조건</h2></li><li>객체의 프로퍼티를 참조하는 경우, 해당 객체에 프로퍼티가 없는 경우, 프로토타입 체인이 동작한다.</li><li>객체의 프로퍼티에 값을 할당하는 경우, 프로토타입 체인이 동작하지 않는다.  이미 찾았는데 뭐하러 프로토타입에 올라가겠음</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="JavaScript-10-프로토타입과-객체지향-Prototype"><a href="#JavaScript-10-프로토타입과-객체지향-Prototype" class="headerlink" title="JavaScript 10. 프로토타입과 객체지향 (Prototype)"></a>JavaScript 10. 프로토타입과 객체지향 (Prototype)</h1><ul><li>보통 객체지향언어는 클래스를 사용해서 상속으르 구현. 그러나 자바스크립트는 프로토타입으로 함.<h2 id="프로토타입-객체"><a href="#프로토타입-객체" class="headerlink" title="프로토타입 객체"></a>프로토타입 객체</h2></li><li>모든 객체의 prototype 종점은 Object.prototype<h2 id="Prototype-프로퍼티-vs-prototype-프로퍼티"><a href="#Prototype-프로퍼티-vs-prototype-프로퍼티" class="headerlink" title="[[Prototype]] 프로퍼티 vs prototype 프로퍼티"></a>[[Prototype]] 프로퍼티 vs prototype 프로퍼티</h2></li></ul><h2 id="constructor-프로퍼티"><a href="#constructor-프로퍼티" class="headerlink" title="constructor 프로퍼티"></a>constructor 프로퍼티</h2><ul><li>constructor는 생모를 찾아가는 과정<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">me.constructor</div><div class="line">=&gt; __proto__</div><div class="line">=&gt; Person.prototype.constructor === Person 생성자 함수</div></pre></td></tr></table></figure></li></ul><h2 id="Prototype-chain"><a href="#Prototype-chain" class="headerlink" title="Prototype chain"></a>Prototype chain</h2><ul><li>객체 리터럴로 생성한 인스턴스와 생성자 함수로 생성한 인스턴스는 prototype chain이 다르다. 따라서 prototype을 활용하고 싶다면 ‘생성자 함수를 통한 인스터스 생성’을 해야 한다.</li><li>왜 생성자 함수를 통한 인스턴스 생성을 해야하나? 라는 질문에 대한 답이 된다.<h2 id="프로토타입-객체의-확장"><a href="#프로토타입-객체의-확장" class="headerlink" title="프로토타입 객체의 확장"></a>프로토타입 객체의 확장</h2></li></ul><h2 id="기본자료형-Primitive-data-type-의-확장"><a href="#기본자료형-Primitive-data-type-의-확장" class="headerlink" title="기본자료형(Primitive data type)의 확장"></a>기본자료형(Primitive data type)의 확장</h2><ul><li>new String() -&gt; 문자열을 객체로 갖는 객체 생성자 함수.</li><li>문자열.constructor === String이 가능한 건 자바스크립트가 연관 객체(String())로 일시적으로 변환되어 프로토타입 객체를 공유하기 때문</li><li>기본자료형 뒤에 점을 찍고 메소드를 적으면 자바스크립트가 내부적으로 관련한 객체로 변환하여 작동시키고, 작동이 끝나면 다시 기본자료형으로 돌려놓음.</li><li>빌트인을 건드려서 관련 모든 인스턴스에 영향을 미칠 수 있는 나만의 메소드를 만들 수 있는데… 이것은 비추! 관대한 자바스크립트의 특성을 볼 수 있는 부분.(다른 언어들은 빌트인을 아예 못 건드리게 하는게 보통)</li></ul><h2 id="프로토타입-객체의-변경"><a href="#프로토타입-객체의-변경" class="headerlink" title="프로토타입 객체의 변경"></a>프로토타입 객체의 변경</h2><ul><li>자바스크립트는 클래스를 활용하는 자바와 같지 않은데… 자바처럼 쓸 수 없을까? 라는 생각으로 나온 꼼수. 이후에 ES6에서 클래스를 아예 추가해줬다. 물론 이것도 내부적으로는 프로토타입개념으로 작동</li><li>권장하는 방식은 아님</li><li>constructor 연결이 깨짐.<h2 id="프로토타입-체인-동작-조건"><a href="#프로토타입-체인-동작-조건" class="headerlink" title="프로토타입 체인 동작 조건"></a>프로토타입 체인 동작 조건</h2></li><li>객체의 프로퍼티를 참조하는 경우, 해당 객체에 프로퍼티가 없는 경우, 프로토타입 체인이 동작한다.</li><li>객체의 프로퍼티에 값을 할당하는 경우, 프로토타입 체인이 동작하지 않는다.  이미 찾았는데 뭐하러 프로토타입에 올라가겠음</li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;프로토타입과-객체지향-Prototype&quot;&gt;&lt;a href=&quot;#프로토타입과-객체지향-Prototype&quot; class=&quot;headerlink&quot; title=&quot;프로토타입과 객체지향 (Prototype)&quot;&gt;&lt;/a&gt;프로토타입과 객체지향 (Prototyp
+        &lt;h1 id=&quot;JavaScript-10-프로토타입과-객체지향-Prototype&quot;&gt;&lt;a href=&quot;#JavaScript-10-프로토타입과-객체지향-Prototype&quot; class=&quot;headerlink&quot; title=&quot;JavaScript 10. 프로토타입과 
       
     
     </summary>
