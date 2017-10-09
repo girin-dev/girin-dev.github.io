@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> JavaScript-11-Scope · 기린개발의 일지</title><meta name="description" content="JavaScript-11-Scope - Girin-dev"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://girin-dev.github.io/atom.xml" title="기린개발의 일지"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/categories/" target="_self" class="nav-list-link">CATEGORY</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="https://github.com/girin-dev" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">JavaScript-11-Scope</h1><div class="post-info">2017년 10월 9일</div><div class="post-content"><h1 id="변수에의-접근성과-생존기간-life-cycle"><a href="#변수에의-접근성과-생존기간-life-cycle" class="headerlink" title="변수에의 접근성과 생존기간 (life-cycle)"></a>변수에의 접근성과 생존기간 (life-cycle)</h1><ul>
+<li>자바스크립트는 블록레벨스코프가 아니라 펑션레벨스코프!</li>
+<li>블록레벨스코프처럼 쓰고 싶으면 var가 아니라 ES6에 새롭게 추가된 let을 쓰자.</li>
+<li>스코프는 동일한 변수를 또 쓰기 위해서 고안된 개념(폴더와 디렉토리 개념과 비슷)</li>
+</ul>
+<h2 id="Global-scope"><a href="#Global-scope" class="headerlink" title="Global scope"></a>Global scope</h2><ul>
+<li>전역의 실체<ul>
+<li>server-side(Node.js)에서는 <code>glabal</code>(전역객체)</li>
+<li>브라우저-side에서 <code>window</code>라는 전역객체</li>
+</ul>
+</li>
+<li>전역변수라는 것은 결국 전역객체 window의 프로퍼티.</li>
+</ul>
+<h2 id="Non-block-level-scope"><a href="#Non-block-level-scope" class="headerlink" title="Non block-level scope"></a>Non block-level scope</h2><ul>
+<li>function 밖에서 선언된 변수는 블럭 내에서 선언되었다고 할지라도 모두 전역변수, 즉 global scope를 가짐.</li>
+</ul>
+<h2 id="Function-scope"><a href="#Function-scope" class="headerlink" title="Function scope"></a>Function scope</h2><ul>
+<li>함수 내에서 선언된 매개변수와 변수는 내부에서만 유효(지역변수)</li>
+<li>전역변수와 지역변수가 같은 이름으로 중복 선언 되었다고 해도 지역변수를 우선한다.</li>
+<li>즉, 실행 컨텍스트에서 스코프 체인에 의한 참조 순위가 존재한다는 뜻.</li>
+</ul>
+<h2 id="암묵적-전역-inplied-globals"><a href="#암묵적-전역-inplied-globals" class="headerlink" title="암묵적 전역 (inplied globals)"></a>암묵적 전역 (inplied globals)</h2><ul>
+<li>함수 내에서 <code>var</code>를 사용하지 않고 변수를 설정하더라도 자바스크립트는 이를 암묵적으로 전역변수로 선언</li>
+<li>하지만 의도치 않은 전역변수는 혼란을 초래하므로 <code>var</code>를 반드시 사용할 것.</li>
+<li>각각의 코드를 실행해보면서 확인해 볼 것.</li>
+</ul>
+<h2 id="Lexical-scoping-Static-scoping"><a href="#Lexical-scoping-Static-scoping" class="headerlink" title="Lexical scoping (Static scoping)"></a>Lexical scoping (Static scoping)</h2><ul>
+<li>자바스크립트는 함수가 선언된 시점에서의 유효범위를 갖는다. 호출 시점이 아니다.</li>
+<li>따라서 지역함수 내에 호출이 벌어져도 선언 시점에서의 스코프가 결정.</li>
+</ul>
+<h2 id="변수명의-중복"><a href="#변수명의-중복" class="headerlink" title="변수명의 중복"></a>변수명의 중복</h2><ul>
+<li>여러 javascript파일을 불러오는 경우 전역변수들끼리 중복이 될 수 있다.</li>
+<li>이 경우 중복된 변수가 영향을 미쳐 코드가 정상작동하지 않을 수 있다.</li>
+<li>따라서 전역변수는 되도록 쓰지 말아야 하며 스코프는 좁힐수록 좋다.</li>
+</ul>
+<h2 id="최소한의-전역변수-사용"><a href="#최소한의-전역변수-사용" class="headerlink" title="최소한의 전역변수 사용"></a>최소한의 전역변수 사용</h2><ul>
+<li>즉시실행함수사용</li>
+<li>더글라스 크락포드의 제안: 굳이 쓰려면 전연변수를 모아놓은 객체를 만들어서 쓸 것.</li>
+</ul>
+<h2 id="즉시실행함수를-이용한-전역변수-사용-억제"><a href="#즉시실행함수를-이용한-전역변수-사용-억제" class="headerlink" title="즉시실행함수를 이용한 전역변수 사용 억제"></a>즉시실행함수를 이용한 전역변수 사용 억제</h2><ul>
+<li>즉시실행함수를 사용하면 전역변수를 만들지 않게 되어 라이브러리에 자주 이용된다. 실행함수가 실행된 후 해당 함수는 바로 전역에서 사라진다.</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2017/10/09/JavaScript-11-this/" class="prev">이전글</a><a href="/2017/10/08/JavaScript-10-Prototype/" class="next">다음글</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'girin-dev';
+var disqus_identifier = '2017/10/09/JavaScript-11-Scope/';
+var disqus_title = 'JavaScript-11-Scope';
+var disqus_url = 'http://girin-dev.github.io/2017/10/09/JavaScript-11-Scope/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//girin-dev.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 <a href="http://girin-dev.github.io">Girin-dev</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>

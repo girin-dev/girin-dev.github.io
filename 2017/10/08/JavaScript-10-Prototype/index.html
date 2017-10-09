@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> JavaScript-10-Prototype · 기린개발의 일지</title><meta name="description" content="JavaScript-10-Prototype - Girin-dev"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://girin-dev.github.io/atom.xml" title="기린개발의 일지"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/categories/" target="_self" class="nav-list-link">CATEGORY</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="https://github.com/girin-dev" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">JavaScript-10-Prototype</h1><div class="post-info">2017년 10월 8일</div><div class="post-content"><h1 id="프로토타입과-객체지향-Prototype"><a href="#프로토타입과-객체지향-Prototype" class="headerlink" title="프로토타입과 객체지향 (Prototype)"></a>프로토타입과 객체지향 (Prototype)</h1><ul>
+<li>보통 객체지향언어는 클래스를 사용해서 상속으르 구현. 그러나 자바스크립트는 프로토타입으로 함.<h2 id="프로토타입-객체"><a href="#프로토타입-객체" class="headerlink" title="프로토타입 객체"></a>프로토타입 객체</h2></li>
+<li>모든 객체의 prototype 종점은 Object.prototype<h2 id="Prototype-프로퍼티-vs-prototype-프로퍼티"><a href="#Prototype-프로퍼티-vs-prototype-프로퍼티" class="headerlink" title="[[Prototype]] 프로퍼티 vs prototype 프로퍼티"></a>[[Prototype]] 프로퍼티 vs prototype 프로퍼티</h2></li>
+</ul>
+<h2 id="constructor-프로퍼티"><a href="#constructor-프로퍼티" class="headerlink" title="constructor 프로퍼티"></a>constructor 프로퍼티</h2><ul>
+<li>constructor는 생모를 찾아가는 과정<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">me.constructor</div><div class="line">=&gt; __proto__</div><div class="line">=&gt; Person.prototype.constructor === Person 생성자 함수</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Prototype-chain"><a href="#Prototype-chain" class="headerlink" title="Prototype chain"></a>Prototype chain</h2><ul>
+<li>객체 리터럴로 생성한 인스턴스와 생성자 함수로 생성한 인스턴스는 prototype chain이 다르다. 따라서 prototype을 활용하고 싶다면 ‘생성자 함수를 통한 인스터스 생성’을 해야 한다.</li>
+<li>왜 생성자 함수를 통한 인스턴스 생성을 해야하나? 라는 질문에 대한 답이 된다.<h2 id="프로토타입-객체의-확장"><a href="#프로토타입-객체의-확장" class="headerlink" title="프로토타입 객체의 확장"></a>프로토타입 객체의 확장</h2></li>
+</ul>
+<h2 id="기본자료형-Primitive-data-type-의-확장"><a href="#기본자료형-Primitive-data-type-의-확장" class="headerlink" title="기본자료형(Primitive data type)의 확장"></a>기본자료형(Primitive data type)의 확장</h2><ul>
+<li>new String() -&gt; 문자열을 객체로 갖는 객체 생성자 함수.</li>
+<li>문자열.constructor === String이 가능한 건 자바스크립트가 연관 객체(String())로 일시적으로 변환되어 프로토타입 객체를 공유하기 때문</li>
+<li>기본자료형 뒤에 점을 찍고 메소드를 적으면 자바스크립트가 내부적으로 관련한 객체로 변환하여 작동시키고, 작동이 끝나면 다시 기본자료형으로 돌려놓음.</li>
+<li>빌트인을 건드려서 관련 모든 인스턴스에 영향을 미칠 수 있는 나만의 메소드를 만들 수 있는데… 이것은 비추! 관대한 자바스크립트의 특성을 볼 수 있는 부분.(다른 언어들은 빌트인을 아예 못 건드리게 하는게 보통)</li>
+</ul>
+<h2 id="프로토타입-객체의-변경"><a href="#프로토타입-객체의-변경" class="headerlink" title="프로토타입 객체의 변경"></a>프로토타입 객체의 변경</h2><ul>
+<li>자바스크립트는 클래스를 활용하는 자바와 같지 않은데… 자바처럼 쓸 수 없을까? 라는 생각으로 나온 꼼수. 이후에 ES6에서 클래스를 아예 추가해줬다. 물론 이것도 내부적으로는 프로토타입개념으로 작동</li>
+<li>권장하는 방식은 아님</li>
+<li>constructor 연결이 깨짐.<h2 id="프로토타입-체인-동작-조건"><a href="#프로토타입-체인-동작-조건" class="headerlink" title="프로토타입 체인 동작 조건"></a>프로토타입 체인 동작 조건</h2></li>
+<li>객체의 프로퍼티를 참조하는 경우, 해당 객체에 프로퍼티가 없는 경우, 프로토타입 체인이 동작한다.</li>
+<li>객체의 프로퍼티에 값을 할당하는 경우, 프로토타입 체인이 동작하지 않는다.  이미 찾았는데 뭐하러 프로토타입에 올라가겠음</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2017/10/09/JavaScript-11-Scope/" class="prev">이전글</a><a href="/2017/10/08/JavaScript-09-Function/" class="next">다음글</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'girin-dev';
+var disqus_identifier = '2017/10/08/JavaScript-10-Prototype/';
+var disqus_title = 'JavaScript-10-Prototype';
+var disqus_url = 'http://girin-dev.github.io/2017/10/08/JavaScript-10-Prototype/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//girin-dev.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 <a href="http://girin-dev.github.io">Girin-dev</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>

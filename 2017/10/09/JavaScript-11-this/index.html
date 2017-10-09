@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> JavaScript-11-this · 기린개발의 일지</title><meta name="description" content="JavaScript-11-this - Girin-dev"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://girin-dev.github.io/atom.xml" title="기린개발의 일지"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/categories/" target="_self" class="nav-list-link">CATEGORY</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="https://github.com/girin-dev" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">JavaScript-11-this</h1><div class="post-info">2017년 10월 9일</div><div class="post-content"><h1 id="함수-호출-패턴에-따라-결정되는-this"><a href="#함수-호출-패턴에-따라-결정되는-this" class="headerlink" title="함수 호출 패턴에 따라 결정되는 this"></a>함수 호출 패턴에 따라 결정되는 this</h1><ul>
+<li>일반적인 객체에는 this가 없고 함수객체에만 존재.</li>
+<li>기본은 this가 전역객체(window/global)를 의미</li>
+<li>이 두가지 빼고는 메소드와 생성자 함수일 때만 다름.</li>
+</ul>
+<h2 id="함수-호출-패턴과-this-바인딩"><a href="#함수-호출-패턴과-this-바인딩" class="headerlink" title="함수 호출 패턴과 this 바인딩"></a>함수 호출 패턴과 this 바인딩</h2><ul>
+<li>아래 4가지 패턴에 따라 어떤 객체 this에 바인딩할지 결정.</li>
+</ul>
+<ol>
+<li>함수 호출 패턴</li>
+<li>매소드 호출 패턴</li>
+<li>생성자 호출 패턴</li>
+<li>apply 호출 패턴</li>
+</ol>
+<h2 id="함수-호출-패턴-Function-Invocation-Pattern"><a href="#함수-호출-패턴-Function-Invocation-Pattern" class="headerlink" title="함수 호출 패턴(Function Invocation Pattern)"></a>함수 호출 패턴(Function Invocation Pattern)</h2><ul>
+<li>브라우저에서는 <code>window</code>, 서버(node.js)에서는 <code>global</code></li>
+</ul>
+<h2 id="메소드-호출-패턴-Method-Invocation-Pattern"><a href="#메소드-호출-패턴-Method-Invocation-Pattern" class="headerlink" title="메소드 호출 패턴(Method Invocation Pattern)"></a>메소드 호출 패턴(Method Invocation Pattern)</h2><ul>
+<li>해당 메소드를 소유한 객체가 this</li>
+</ul>
+<h2 id="생성자-호출-패턴-Constructor-Invocation-Pattern"><a href="#생성자-호출-패턴-Constructor-Invocation-Pattern" class="headerlink" title="생성자 호출 패턴(Constructor Invocation Pattern)"></a>생성자 호출 패턴(Constructor Invocation Pattern)</h2><ul>
+<li>생성자로 만든 함수라면 new를 넣어주자…</li>
+<li>new 연산자와 함께 생성자 함수를 호출하면 자바스크립트가 알아서 빈 객체를 생성하고 함수 내부의 this 의 참조(원래 window)를 지우고 생성한 빈 객체를 참조하게 한다.  따라서 이때 this는 생성된 빈 객체~(this를 생성된 빈 객체에 바인딩한다.)</li>
+<li><code>[앞] instanceof [뒤]</code>=&gt; ‘뒤’가 ‘앞’을 만든 주체니? 라는 뜻<br>callee 는 불림 당한 것<br>caller 는 부른 것</li>
+</ul>
+<h2 id="apply-호출-패턴-Apply-Invocation-Pattern"><a href="#apply-호출-패턴-Apply-Invocation-Pattern" class="headerlink" title="apply 호출 패턴(Apply Invocation Pattern)"></a>apply 호출 패턴(Apply Invocation Pattern)</h2><p>arguments는 아무거나 다 되는게 아니라 유사배열객체만 가능.<br>이번엔 this가 아니라 apply(arguments)를 this로 쓸게~ 라는 의미.<br>call()은 하는 일은 같다.</p>
+</div></article></div></main><footer><div class="paginator"><a href="/2017/10/09/JavaScript-11-Scope/" class="next">다음글</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'girin-dev';
+var disqus_identifier = '2017/10/09/JavaScript-11-this/';
+var disqus_title = 'JavaScript-11-this';
+var disqus_url = 'http://girin-dev.github.io/2017/10/09/JavaScript-11-this/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//girin-dev.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 <a href="http://girin-dev.github.io">Girin-dev</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
