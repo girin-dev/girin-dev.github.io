@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> JavaScript 16. 자바스크립트가 제공하는 내장 객체 (Built-in Object) · 기린개발의 일지</title><meta name="description" content="JavaScript 16. 자바스크립트가 제공하는 내장 객체 (Built-in Object) - Girin-dev"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://girin-dev.github.io/atom.xml" title="기린개발의 일지"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/categories/" target="_self" class="nav-list-link">CATEGORY</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="https://github.com/girin-dev" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">JavaScript 16. 자바스크립트가 제공하는 내장 객체 (Built-in Object)</h1><div class="post-info">2017년 10월 10일</div><div class="post-content"><h1 id="JavaScript-16-자바스크립트가-제공하는-내장-객체-Built-in-Object"><a href="#JavaScript-16-자바스크립트가-제공하는-내장-객체-Built-in-Object" class="headerlink" title="JavaScript 16. 자바스크립트가 제공하는 내장 객체 (Built-in Object)"></a>JavaScript 16. 자바스크립트가 제공하는 내장 객체 (Built-in Object)</h1><ul>
+<li><p>Built-in(API) 이란?</p>
+<ul>
+<li>이미 자바스크립트에 내장된, 또한 검증된 것들(객체, 함수 등)</li>
+<li>쓰려면 뭐가 있는지는 알아야 한다. 모르면 자기가 직접 만들려고 할 것이고 그럼 그 검증되지 않은 코드는 퍼포먼스 등에서 문제가 생긴다.</li>
+<li>String과 <strong>Array(순회가능, index라는 순서가 있어서 다루기가 편함, array의 built-in은 성능이 우수)</strong> 등</li>
+</ul>
+</li>
+<li><p>빌트인 객체 (내장객체, Built-in Object)</p>
+<ul>
+<li>Standard Built-in Objects (Global Objects, not Global Object전역객체)</li>
+<li>BOM (Browser Object Model)</li>
+<li>DOM (Document Object Model)</li>
+</ul>
+</li>
+</ul>
+<h2 id="Standard-Built-in-Objects-표준-빌트인-객체"><a href="#Standard-Built-in-Objects-표준-빌트인-객체" class="headerlink" title="Standard Built-in Objects(표준 빌트인 객체)"></a>Standard Built-in Objects(표준 빌트인 객체)</h2><ul>
+<li>Global Objects라고도 하지만 전역 객체(Global Object)와 다른 뜻 혼동하지 말 것</li>
+<li>자세한 내용은 <a href="">표준 빌트인 객체 (Standard Built-in Objects)</a> 참고</li>
+</ul>
+<h2 id="Native-Object-BOM-DOM"><a href="#Native-Object-BOM-DOM" class="headerlink" title="Native Object (BOM/DOM)"></a>Native Object (BOM/DOM)</h2><ul>
+<li>BOM 브라우저를 프로그래밍적으로 통제할 수 있음<ul>
+<li>window<ul>
+<li>document, history, location, navigator, screen</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DOM CSS와 HTML 등의 구조를 프로그래밍적으로 통제할 수 있음</li>
+<li>필요시 따로 공부해야 함</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2017/10/10/JavaScript-17-Standard-Built-in-Objects/" class="prev">이전글</a><a href="/2017/10/10/171010-TIL/" class="next">다음글</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'girin-dev';
+var disqus_identifier = '2017/10/10/JavaScript-16-Built-in-Object/';
+var disqus_title = 'JavaScript 16. 자바스크립트가 제공하는 내장 객체 (Built-in Object)';
+var disqus_url = 'http://girin-dev.github.io/2017/10/10/JavaScript-16-Built-in-Object/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//girin-dev.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 <a href="http://girin-dev.github.io">Girin-dev</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>

@@ -19,34 +19,24 @@
 </ul>
 <h2 id="객체-생성-방법-암기"><a href="#객체-생성-방법-암기" class="headerlink" title="객체 생성 방법(암기)"></a>객체 생성 방법(암기)</h2><p>  객체를 마음대로 언제든지 바꿀 수 있다는 것이 자바스크립트의 장점.</p>
 <ul>
-<li>객체 생성 방법 3가지<ol>
+<li><p>객체 생성 방법 3가지</p>
+<ol>
 <li>객체 리터럴</li>
 <li>Object() 생성자 함수</li>
 <li>생성자 함수</li>
 </ol>
+<p><strong>객체리터럴</strong></p>
 </li>
-</ul>
-<ol>
-<li><strong>객체리터럴</strong></li>
-</ol>
-<ul>
 <li>내부적으로 2번 방식으로 처리하며, 쓰기 편하라고 만들어 놓은 편의기능.</li>
 <li><p>선언과 동시에 인스턴스 생성.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> [객체명] = &#123;</div><div class="line">  [프로퍼티명]: [프로퍼티값];</div><div class="line">  [프로퍼티명]: [함수(메소드)];</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="keyword">var</span> girin = &#123;</div><div class="line">  location: <span class="string">'Seoul'</span>,</div><div class="line">  computer: <span class="string">'MacBook Pro'</span>,</div><div class="line">  saySth: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'I live in '</span>+ <span class="keyword">this</span>.location)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>Object() 생성자 함수</strong></p>
 </li>
-</ul>
-<ol>
-<li>Object() 생성자 함수</li>
-</ol>
-<ul>
 <li>new 연산자와 Object() 생성자 함수를 이용해 빈 객체를 생성하고 여기에 프로퍼티와 메소드를 추가하는 방법.</li>
-<li>특별한 이유가 없다면 1. 객체리터럴 방식이 더 유용.(어차피 내부 작동방식은 동일)<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> [객체명] = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line">[객체명].[프로퍼티명] = [프로퍼티값];</div><div class="line">[객체명].[프로퍼티명] = [함수(메소드)];</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">var</span> girin = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line"></div><div class="line">girin.cafe = <span class="string">'americano'</span>;</div><div class="line">girin.coffee = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'I like '</span> + <span class="keyword">this</span>.cafe)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li><p>특별한 이유가 없다면 1. 객체리터럴 방식이 더 유용.(어차피 내부 작동방식은 동일)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> [객체명] = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line">[객체명].[프로퍼티명] = [프로퍼티값];</div><div class="line">[객체명].[프로퍼티명] = [함수(메소드)];</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">var</span> girin = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line"></div><div class="line">girin.cafe = <span class="string">'americano'</span>;</div><div class="line">girin.coffee = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'I like '</span> + <span class="keyword">this</span>.cafe)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>생성자 함수</strong></p>
 </li>
-</ul>
-<ol>
-<li>생성자 함수</li>
-</ol>
-<ul>
 <li>중복된 객체를 다수 만들어야 할 경우(중복된 인스턴스가 많을 경우) 사용.</li>
 <li><p>생성자 함수명은 일반적으로 대문자로 시작(암묵적 약속, 일반 함수와의 혼란을 방지)</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 내용을 채운 객체(생성자 함수) 생성</span></div><div class="line">function [생성자함수명]([인자값1],[인자값2])&#123;</div><div class="line">  <span class="keyword">this</span>.[프로퍼티명] = [인자값<span class="number">1</span>];</div><div class="line">  <span class="keyword">this</span>.[프로퍼티명] = [인자값<span class="number">2</span>];</div><div class="line">  <span class="keyword">this</span>.[프로퍼티명] = [함수(메소드)]</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 정의한 생성자 함수를 이용해 인스턴스 생성</span></div><div class="line"><span class="keyword">var</span> [객체명] = <span class="keyword">new</span> [생성자함수명]([인자값<span class="number">1</span>], [인자값<span class="number">2</span>]);</div></pre></td></tr></table></figure>

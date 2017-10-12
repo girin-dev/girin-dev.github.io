@@ -5,39 +5,39 @@
 <li>함수도 객체의 일부이며 변수나 객체, 배열 등에 저장할 수 있고, 인수 및 반환값으로도 기능할 수 있다.(일급객체의 특징)</li>
 </ul>
 <h2 id="함수-정의-방법-3가지-암기"><a href="#함수-정의-방법-3가지-암기" class="headerlink" title="함수 정의 방법 3가지(암기)"></a>함수 정의 방법 3가지(암기)</h2><ul>
-<li>함수를 정의하는 방식<ol>
+<li><p>함수를 정의하는 방식</p>
+<ol>
 <li>함수선언식 (Function declaration)</li>
 <li>함수표현식 (Function expression)hd</li>
 <li>Function() 생성자 함수</li>
 </ol>
+<p><strong>함수선언식 (Function declaration)</strong></p>
 </li>
-</ul>
-<ol>
-<li>함수선언식 (Function declaration)</li>
-</ol>
-<ul>
 <li>내부적으로 변수명과 함수명을 똑같이 만든 함수표현식으로 인식한다.</li>
 <li>호이스팅에서 함수표현식과 차이가 나는데, 정의되는 위치와 무관하게 어디서든 호출할 수 있다. 반면 함수표현식은 변수 호이스팅 발생.</li>
-<li>함수명을 생략할 수 없고 0개 이상의 매개변수(자료형 미정으로 함수 몸체에서 자료형 체크 필요) 실행 구문을 갖는다.<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">plus</span>(<span class="params">num</span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> num + num;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li><p>함수명을 생략할 수 없고 0개 이상의 매개변수(자료형 미정으로 함수 몸체에서 자료형 체크 필요) 실행 구문을 갖는다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">plus</span>(<span class="params">num</span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> num + num;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>함수표현식 (Function expression)</strong></p>
 </li>
-</ul>
-<ol>
-<li>함수표현식 (Function expression)</li>
-</ol>
-<ul>
 <li>함수는 일급객체로서의 특징을 갖는다</li>
 <li>함수를 정의하고 변수에 할당하는 방식</li>
 <li><p>아래 식에서 함수명 plus는 함수 안에서면 유요한 이름.(재귀적이거나 디버깅에만 쓰임)</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 기명 함수표현식(이름붙은 함수 표현식)</span></div><div class="line"><span class="comment">// 호출시 함수명이 아니라 변수명으로 해야한다.</span></div><div class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span> <span class="title">plus</span>(<span class="params">num1, num2</span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> num1 + num2;</div><div class="line">&#125;</div><div class="line"><span class="comment">// 익명 함수표현식(이름없는 함수 포현식)</span></div><div class="line"><span class="keyword">var</span> bar = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> num1 + num2;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(foo(<span class="number">1</span>, <span class="number">2</span>)); <span class="comment">// 3</span></div><div class="line"><span class="built_in">console</span>.log(bar(<span class="number">1</span>, <span class="number">2</span>)); <span class="comment">// 3</span></div><div class="line"><span class="built_in">console</span>.log(plus(<span class="number">1</span>, <span class="number">2</span>)); <span class="comment">// Uncaught ReferenceError: plus is not defined</span></div></pre></td></tr></table></figure>
-<p>&lt;!– * 함수표현식을 다른 변수로 새로 할당하면 객체인 함수의 특성상 동일한 참조값을 갖는다.</p>
 </li>
-<li>일반 객체와 달리 다른 변수를 재할당하면 다른 값을 갖도록 할당된다(?) 재공부 필요.<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> a * b;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> bar = foo;</div><div class="line"><span class="built_in">console</span>.log(foo(<span class="number">2</span>, <span class="number">5</span>), bar(<span class="number">2</span>, <span class="number">5</span>)); <span class="comment">// 10 10</span></div><div class="line"><span class="built_in">console</span>.log(foo === bar); <span class="comment">// true</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> a + b;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(foo(<span class="number">2</span>, <span class="number">5</span>), bar(<span class="number">2</span>, <span class="number">5</span>)); <span class="comment">// 7 10</span></div><div class="line"><span class="built_in">console</span>.log(foo === bar); <span class="comment">// false</span></div><div class="line"><span class="string">``</span><span class="string">` --&gt;</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">3. Function() 생성자 함수</span></div><div class="line"><span class="string">* 내부적으로 함수선언식은 함수표현식으로 처리되고, 함수표현식은 Function() 생성자 함수로 처리된다. 결국 앞의 두 방법은 3번의 방법을 쓰기 편하게 만들어 놓은 것.</span></div><div class="line"><span class="string">* 성능 이슈와 함수의 호이스팅을 고려했을때 함수 표현식을 쓰는게 좋다.</span></div><div class="line"><span class="string">`</span><span class="string">``</span>javascript</div><div class="line"><span class="keyword">new</span> <span class="built_in">Function</span>([매개변수<span class="number">1</span>], [매개변수<span class="number">2</span>], ... [매개변수N], [함수 몸체] )</div><div class="line"><span class="keyword">var</span> cup = <span class="keyword">new</span> <span class="built_in">Function</span>(<span class="string">'number'</span>, <span class="string">'return number + number'</span>);</div><div class="line"><span class="built_in">console</span>.log(cup(<span class="number">10</span>)); <span class="comment">// 20</span></div></pre></td></tr></table></figure>
+<li><p>함수표현식을 다른 변수로 새로 할당하면 객체인 함수의 특성상 동일한 참조값을 갖는다.</p>
+</li>
+<li><p>일반 객체와 달리 다른 변수를 재할당하면 다른 값을 갖도록 할당된다(?) 재공부 필요.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> a * b;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> bar = foo;</div><div class="line"><span class="built_in">console</span>.log(foo(<span class="number">2</span>, <span class="number">5</span>), bar(<span class="number">2</span>, <span class="number">5</span>)); <span class="comment">// 10 10</span></div><div class="line"><span class="built_in">console</span>.log(foo === bar); <span class="comment">// true</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> a + b;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(foo(<span class="number">2</span>, <span class="number">5</span>), bar(<span class="number">2</span>, <span class="number">5</span>)); <span class="comment">// 7 10</span></div><div class="line"><span class="built_in">console</span>.log(foo === bar); <span class="comment">// false</span></div><div class="line"><span class="comment">// 이것은 변수 foo가 변경된 것이 아니라 재할당 된 것이기 때문에 값이 다르게 나온 것.</span></div></pre></td></tr></table></figure>
+<p><strong>Function() 생성자 함수</strong></p>
+</li>
+<li>내부적으로 함수선언식은 함수표현식으로 처리되고, 함수표현식은 Function() 생성자 함수로 처리된다. 결국 앞의 두 방법은 3번의 방법을 쓰기 편하게 만들어 놓은 것.</li>
+<li>성능 이슈와 함수의 호이스팅을 고려했을때 함수 표현식을 쓰는게 좋다.<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> <span class="built_in">Function</span>([매개변수<span class="number">1</span>], [매개변수<span class="number">2</span>], ... [매개변수N], [함수 몸체] )</div><div class="line"><span class="keyword">var</span> cup = <span class="keyword">new</span> <span class="built_in">Function</span>(<span class="string">'number'</span>, <span class="string">'return number + number'</span>);</div><div class="line"><span class="built_in">console</span>.log(cup(<span class="number">10</span>)); <span class="comment">// 20</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="함수-호이스팅-Function-Hoisting"><a href="#함수-호이스팅-Function-Hoisting" class="headerlink" title="함수 호이스팅 (Function Hoisting)"></a>함수 호이스팅 (Function Hoisting)</h2><ul>
 <li>호이스팅이란 var나 function 등의 선언문을 해당 Scope의 맨 위로 옮기는 것.</li>
 <li>자바스크립트 엔진이 스크립트 로딩되는 그 시점에 바로 함수선언식으로 정의된 함수를 한번에 선언, 초기화, 할당해버린다. (VO, variable object에 저장)</li>
-<li><p>이 때문에 <strong>함수선언식</strong> 의 경우 어디에서 선언하든 호출이 가능하다. 그러나 이런 식의 코드는 비추.</p>
+<li><p>이 때문에 <strong>함수선언식의 경우 어디에서 선언하든 호출이 가능하다.</strong> 그러나 이런 식의 코드는 비추.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 함수선언식</span></div><div class="line"><span class="keyword">var</span> foo = plus(<span class="number">5</span>,<span class="number">6</span>);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">apple</span>(<span class="params">num1, num2</span>)</span>&#123;</div><div class="line"> <span class="keyword">return</span> num1 + num2;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 <li><p>ES6는 <code>let</code>, <code>const</code>를 포함한 모든 선언(var, let, const, function, class)를 호이스팅</p>
@@ -50,8 +50,8 @@
 <ol>
 <li>무명의 리터럴로 표현 가능</li>
 <li>변수나 자료구조(객체, 배열..)에 저장 가능</li>
-<li>함수의 파라미터로 전달 가능<br>함수의 인자로 다른 함수를 넣을 수 있다.(콜백함수)</li>
-<li>반환값(return value)으로 사용 가능<br>이렇게 짜여진 남의 코드를 독해할 줄 알아야 한다.</li>
+<li>함수의 파라미터로 전달 가능<br>(함수의 인자로 다른 함수를 넣을 수 있다. -콜백함수)</li>
+<li>반환값(return value)으로 사용 가능<br>(이렇게 짜여진 남의 코드를 독해할 줄 알아야 한다.)</li>
 </ol>
 </blockquote>
 </li>
