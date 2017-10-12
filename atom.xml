@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2017-10-12T00:21:53.204Z</updated>
+  <updated>2017-10-12T00:23:13.140Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://girin-dev.github.io/2017/10/12/171012-TIL/"/>
     <id>http://girin-dev.github.io/2017/10/12/171012-TIL/</id>
     <published>2017-10-12T00:20:40.000Z</published>
-    <updated>2017-10-12T00:21:53.204Z</updated>
+    <updated>2017-10-12T00:23:13.140Z</updated>
     
     <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Activity<br>*</li><li>JavaScript<ul><li>Execution Context</li><li>Closure</li><li>Object Oriented Programming</li><li>시험 복습</li></ul></li><li>과제<ul><li>예습</li><li>복습</li><li>퀴즈</li></ul></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2>]]></content>
     
@@ -49,9 +49,9 @@
     <link href="http://girin-dev.github.io/2017/10/11/171011-TIL/"/>
     <id>http://girin-dev.github.io/2017/10/11/171011-TIL/</id>
     <published>2017-10-11T01:13:21.000Z</published>
-    <updated>2017-10-12T00:22:00.705Z</updated>
+    <updated>2017-10-12T00:23:11.457Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Activity<ul><li>시험 풀이</li></ul></li><li>JavaScript<ul><li>Number</li><li>Math</li><li>Array</li><li>RegExp(정규표현식)</li></ul></li><li>과제<ul><li>예습(Execution Context/Closure/OOP)</li><li>복습</li><li>퀴즈<ul><li>String</li><li>RegExp<h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2></li></ul></li></ul></li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Activity<ul><li>시험 풀이</li></ul></li><li>JavaScript<ul><li>Number</li><li>Math</li><li>Array</li><li>RegExp(정규표현식)</li></ul></li><li>과제<ul><li>예습(Execution Context/Closure/OOP)</li><li>복습</li><li>퀴즈<ul><li>String</li><li>RegExp</li></ul></li></ul></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2>]]></content>
     
     <summary type="html">
     
@@ -129,9 +129,9 @@
     <link href="http://girin-dev.github.io/2017/10/10/171010-TIL/"/>
     <id>http://girin-dev.github.io/2017/10/10/171010-TIL/</id>
     <published>2017-10-10T00:21:15.000Z</published>
-    <updated>2017-10-11T16:49:12.873Z</updated>
+    <updated>2017-10-12T00:23:09.164Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Activity<ul><li>예습/복습</li></ul></li><li>JavaScript<ul><li>Built-in(API) Object</li><li>Standard Built-in Object</li><li>String</li><li>Date</li></ul></li><li>과제<ul><li>예습(Number/Math/RegExp/Array)</li><li>복습(시험, 퀴즈)</li><li>퀴즈<ul><li>String<ol><li>1~10,000 중 8이 등장하는 횟수 구하기(Google)</li><li>짝수와 홀수 구하기</li><li>문자열 검증하기</li></ol></li><li>Date<ol><li>요일 구하기<h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2></li></ol></li></ul></li></ul></li><li>정리는 주말에 하고 복습에 집중하자</li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Activity<ul><li>예습/복습</li></ul></li><li>JavaScript<ul><li>Built-in(API) Object</li><li>Standard Built-in Object</li><li>String</li><li>Date</li></ul></li><li>과제<ul><li>예습(Number/Math/RegExp/Array)</li><li>복습(시험, 퀴즈)</li><li>퀴즈<ul><li>String<ol><li>1~10,000 중 8이 등장하는 횟수 구하기(Google)</li><li>짝수와 홀수 구하기</li><li>문자열 검증하기</li></ol></li><li>Date<ol><li>요일 구하기</li></ol></li></ul></li></ul></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul><li>정리는 주말에 하고 복습에 집중하자</li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2>]]></content>
     
     <summary type="html">
     

@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://girin-dev.github.io/2017/10/11/171011-TIL/</loc>
+    <loc>http://girin-dev.github.io/2017/10/12/171012-TIL/</loc>
     
-    <lastmod>2017-10-12T00:22:00.705Z</lastmod>
+    <lastmod>2017-10-12T00:23:13.140Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://girin-dev.github.io/2017/10/12/171012-TIL/</loc>
+    <loc>http://girin-dev.github.io/2017/10/11/171011-TIL/</loc>
     
-    <lastmod>2017-10-12T00:21:53.204Z</lastmod>
+    <lastmod>2017-10-12T00:23:11.457Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://girin-dev.github.io/2017/10/10/171010-TIL/</loc>
+    
+    <lastmod>2017-10-12T00:23:09.164Z</lastmod>
     
   </url>
   
@@ -19,13 +26,6 @@
     <loc>http://girin-dev.github.io/2017/10/10/JavaScript-17-Standard-Built-in-Objects/</loc>
     
     <lastmod>2017-10-11T16:49:30.010Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://girin-dev.github.io/2017/10/10/171010-TIL/</loc>
-    
-    <lastmod>2017-10-11T16:49:12.873Z</lastmod>
     
   </url>
   
