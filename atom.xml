@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2017-10-30T16:48:52.948Z</updated>
+  <updated>2017-10-30T17:08:45.000Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://girin-dev.github.io/2017/10/30/171030-TIL/"/>
     <id>http://girin-dev.github.io/2017/10/30/171030-TIL/</id>
     <published>2017-10-30T01:24:04.000Z</published>
-    <updated>2017-10-30T16:48:52.948Z</updated>
+    <updated>2017-10-30T17:08:45.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>ES6<ul><li>Promise</li></ul></li><li>Node.js &amp; Express<ul><li>Node.js<ul><li>basics</li><li>모듈화와 npm<ul><li><a href="http://d2.naver.com/helloworld/12864" target="_blank" rel="external">JavaScript 표준을 위한 움직임: CommonJS와 AMD</a></li></ul></li><li>Module loading system</li></ul></li><li>Express<ul><li>Basic(Routing, Middleware, Static file, Template engine)</li></ul></li></ul></li><li>Todo-list2 복기</li><li>알고리즘 퀴즈<ul><li>[미완]nextBigNumber()</li></ul></li><li>맘에 드는 codepen<ul><li><a href="https://codepen.io/tonkec/pen/jWmgqN" target="_blank" rel="external">https://codepen.io/tonkec/pen/jWmgqN</a></li><li><a href="https://codepen.io/2016/popular/pens/" target="_blank" rel="external">2016 인기있는 codepen</a></li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>HTTP error code 304<ul><li>이미 캐시에 저장이 되어 받아온 데이터의 변경이 없어 캐시에 저장된 데이터를 그대로 불러올 때.</li><li><a href="http://ohgyun.com/175" target="_blank" rel="external">http://ohgyun.com/175</a></li></ul></li><li>좋은 책<ul><li><a href="http://www.aladin.co.kr/shop/common/wseriesitem.aspx?SRID=96627" target="_blank" rel="external">You don’t know JS</a></li></ul></li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>Express<ul><li>Error handling</li></ul></li><li>알고리즘 퀴즈<ul><li>[미완]nextBigNumber()</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>ES6<ul><li>Promise</li></ul></li><li>Node.js &amp; Express<ul><li>Node.js<ul><li>basics</li><li>모듈화와 npm<ul><li><a href="http://d2.naver.com/helloworld/12864" target="_blank" rel="external">JavaScript 표준을 위한 움직임: CommonJS와 AMD</a></li></ul></li><li>Module loading system</li></ul></li><li>Express<ul><li>Basic(Routing, Middleware, Static file, Template engine)</li></ul></li></ul></li><li>Todo-list2 복기</li><li>알고리즘 퀴즈<ul><li>[미완]nextBigNumber()</li></ul></li><li>맘에 드는 codepen<ul><li><a href="https://codepen.io/tonkec/pen/jWmgqN" target="_blank" rel="external">https://codepen.io/tonkec/pen/jWmgqN</a></li><li><a href="https://codepen.io/2016/popular/pens/" target="_blank" rel="external">2016 인기있는 codepen</a></li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>HTTP error code 304<ul><li>이미 캐시에 저장이 되어 받아온 데이터의 변경이 없어 캐시에 저장된 데이터를 그대로 불러올 때.</li><li><a href="http://ohgyun.com/175" target="_blank" rel="external">http://ohgyun.com/175</a></li></ul></li><li>좋은 책<ul><li><a href="http://www.aladin.co.kr/shop/common/wseriesitem.aspx?SRID=96627" target="_blank" rel="external">You don’t know JS</a></li></ul></li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>Express<ul><li>Error handling</li></ul></li><li>알고리즘 퀴즈<ul><li>[미완]nextBigNumber()</li><li>[미완]isPair() 괄호 확인하기</li></ul></li></ul>]]></content>
     
     <summary type="html">
     
