@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2017-10-30T17:08:45.000Z</updated>
+  <updated>2017-11-01T12:02:55.688Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -17,13 +17,119 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JavaScript-22-RegExp</title>
+    <link href="http://girin-dev.github.io/2017/11/01/JavaScript-22-RegExp/"/>
+    <id>http://girin-dev.github.io/2017/11/01/JavaScript-22-RegExp/</id>
+    <published>2017-11-01T11:27:01.000Z</published>
+    <updated>2017-11-01T12:02:55.688Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="JavaScript-22-정규표현식-RegExp"><a href="#JavaScript-22-정규표현식-RegExp" class="headerlink" title="JavaScript 22. 정규표현식 (RegExp)"></a>JavaScript 22. 정규표현식 (RegExp)</h1><h2 id="정규표현식"><a href="#정규표현식" class="headerlink" title="정규표현식"></a>정규표현식</h2><ul><li><p>정규표현식을 사용하는 자바스크립트 메소드</p><ul><li>RegExp.prototype.exec(str)<ul><li>실행 결과를 자체 배열로 반환</li><li>[ ‘is’, index: 2, input: ‘This is a pen.’ ]</li></ul></li><li>RegExp.prototype.test(str)<ul><li>실행 결과를 Boolean값으로 반환</li></ul></li><li>String.prototype.match(regexp)<ul><li>정규표현식에 부합하는 문자를 배열로 반환</li></ul></li><li>String.prototype.replace(regexp)<ul><li>정규표현식에 부합하는 문자를 특정 문자로 변경 후 문자열로 반환</li></ul></li><li>String.prototype.search(regexp)<ul><li>정규표현식에 부합하는 문자의 갯수를 반환</li></ul></li><li>String.prototype.split(regexp)<ul><li>정규표현식에 부합하는 문자를 기준으로 문자열을 나눠서 배열로 반환</li></ul></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> targetStr = <span class="string">'This is a pen.'</span>;</div><div class="line"><span class="keyword">var</span> regexr = <span class="regexp">/is/ig</span>;</div><div class="line"></div><div class="line"><span class="comment">// RegExp 객체의 메소드</span></div><div class="line"><span class="built_in">console</span>.log(regexr.exec(targetStr)); <span class="comment">// [ 'is', index: 2, input: 'This is a pen.' ]</span></div><div class="line"><span class="built_in">console</span>.log(regexr.test(targetStr)); <span class="comment">// true</span></div><div class="line"></div><div class="line"><span class="comment">// String 객체의 메소드</span></div><div class="line"><span class="built_in">console</span>.log(targetStr.match(regexr)); <span class="comment">// [ 'is', 'is' ]</span></div><div class="line"><span class="built_in">console</span>.log(targetStr.replace(regexr, <span class="string">'IS'</span>)); <span class="comment">// ThIS IS a pen.</span></div><div class="line"><span class="built_in">console</span>.log(targetStr.search(regexr)); <span class="comment">// 2</span></div><div class="line"><span class="built_in">console</span>.log(targetStr.split(regexr));  <span class="comment">// [ 'Th', ' ', ' a pen.' ]</span></div></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;JavaScript-22-정규표현식-RegExp&quot;&gt;&lt;a href=&quot;#JavaScript-22-정규표현식-RegExp&quot; class=&quot;headerlink&quot; title=&quot;JavaScript 22. 정규표현식 (RegExp)&quot;&gt;&lt;/a&gt;JavaS
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://girin-dev.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://girin-dev.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>171101-TIL</title>
+    <link href="http://girin-dev.github.io/2017/11/01/171101-TIL/"/>
+    <id>http://girin-dev.github.io/2017/11/01/171101-TIL/</id>
+    <published>2017-11-01T01:37:33.000Z</published>
+    <updated>2017-11-02T01:20:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>Sass를 이용한 Grid 만들기(임기완 조교님)</p><ul><li><a href="https://github.com/girin-dev/FDS6NoLectureDay/tree/master/kuwon_kwak/171101(Sass%EC%99%80Grid" target="_blank" rel="external">Github 레포</a>)</li></ul></li><li><p>알고리즘 퀴즈</p><ul><li>[미완]isPair() 괄호 확인하기<ul><li>결국 풀지 못해 해설을 보았다.</li><li>원리는 ‘(‘, ‘)’의 체크여부에 따라 임의의 변수에 할당한 0에 1을 하나씩 더하거나 빼서 그 임의의 변수의 상태 체크하는 것이다.</li><li>다른 사람의 풀이를 보니 정규표현식을 통해 푼 사람도 있었다. 다음에 한번 더 도전해봐야겠다.</li></ul></li></ul></li><li><p>Todo-list v2</p></li><li><p>팀프로젝트: 반려동물</p><ul><li>depth 짜기(Information Architecture)</li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>D2Coding 코딩할때 쓰면 좋은 폰트라고 해서 다운받아봤는데, 딱히 잘 모르겠다. 너무 얇고 익숙치가 않다. 요새는 이게 트렌드인가 싶었지만 그냥 기존에 쓰던 기본 폰트로 돌아갔다.</li><li><a href="http://sculove.github.io/blog/2016/07/11/react%EB%B3%B4%EB%8B%A4-angular2%EC%97%90-%EB%8D%94-%EC%A3%BC%EB%AA%A9%ED%95%B4%EC%95%BC%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0/" target="_blank" rel="external">React보다 Angular2에 더 주목해야하는 이유</a><ul><li>마크업과 코드의 분리, HTML표준과 WEB component, TypeScript 등 여러 장점이 있다고 한다. 아직 Angular2를 공부해보지 않아서 정확히 이해할 수는 없었지만 어렴풋하게나마 느낄 수 있었다.</li></ul></li><li>Sass를 직접 실습하니 훨씬 편하고 친근하게 느껴진다. 아마 TypeScript를 공부할 때에도 이런 느낌이 아닐까 싶다.</li><li>팀프로젝트 depth를 직접 짜니 내 생각의 한계점이나 몰랐던 점도 알게 되었다. 가령 나는 대쉬보드 형식의 웹페이지를 구상했는데, 기존에 자료가 있는 유저에겐 유익하지만, 처음 가입하는 유저에게는 아직 입력하지 않은 텅 빈 화면이 큰 부담으로 느껴질 수 있다는 느낌이다.</li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>알고리즘 퀴즈<ul><li>[미완]nextBigNumber()</li></ul></li><li>Todo-list v2</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Sass를 이용한 Grid 만들기(임기완 조교님)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a h
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript-23-Array</title>
+    <link href="http://girin-dev.github.io/2017/10/31/JavaScript-23-Array/"/>
+    <id>http://girin-dev.github.io/2017/10/31/JavaScript-23-Array/</id>
+    <published>2017-10-31T11:03:40.000Z</published>
+    <updated>2017-10-31T11:29:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="JavaScript-23-배열-Array"><a href="#JavaScript-23-배열-Array" class="headerlink" title="JavaScript 23. 배열 (Array)"></a>JavaScript 23. 배열 (Array)</h1><h2 id="배열의-생성"><a href="#배열의-생성" class="headerlink" title="배열의 생성"></a>배열의 생성</h2><h2 id="배열-요소의-추가와-삭제"><a href="#배열-요소의-추가와-삭제" class="headerlink" title="배열 요소의 추가와 삭제"></a>배열 요소의 추가와 삭제</h2><h2 id="배열-요소의-열거"><a href="#배열-요소의-열거" class="headerlink" title="배열 요소의 열거"></a>배열 요소의 열거</h2><h2 id="Array-Property"><a href="#Array-Property" class="headerlink" title="Array Property"></a>Array Property</h2><h2 id="Array-Method"><a href="#Array-Method" class="headerlink" title="Array Method"></a>Array Method</h2><ul><li><code>Array.prototype.forEach</code><ul><li>각 요소 순회하면서 무언가 함</li><li>원본배열 유지(콜백함수의 세번째 인자로 원본배열 조작가능)</li><li>두번째 인자 this 가능</li></ul></li><li><code>Array.prototype.map()</code><ul><li>원본배열을 1:1 매핑하는 새로운 배열 생성</li><li>원본배열 유지(콜백함수의 세번째 인자로 원본배열 조작가능)</li><li>두번째 인자 this 가능</li></ul></li><li><code>Array.prototype.filter()</code><ul><li>return값이 true인 값만을 추려 새로운 배열 생성(if문처럼 다양하게 활용가능)</li><li>원본배열 유지</li><li>두번째 인자 this 가능</li></ul></li><li><code>Array.prototype.reduce()</code><ul><li>이전 콜백의 반환값(이전 순회에서 반환한 값)을 인자로 받아와 이용.(재귀적 특징)</li><li>원본배열에 영향을 주지 않음.ㅍ</li></ul></li><li><code>Array.prototype.find()</code><ul><li>있는지 없는지가 중요하기 때문에 처음으로 찾으면 그 값을 반환.</li><li>원본배열에 영향을 주지 않음.</li><li>ES6에 새롭게 도입 (IE미지원)</li><li><strong>객체를 가진 배열</strong>에 유용하게 쓸 수 있음.</li><li>filter()가 콜백함수에 의해 반환된 것들을 묶은 배열을 반환하는 것에 반해, find()는 콜백함수에 의해 반환된 첫번째 요소를 반환</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;JavaScript-23-배열-Array&quot;&gt;&lt;a href=&quot;#JavaScript-23-배열-Array&quot; class=&quot;headerlink&quot; title=&quot;JavaScript 23. 배열 (Array)&quot;&gt;&lt;/a&gt;JavaScript 23. 배열
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://girin-dev.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://girin-dev.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>171031-TIL</title>
+    <link href="http://girin-dev.github.io/2017/10/31/171031-TIL/"/>
+    <id>http://girin-dev.github.io/2017/10/31/171031-TIL/</id>
+    <published>2017-10-31T00:56:09.000Z</published>
+    <updated>2017-11-01T11:29:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>Express</p><ul><li>Basic(Routing, Middleware, Static file, Template engine)</li></ul></li><li><p><a href="https://github.com/girin-dev/Todo-List-v3" target="_blank" rel="external">Todo-list.v3</a></p><ul><li>axios, babel-polyfill, body-parser, dotenv, express, mongoose</li><li>sass, webpack, eslint</li><li>MongoDB와 mLab(<a href="https://mlab.com/" target="_blank" rel="external">https://mlab.com/</a>) 활용</li><li>Back-end와 서버는 ungmo2님 제공</li></ul></li><li><p>JavaScript 집중 체크리스트</p></li><li><p>res.data와 err.response</p></li></ul><h1 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h1><ul><li>사파리의 주소창에서 enter키가 작동하지 않는 오류로 며칠동안 고생했는데, 맥을 껐다켰더니 해결되었다.</li><li>사실 코멘트(주석)이 없이 읽혀지는 코드가 베스트. 하지만 반드시 그럴 수는 없기 때문에 약간의 코멘트를 추가해주는 것. 너무 많아도 좋지 않다.</li><li>CSS 프레임워크 <a href="https://cssauthor.com/css-frameworks" target="_blank" rel="external">100+ Best CSS Frameworks for Responsive Design</a>, <a href="https://semantic-ui.com/" target="_blank" rel="external">Semantic UI</a>, <a href="http://getbootstrap.com/" target="_blank" rel="external">Bootstratp</a>, <a href="http://www.material-ui.com/#/" target="_blank" rel="external">Material Design</a></li><li>팀프로젝트가 잘 되었으면 좋겠다. 팀프로젝트를 통해 협업과 소통의 경험을 쌓고, 몰랐던 지식을 습득적용하며, 부수적으로는 가시적 결과물로 만족감도 얻고 싶다.</li><li>axios: promise를 지원하는 HTTP 클라이언트 라이브러리</li><li><a href="https://medium.com/@jwyeom63/더-이상-배우려-하지-않는-개발자-expert-beginner의-등장-dd40c40aeedf" target="_blank" rel="external">더 이상 배우려 하지 않는 개발자 : Expert Beginner의 등장</a><ul><li>신기술에 관심없는 개발자 이야기일 줄 알았는데, 자신이 부족한 점을 잘 알지 못한 채 주변 몇몇 성과물을 갖고 더이상 발전할 필요를 느끼지 못하는 개발자에 대한 이야기.</li><li>지난 2년동안의 나의 모습이 이런 Expert Beginner의 모습이 아니었을까?</li><li>언제든지 다시 올 수 있고, 그 사실조차 알아챌 수 없을지도 모른다. 해결방법은 피어리뷰(peer review)와 개발자 커뮤니티와의 교류.</li></ul></li></ul><h1 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h1><ul><li><p>팀프로젝트: 반려동물</p><ul><li>depth 짜기(Information Architecture)</li></ul></li><li><p>알고리즘 퀴즈</p><ul><li>[미완]nextBigNumber()</li><li>[미완]isPair() 괄호 확인하기</li></ul></li><li><p>Todo-list v2</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Express&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic(Routing, Middlewar
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
+  
+  <entry>
     <title>171030-TIL</title>
     <link href="http://girin-dev.github.io/2017/10/30/171030-TIL/"/>
     <id>http://girin-dev.github.io/2017/10/30/171030-TIL/</id>
     <published>2017-10-30T01:24:04.000Z</published>
-    <updated>2017-10-30T17:08:45.000Z</updated>
+    <updated>2017-10-31T11:53:09.168Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>ES6<ul><li>Promise</li></ul></li><li>Node.js &amp; Express<ul><li>Node.js<ul><li>basics</li><li>모듈화와 npm<ul><li><a href="http://d2.naver.com/helloworld/12864" target="_blank" rel="external">JavaScript 표준을 위한 움직임: CommonJS와 AMD</a></li></ul></li><li>Module loading system</li></ul></li><li>Express<ul><li>Basic(Routing, Middleware, Static file, Template engine)</li></ul></li></ul></li><li>Todo-list2 복기</li><li>알고리즘 퀴즈<ul><li>[미완]nextBigNumber()</li></ul></li><li>맘에 드는 codepen<ul><li><a href="https://codepen.io/tonkec/pen/jWmgqN" target="_blank" rel="external">https://codepen.io/tonkec/pen/jWmgqN</a></li><li><a href="https://codepen.io/2016/popular/pens/" target="_blank" rel="external">2016 인기있는 codepen</a></li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>HTTP error code 304<ul><li>이미 캐시에 저장이 되어 받아온 데이터의 변경이 없어 캐시에 저장된 데이터를 그대로 불러올 때.</li><li><a href="http://ohgyun.com/175" target="_blank" rel="external">http://ohgyun.com/175</a></li></ul></li><li>좋은 책<ul><li><a href="http://www.aladin.co.kr/shop/common/wseriesitem.aspx?SRID=96627" target="_blank" rel="external">You don’t know JS</a></li></ul></li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>Express<ul><li>Error handling</li></ul></li><li>알고리즘 퀴즈<ul><li>[미완]nextBigNumber()</li><li>[미완]isPair() 괄호 확인하기</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>ES6<ul><li>Promise</li></ul></li><li>Node.js &amp; Express<ul><li>Node.js<ul><li>basics</li><li>모듈화와 npm<ul><li><a href="http://d2.naver.com/helloworld/12864" target="_blank" rel="external">JavaScript 표준을 위한 움직임: CommonJS와 AMD</a></li></ul></li><li>Module loading system</li></ul></li><li>Express<ul><li>Basic(Routing, Middleware, Static file, Template engine) 맛보기</li></ul></li></ul></li><li>Todo-list.v1 복기</li><li>알고리즘 퀴즈<ul><li>[미완]nextBigNumber()</li></ul></li><li>맘에 드는 codepen<ul><li><a href="https://codepen.io/tonkec/pen/jWmgqN" target="_blank" rel="external">https://codepen.io/tonkec/pen/jWmgqN</a></li><li><a href="https://codepen.io/2016/popular/pens/" target="_blank" rel="external">2016 인기있는 codepen</a></li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>HTTP error code 304<ul><li>이미 캐시에 저장이 되어 받아온 데이터의 변경이 없어 캐시에 저장된 데이터를 그대로 불러올 때.</li><li><a href="http://ohgyun.com/175" target="_blank" rel="external">http://ohgyun.com/175</a></li></ul></li><li>좋은 책<ul><li><a href="http://www.aladin.co.kr/shop/common/wseriesitem.aspx?SRID=96627" target="_blank" rel="external">You don’t know JS</a></li></ul></li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>Express<ul><li>Error handling</li></ul></li><li>알고리즘 퀴즈<ul><li>[미완]nextBigNumber()</li><li>[미완]isPair() 괄호 확인하기</li></ul></li><li>JavaScript 집중 체크리스트</li></ul>]]></content>
     
     <summary type="html">
     
@@ -458,116 +564,6 @@
 &lt;li&gt;과제 풀이 해설&lt;ul&gt;
 &lt;li&gt;String&lt;/li&gt;
 &lt;l
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171011-TIL</title>
-    <link href="http://girin-dev.github.io/2017/10/11/171011-TIL/"/>
-    <id>http://girin-dev.github.io/2017/10/11/171011-TIL/</id>
-    <published>2017-10-11T01:13:21.000Z</published>
-    <updated>2017-10-29T09:29:59.318Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Activity<ul><li>시험 풀이</li></ul></li><li>JavaScript<ul><li>Number</li><li>Math</li><li>Array</li><li>RegExp(정규표현식)</li></ul></li><li>과제<ul><li>예습(Execution Context/Closure/OOP)</li><li>복습</li><li>퀴즈<ul><li>String</li><li>RegExp</li></ul></li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Activity&lt;ul&gt;
-&lt;li&gt;시험 풀이&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Java
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript 17. 표준 빌트인 객체 (Standard Built-in Objects)</title>
-    <link href="http://girin-dev.github.io/2017/10/10/JavaScript-17-Standard-Built-in-Objects/"/>
-    <id>http://girin-dev.github.io/2017/10/10/JavaScript-17-Standard-Built-in-Objects/</id>
-    <published>2017-10-10T09:07:09.000Z</published>
-    <updated>2017-10-29T06:31:14.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="JavaScript-17-표준-빌트인-객체-Standard-Built-in-Objects"><a href="#JavaScript-17-표준-빌트인-객체-Standard-Built-in-Objects" class="headerlink" title="JavaScript 17. 표준 빌트인 객체 (Standard Built-in Objects)"></a>JavaScript 17. 표준 빌트인 객체 (Standard Built-in Objects)</h1><ul><li>Global Objects 라고 표기하기도 하는데 전역객체(Global Object)와 다른 의미</li></ul><h2 id="전역-객체-Global-Object"><a href="#전역-객체-Global-Object" class="headerlink" title="전역 객체 (Global Object)"></a>전역 객체 (Global Object)</h2><ul><li>전역객체도 표준 빌트인 객체 중 하나. 브라우저와 서버에서 전역객체는 다르다.(각각 <code>window</code>와 <code>global</code>)</li><li>전역객체는 어플리케이션 안에서 오직 하나만 존재. <code>undefined</code>를 제외하고 모든 것을 가질 수 있음(Object 참고)</li><li>전역함수는 전역 객체의 메소드였다.(전역 객체는 전역 변수를 프로퍼티로 갖는다.) 따라서 전역함수와 전역변수를 남발하면 전역객체의 덩치가 점점 커진다. 성능이슈 발생</li><li><p>글로벌 영역에 선언한 함수도 전역 객체의 프로퍼티로 접근 가능.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">moveTo</span>(<span class="params">url</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> location = &#123;<span class="string">'href'</span>:<span class="string">'move to '</span>&#125;; <span class="comment">// 전역 객체 window의 프로퍼티 location과 충돌</span></div><div class="line">  alert(location.href + url);</div><div class="line">  <span class="comment">// 이 코드로 실행시 alert까지 뜨고 그냥 지역변수 location의 값을 바꿔주고 끝.</span></div><div class="line">  <span class="comment">// location.href = url;</span></div><div class="line">  <span class="comment">// 이 코드로 실행시 alert 뜬 이후 전역객체의 프로퍼티 location 기능 수행.(페이지 이동)</span></div><div class="line">  <span class="built_in">window</span>.location.href = url;</div><div class="line">&#125;</div><div class="line">moveTo(<span class="string">'http://www.google.com'</span>);</div></pre></td></tr></table></figure></li><li><p>전역객체의 기술은 대개 생략하지만 위 코드와 같이 사용자가 정의한 변수와 전역 객체의 자식 객체 이름이 충돌할 경우, 전역객체를 명확히 기술해 혼동을 방지할 수 있다. <strong>하지만 애초에 이런 식의 코드는 짜지 않는 것이 좋다.</strong></p></li><li>표준 빌트인 객체도 전역 객체의 자식 객체. 따라서 전역 객체 기술을 생략할 수 있다.<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// window.alert('Hello world!');;</span></div><div class="line">alert(<span class="string">'Hello world!'</span>);</div></pre></td></tr></table></figure></li></ul><h2 id="전역-프로퍼티-Global-property"><a href="#전역-프로퍼티-Global-property" class="headerlink" title="전역 프로퍼티 (Global property)"></a>전역 프로퍼티 (Global property)</h2><ul><li>Infinity</li><li>NaN</li><li>undefined</li></ul><h2 id="전역-함수-Global-function"><a href="#전역-함수-Global-function" class="headerlink" title="전역 함수 (Global function)"></a>전역 함수 (Global function)</h2><ul><li>eval()<ul><li>매개변수에 전달된 문자열 구문 또는 표현식을 평가 실행</li><li>보안상의 문제로 절대 사용 금지</li></ul></li><li><p>isFinite()</p><ul><li>매개변수에 전달된 값이 유한수인지 아닌지를 검사</li><li>유한수이면 <code>true</code>, 무한수이면 <code>false</code>를 반환</li><li>전달값이 문자열의 숫자인 경우, 숫자로 변환하여 검사를 수행한다. 숫자도 아니고 문자열 속의 숫자도 아닌 경우 <code>false</code>로 반환한다.(<code>null</code> 예외)<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">isFinite</span>([검사하고자 하는 값])</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">isFinite</span>(<span class="literal">Infinity</span>));  <span class="comment">// false</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">isFinite</span>(<span class="literal">NaN</span>));       <span class="comment">// false</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">isFinite</span>(<span class="string">'Hello'</span>));   <span class="comment">// false</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">isFinite</span>(<span class="string">'2005/12/12'</span>));   <span class="comment">// false</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">isFinite</span>(<span class="number">1</span>/<span class="number">3</span>));    <span class="comment">// true, 컴퓨터는 무한소수를 끝까지 표현하지 않고 버려서 유한소수로 표현.</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">isFinite</span>(<span class="number">0</span>));         <span class="comment">// true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">isFinite</span>(<span class="number">2e64</span>));      <span class="comment">// true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">isFinite</span>(<span class="literal">null</span>));      <span class="comment">// true: null-&gt;0</span></div></pre></td></tr></table></figure></li></ul></li><li><p>isNaN()</p><ul><li>매개변수에 전달된 값이 NaN인지 검사, 숫자가 맞다면 <code>false</code> 숫자가 아니면 <code>true</code> 반환.<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">isNaN</span>([검사하고자 하는 값])</div><div class="line"></div><div class="line"><span class="built_in">isNaN</span>(<span class="literal">NaN</span>)       <span class="comment">// true</span></div><div class="line"><span class="built_in">isNaN</span>(<span class="literal">undefined</span>) <span class="comment">// true: undefined -&gt; NaN</span></div><div class="line"><span class="built_in">isNaN</span>(&#123;&#125;)        <span class="comment">// true: &#123;&#125; -&gt; NaN</span></div><div class="line"><span class="built_in">isNaN</span>(<span class="string">'blabla'</span>)  <span class="comment">// true: 'blabla' -&gt; NaN</span></div><div class="line"></div><div class="line"><span class="built_in">isNaN</span>(<span class="literal">true</span>)      <span class="comment">// false: true -&gt; 1</span></div><div class="line"><span class="built_in">isNaN</span>(<span class="literal">null</span>)      <span class="comment">// false: null -&gt; 0</span></div><div class="line"><span class="built_in">isNaN</span>(<span class="number">37</span>)        <span class="comment">// false</span></div><div class="line"></div><div class="line"><span class="comment">// strings</span></div><div class="line"><span class="built_in">isNaN</span>(<span class="string">'37'</span>)      <span class="comment">// false: '37' -&gt; 37</span></div><div class="line"><span class="built_in">isNaN</span>(<span class="string">'37.37'</span>)   <span class="comment">// false: '37.37' -&gt; 37.37</span></div><div class="line"><span class="built_in">isNaN</span>(<span class="string">''</span>)        <span class="comment">// false: '' -&gt; 0</span></div><div class="line"><span class="built_in">isNaN</span>(<span class="string">' '</span>)       <span class="comment">// false: ' ' -&gt; 0</span></div><div class="line"></div><div class="line"><span class="comment">// dates</span></div><div class="line"><span class="built_in">isNaN</span>(<span class="keyword">new</span> <span class="built_in">Date</span>())             <span class="comment">// false: new Date() -&gt; Number</span></div><div class="line"><span class="built_in">isNaN</span>(<span class="keyword">new</span> <span class="built_in">Date</span>().toString())  <span class="comment">// true:  String -&gt; NaN</span></div></pre></td></tr></table></figure></li></ul></li><li><p>parseFloat()</p><ul><li>이어서…</li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;JavaScript-17-표준-빌트인-객체-Standard-Built-in-Objects&quot;&gt;&lt;a href=&quot;#JavaScript-17-표준-빌트인-객체-Standard-Built-in-Objects&quot; class=&quot;headerlink&quot; t
-      
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="http://girin-dev.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://girin-dev.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript 16. 자바스크립트가 제공하는 내장 객체 (Built-in Object)</title>
-    <link href="http://girin-dev.github.io/2017/10/10/JavaScript-16-Built-in-Object/"/>
-    <id>http://girin-dev.github.io/2017/10/10/JavaScript-16-Built-in-Object/</id>
-    <published>2017-10-10T09:05:59.000Z</published>
-    <updated>2017-10-10T14:38:29.066Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="JavaScript-16-자바스크립트가-제공하는-내장-객체-Built-in-Object"><a href="#JavaScript-16-자바스크립트가-제공하는-내장-객체-Built-in-Object" class="headerlink" title="JavaScript 16. 자바스크립트가 제공하는 내장 객체 (Built-in Object)"></a>JavaScript 16. 자바스크립트가 제공하는 내장 객체 (Built-in Object)</h1><ul><li><p>Built-in(API) 이란?</p><ul><li>이미 자바스크립트에 내장된, 또한 검증된 것들(객체, 함수 등)</li><li>쓰려면 뭐가 있는지는 알아야 한다. 모르면 자기가 직접 만들려고 할 것이고 그럼 그 검증되지 않은 코드는 퍼포먼스 등에서 문제가 생긴다.</li><li>String과 <strong>Array(순회가능, index라는 순서가 있어서 다루기가 편함, array의 built-in은 성능이 우수)</strong> 등</li></ul></li><li><p>빌트인 객체 (내장객체, Built-in Object)</p><ul><li>Standard Built-in Objects (Global Objects, not Global Object전역객체)</li><li>BOM (Browser Object Model)</li><li>DOM (Document Object Model)</li></ul></li></ul><h2 id="Standard-Built-in-Objects-표준-빌트인-객체"><a href="#Standard-Built-in-Objects-표준-빌트인-객체" class="headerlink" title="Standard Built-in Objects(표준 빌트인 객체)"></a>Standard Built-in Objects(표준 빌트인 객체)</h2><ul><li>Global Objects라고도 하지만 전역 객체(Global Object)와 다른 뜻 혼동하지 말 것</li><li>자세한 내용은 <a href="">표준 빌트인 객체 (Standard Built-in Objects)</a> 참고</li></ul><h2 id="Native-Object-BOM-DOM"><a href="#Native-Object-BOM-DOM" class="headerlink" title="Native Object (BOM/DOM)"></a>Native Object (BOM/DOM)</h2><ul><li>BOM 브라우저를 프로그래밍적으로 통제할 수 있음<ul><li>window<ul><li>document, history, location, navigator, screen</li></ul></li></ul></li><li>DOM CSS와 HTML 등의 구조를 프로그래밍적으로 통제할 수 있음</li><li>필요시 따로 공부해야 함</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;JavaScript-16-자바스크립트가-제공하는-내장-객체-Built-in-Object&quot;&gt;&lt;a href=&quot;#JavaScript-16-자바스크립트가-제공하는-내장-객체-Built-in-Object&quot; class=&quot;headerlink&quot; tit
-      
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="http://girin-dev.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://girin-dev.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171010-TIL</title>
-    <link href="http://girin-dev.github.io/2017/10/10/171010-TIL/"/>
-    <id>http://girin-dev.github.io/2017/10/10/171010-TIL/</id>
-    <published>2017-10-10T00:21:15.000Z</published>
-    <updated>2017-10-29T09:30:02.301Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Activity<ul><li>예습/복습</li></ul></li><li>JavaScript<ul><li>Built-in(API) Object</li><li>Standard Built-in Object</li><li>String</li><li>Date</li></ul></li><li>과제<ul><li>예습(Number/Math/RegExp/Array)</li><li>복습(시험, 퀴즈)</li><li>퀴즈<ul><li>String<ol><li>1~10,000 중 8이 등장하는 횟수 구하기(Google)</li><li>짝수와 홀수 구하기</li><li>문자열 검증하기</li></ol></li><li>Date<ol><li>요일 구하기</li></ol></li></ul></li></ul></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul><li>정리는 주말에 하고 복습에 집중하자</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Activity&lt;ul&gt;
-&lt;li&gt;예습/복습&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Java
       
     
     </summary>
