@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2017-11-10T02:10:00.351Z</updated>
+  <updated>2017-11-10T02:22:27.000Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>171110-TIL</title>
+    <link href="http://girin-dev.github.io/2017/11/10/171110-TIL/"/>
+    <id>http://girin-dev.github.io/2017/11/10/171110-TIL/</id>
+    <published>2017-11-10T02:10:35.000Z</published>
+    <updated>2017-11-10T02:22:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>복습</li><li><p>Angular Component 복습</p></li><li><p>해커톤 및 숙제</p></li><li>Todo-list v2(no mongoDB) 작성</li><li><p>상호작용하는 로그인 창 만들기(no css)</p></li><li><p>알고리즘 퀴즈</p><ul><li>[미완]caeser(s, n)</li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li><a href="https://medium.com/happyprogrammer-in-jeju/%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4-%EC%97%B0%EA%B2%B0%EB%9F%AC-%EC%95%B1-%EA%B3%B5%EA%B0%9C-%EA%B0%9C%EB%B0%9C-%ED%9B%84%EA%B8%B0-c0c5f88a86e8" target="_blank" rel="external">스타벅스 연결러 앱 공개 &amp; 개발 후기</a><ul><li>무료 어플 개발과 노동의 가시적 대가에 대한 욕심, 재미로 하는 코딩(지적유희)</li><li>신기한 한글 코딩(함수명을 한글로?) - 자바스크립트도 시도해봤는데 가능했다. 명령어나 메소드를 한글로 바꾸려는 움직임은 본 적이 있는데(말 그대로 한국어와 한글에 기반한 프로그래밍 언어 창조) 기존의 영어문 기반의 프로그래밍 언어에서도 한국어도 함수명이나 변수를 쓸 수 있는게 신기하다. 개인 프로젝트에는 한번 시도해봐야겠다. (물론 프로그래밍 언어의 작명 가이드라인에는 전혀 맞지 않을 것이다. 그 가이드라인 조차도 영어문 기준일테니.)<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> 더하기 = <span class="function">(<span class="params">정수<span class="number">1</span>, 정수<span class="number">2</span></span>) =&gt;</span> &#123;</div><div class="line">  <span class="keyword">return</span> 정수<span class="number">1</span> + 정수<span class="number">2</span>;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(더하기(<span class="number">1</span>, <span class="number">2</span>)); <span class="comment">// 3</span></div></pre></td></tr></table></figure></li></ul></li></ul><h2 id="주말동안-할-일"><a href="#주말동안-할-일" class="headerlink" title="주말동안 할 일"></a>주말동안 할 일</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;복습&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Angular Component 복습&lt;/p&gt;
+&lt;/li&gt;
+&lt;l
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
   
   <entry>
     <title>171109-TIL</title>
@@ -46,11 +75,11 @@
   </entry>
   
   <entry>
-    <title>171107-TIL</title>
+    <title>171108-TIL</title>
     <link href="http://girin-dev.github.io/2017/11/08/171108-TIL/"/>
     <id>http://girin-dev.github.io/2017/11/08/171108-TIL/</id>
     <published>2017-11-08T02:23:13.000Z</published>
-    <updated>2017-11-10T02:10:06.578Z</updated>
+    <updated>2017-11-10T02:23:08.319Z</updated>
     
     <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>Todo-list v2</p><ul><li><del>Firebase로 진행(not mongoDB)</del></li><li>Firebase 전까지만 진행</li></ul></li><li><p>TypeScript, Angular 복습</p></li><li><p>Angular 예습(interaction까지)</p><ul><li>몽키패치: 런타임상에서 함수, 메서드, 속성을 바꾸는 것을 이야기 한다. (<a href="http://wiki.sagwangho.com/pages/viewpage.action?pageId=4063243" target="_blank" rel="external">http://wiki.sagwangho.com/pages/viewpage.action?pageId=4063243</a>), 흥미러운 점은 원래 게릴라 패치였던 것이 발음의 유사성으로 인해 고릴라 패치가 되고, 이것이 너무 위협적으로 들려 몽키패치가 되었다는 점이다.</li></ul></li><li><p>알고리즘 퀴즈</p><ul><li>nextBigNumber()</li><li>jumpCase()</li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>jumpCase()는 도저히 모르겠어서 풀이를 찾아보니 그냥 ‘재귀임’ 이런 식의 설명이다. 그런 접근 방식이 좋은 걸까? 다른 방식으로도 도전해봐야겠다.</li><li>Todo-list v2를 firebase 기반으로 구현할 줄 알았는데 시간상의 문제로 할 수 없었다. 아쉽다. 혼자 찾아봐야 하려나?</li><li>알고리즘 퀴즈에 너무 많은 시간을 쏟는 느낌이다. 과제일지라도 하루에 1문제, 최대 1시간으로 정해야겠다.</li><li><a href="https://medium.com/@minoo/%EB%B2%88%EC%97%AD-30%EC%82%B4%EC%97%90-%EC%A3%BC%EB%8B%88%EC%96%B4-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EB%90%9C%EB%8B%A4%EB%8A%94-%EA%B2%83-being-a-junior-developer-at-30-b7b587ee4f6b" target="_blank" rel="external">[번역] 30살에 주니어 개발자가 된다는 것 (Being a Junior Developer at 30)</a></li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>수업 복습</li></ul>]]></content>
     
@@ -74,11 +103,11 @@
   </entry>
   
   <entry>
-    <title>171105-TIL</title>
+    <title>171106-TIL</title>
     <link href="http://girin-dev.github.io/2017/11/07/171107-TIL/"/>
     <id>http://girin-dev.github.io/2017/11/07/171107-TIL/</id>
     <published>2017-11-07T01:57:41.000Z</published>
-    <updated>2017-11-10T02:10:09.693Z</updated>
+    <updated>2017-11-10T02:22:28.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Angular<ul><li>Basic</li><li>Angular CLI</li><li>Architecture</li></ul></li><li>TypeScript, Angular 복습</li><li>자소서 완성</li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>PT Mono 폰트를 적용하고 vscode 설정에 “workbench.fontAliasing”: “antialiased”를 적용했다. 폰트는 마음에 들고 Aliasing은 화면이 살짝 어두워져서 좀 별로였다. 하지만 좋다고 하니까 일단 써보고 적응해봐야겠다.</li><li>개인 면담: 스타트업에 대한 정보 문의, 채용 상담에 대한 대비, 팀프로젝트와 패스트캠퍼스 운영에 대한 피드백, mongoDB 내용이 빠진 것에 대한 아쉬움 등</li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>알고리즘 퀴즈<ul><li>[미완]nextBigNumber()</li><li>jumpCase()</li></ul></li></ul>]]></content>
     
@@ -541,34 +570,6 @@
 &lt;li&gt;&lt;p&gt;2017 FEconf&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Performance 
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171020-TIL</title>
-    <link href="http://girin-dev.github.io/2017/10/20/171020-TIL/"/>
-    <id>http://girin-dev.github.io/2017/10/20/171020-TIL/</id>
-    <published>2017-10-20T00:56:41.000Z</published>
-    <updated>2017-10-29T06:14:26.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>Activity</p><ul><li>Todo list 만들기 중 데이터 구조<ul><li>id 만드는 함수 =&gt; <code>reduce()</code> 활용 (임기완 조교님)</li><li><code>Object.freeze()</code> 쓸 수 있음</li></ul></li></ul></li><li><p>Trend of Software Engineering</p><ul><li>웹앱은 (앱에서 웹페이지를 띄워주는 것) 트렌드에 맞지 않음 (모바일은 모바일답게, 웹은 웹답게)</li><li>개인정보와 보안 이슈</li><li>클라우드 컴퓨팅 환경에서 서비스를 배포</li><li>웹과 앱의 통합 =&gt; PWD(프로그레시브 웹 앱) 안드로이드에서 알리익스프레스에 접속해서 홈화면에 추가해보라.</li><li>DevOps 기존의 오퍼레이션(Ops) 팀을 쫓아내고 개발팀에서 다 함.</li></ul></li><li><p>Software Engineering 특강</p><ul><li>개발자가 회사, 프로젝트 등 다양한 사람들과 협업하는 방식과 자세</li><li>DevOps<ul><li>기존의 회사들은 Dev(개발)부서와 Ops(관리운영)부서가 나뉘어있었다. 그러나 기술지향적 분위기와 협업, 소통의 문제로 최근엔 개발부서가 관리운영까지 맡는 DevOps이 탄생하였다.</li></ul></li><li>개발자와 프로그래머, 코더의 구분<ul><li>시스템과 알고리즘과 코드화에 따른 능력과 역하</li></ul></li><li>컴퓨터적 사고(Computational Thinking)<ul><li>과정<ol><li>문제 조직화(추상화)</li><li>솔루션 구현(자동화)</li><li>솔루션 실행 및 평가(분석)</li></ol></li><li>특징<ul><li>문제 분해</li><li>패턴인지 / 데이터표현</li><li>일반화 / 추상화</li><li>알고리즘</li></ul></li></ul></li><li>다양한 문서와 명세<ul><li>user case diagram</li><li>user scenario</li><li>user stories</li></ul></li></ul></li><li><p>소프트웨어 개발주기 과정 모델</p><ul><li>Build-fix model: 설계없이 개발, 수정 반복. 빠른 착수와 무계획적 진행</li><li>폭포수 모델(Waterfall model): 순차적 개발 모델(전 단계의 완료 전까지 다음 단계로 넘어갈 수 없음), 정형화된 접근과 체계적 문서화, 굉장히 느림</li><li>Prototype model: 빠른 프로토타입 제작 이후 피드백 반영하며 진행. 대규모 프로젝트 적용 힘듦</li><li>Spiral model: 대규모/고비용, 프로젝트 위험요인 제거가능, 불명확한 각 단계</li><li>RAD, Iterative Development model, V model, Component Based Development</li></ul></li><li><p>소프트웨어 개발 과정</p><ul><li>애자일(Agile): 도입/상세/구축/이행의 반복(UP), 스크럼 마스터의 프로세스 주도/각자의 역할에 충실/TDD 중시(XP)</li><li>애자일 도구: Planing Poker(애자일 추정과 시간설계를 위한 도구)</li><li>Pair programming<ul><li>재미있었고 내가 모르는 부분을 알려주어서 좋았다.</li></ul></li><li>TDD(Test Driven Development): 객체지향적, 재설계 시간 단축, 디버깅 시간 단축, 애자일과 시너지(사용자 중심적), 테스트 문서 대체, 추가구현 용이</li></ul></li><li><p>소프트웨어 배포 과정</p><ul><li>Pre-alpha/Alpha/Beta/Closed-Beta(이건 다소 홍보목적)</li><li>RC(정식제품이 될 가능성이 있는 베타버전)/RTM(소프트웨어 제공 준비 완료)/GA(유저이용 가능상태)</li></ul></li><li><p>TIP</p><ul><li>Alfred로 화면 띄우기<ul><li>내용을 채우고 난 이후 <code>option + command + L</code> 누르기</li></ul></li></ul></li><li><p>스쿨 네트워크 세션 OT</p></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul><li>애자일이라는 새로운 업무방식을 알게 되어서 좋았다. 늘 말로만 들었던 애자일의 여러 도구들과 방식을 실현해봐서 좋았다. 테키한 IT회사들에 있어서 뭔가 초딩스러운 요소가 많은 것 같다. 초딩스럽다고는 하지만 좀 더 생각해보면 생각의 구체화, 단계의 시각화, 명확한 지시전달 등 업무의 핵심적인 요소를 담고 있는 듯. 사실 아주 정확하게 알지는 못하겠지만 하나 명확히 기억이 나는건 ‘<strong>Scrum master</strong>와 친하게 지내자’라는 것</li><li>PWA(Progresive Web App)의 개념이 신기하다. 홈화면 추가가 아니라 좀 더 쉽고 편하게 접근할 수 있는 방법이 생긴다면 더 활성화될 것 같다.</li><li>Back-end 웹스쿨 분들은 사업을 목적으로 이러한 수업을 듣는 사람도 많은 것 같다. 하지만 의문점은 사업을 할건데 개발을 왜 배우냐는 것이다. 물론 개발을 알면 사업에 도움이 되겠지만 그 정도의 수준은 이러한 고비용 스쿨이 아니라 멋쟁이 사자처럼이나 무료 인터넷 강의같이 더 낫지 않을까? 개발자 출신 사업가는 보았어도, 사업가를 하기 위해 개발을 배우는 건 뭔가 순서가 잘못된 것 같은데… 사실 남의 선택에 왈가왈부할 것은 없다. 나는 사업을 할 것이 아니고 개발자가 되기 위해 개발을 공부하는 것이다. 프로젝트도 기똥찬 아이디어나 수익모델 적용이 아니라, 배운 것을 구현, 복습하고 협업경험을 키우는데 방점을 찍고 싶다.</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Activity&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Todo list 만들기 중 데이터 구조&lt;
       
     
     </summary>
