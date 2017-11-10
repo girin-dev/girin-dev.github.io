@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2017-11-10T02:24:33.175Z</updated>
+  <updated>2017-11-10T02:32:30.000Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://girin-dev.github.io/2017/11/10/171110-TIL/"/>
     <id>http://girin-dev.github.io/2017/11/10/171110-TIL/</id>
     <published>2017-11-10T02:10:35.000Z</published>
-    <updated>2017-11-10T02:24:33.175Z</updated>
+    <updated>2017-11-10T02:32:30.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>복습</li><li><p>Angular Component 복습</p></li><li><p>해커톤 및 숙제</p></li><li>Todo-list v2(no mongoDB) 작성</li><li><p>상호작용하는 로그인 창 만들기(no css)</p></li><li><p>알고리즘 퀴즈</p><ul><li>[미완]caeser(s, n)</li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li><a href="https://medium.com/happyprogrammer-in-jeju/%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4-%EC%97%B0%EA%B2%B0%EB%9F%AC-%EC%95%B1-%EA%B3%B5%EA%B0%9C-%EA%B0%9C%EB%B0%9C-%ED%9B%84%EA%B8%B0-c0c5f88a86e8" target="_blank" rel="external">스타벅스 연결러 앱 공개 &amp; 개발 후기</a><ul><li>무료 어플 개발과 노동의 가시적 대가에 대한 욕심, 재미로 하는 코딩(지적유희)</li><li>신기한 한글 코딩(함수명을 한글로?) - 자바스크립트도 시도해봤는데 가능했다. 명령어나 메소드를 한글로 바꾸려는 움직임은 본 적이 있는데(말 그대로 한국어와 한글에 기반한 프로그래밍 언어 창조) 기존의 영어문 기반의 프로그래밍 언어에서도 한국어도 함수명이나 변수를 쓸 수 있는게 신기하다. 개인 프로젝트에는 한번 시도해봐야겠다. (물론 프로그래밍 언어의 작명 가이드라인에는 전혀 맞지 않을 것이다. 그 가이드라인 조차도 영어문 기준일테니.)<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> 더하기 = <span class="function">(<span class="params">정수<span class="number">1</span>, 정수<span class="number">2</span></span>) =&gt;</span> &#123;</div><div class="line">  <span class="keyword">return</span> 정수<span class="number">1</span> + 정수<span class="number">2</span>;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(더하기(<span class="number">1</span>, <span class="number">2</span>)); <span class="comment">// 3</span></div></pre></td></tr></table></figure></li></ul></li></ul><h2 id="주말동안-할-일"><a href="#주말동안-할-일" class="headerlink" title="주말동안 할 일"></a>주말동안 할 일</h2><ul><li>한 주간 배운 내용 정리 &amp; 복습</li><li>Angular를 이용하여 Todo-list v1 만들어보기</li></ul>]]></content>
     
@@ -50,7 +50,7 @@
     <link href="http://girin-dev.github.io/2017/11/09/171109-TIL/"/>
     <id>http://girin-dev.github.io/2017/11/09/171109-TIL/</id>
     <published>2017-11-09T00:26:47.000Z</published>
-    <updated>2017-11-10T02:10:00.351Z</updated>
+    <updated>2017-11-10T02:32:30.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>Activity</p><ul><li>알고리즘 퀴즈<ul><li>[미완]caeser(s, n)</li></ul></li></ul></li><li><p>Angular Component</p><ul><li>Basics</li><li>Template</li><li>Data Binding</li><li>Built-in directive</li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li><a href="https://academy.realm.io/kr/posts/firebase-as-a-real-mobile-backend/" target="_blank" rel="external">Firebase를 실제 모바일 백엔드로 사용하면 일어날 수 있는 일들</a><ul><li>안드로이드 백엔드에 관련된 내용이라 가볍게 읽었다.</li></ul></li><li>내일은 해커톤을 한다고 하는데 이미 해본 경험도 있고 밤늦게까지 있을 수 없어서 차라리 아침 일찍 가서 일찍 돌아가야겠다.</li><li>TIL을 쓰면서 느끼는 것이 조금 부족하게 느껴지는 TIL이라도 deploy를 마치면 뭔가 해냈다는 뿌듯한 기분이 들고 하지 않고 밀려 있으며 계속 찜찜한 기분이든다는 것이다. 조금 부족하더라도 그냥 당일당일 TIL을 deploy하는 편이 낫겟다는 생각이 들었다.</li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>Angular Component 복습</li><li>Todo-list v2(no mongoDB) 작성</li><li>상호작용하는 로그인 창 만들기(no css)</li></ul>]]></content>
     
@@ -79,7 +79,7 @@
     <link href="http://girin-dev.github.io/2017/11/08/171108-TIL/"/>
     <id>http://girin-dev.github.io/2017/11/08/171108-TIL/</id>
     <published>2017-11-08T02:23:13.000Z</published>
-    <updated>2017-11-10T02:23:08.319Z</updated>
+    <updated>2017-11-10T02:32:28.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>Todo-list v2</p><ul><li><del>Firebase로 진행(not mongoDB)</del></li><li>Firebase 전까지만 진행</li></ul></li><li><p>TypeScript, Angular 복습</p></li><li><p>Angular 예습(interaction까지)</p><ul><li>몽키패치: 런타임상에서 함수, 메서드, 속성을 바꾸는 것을 이야기 한다. (<a href="http://wiki.sagwangho.com/pages/viewpage.action?pageId=4063243" target="_blank" rel="external">http://wiki.sagwangho.com/pages/viewpage.action?pageId=4063243</a>), 흥미러운 점은 원래 게릴라 패치였던 것이 발음의 유사성으로 인해 고릴라 패치가 되고, 이것이 너무 위협적으로 들려 몽키패치가 되었다는 점이다.</li></ul></li><li><p>알고리즘 퀴즈</p><ul><li>nextBigNumber()</li><li>jumpCase()</li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>jumpCase()는 도저히 모르겠어서 풀이를 찾아보니 그냥 ‘재귀임’ 이런 식의 설명이다. 그런 접근 방식이 좋은 걸까? 다른 방식으로도 도전해봐야겠다.</li><li>Todo-list v2를 firebase 기반으로 구현할 줄 알았는데 시간상의 문제로 할 수 없었다. 아쉽다. 혼자 찾아봐야 하려나?</li><li>알고리즘 퀴즈에 너무 많은 시간을 쏟는 느낌이다. 과제일지라도 하루에 1문제, 최대 1시간으로 정해야겠다.</li><li><a href="https://medium.com/@minoo/%EB%B2%88%EC%97%AD-30%EC%82%B4%EC%97%90-%EC%A3%BC%EB%8B%88%EC%96%B4-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EB%90%9C%EB%8B%A4%EB%8A%94-%EA%B2%83-being-a-junior-developer-at-30-b7b587ee4f6b" target="_blank" rel="external">[번역] 30살에 주니어 개발자가 된다는 것 (Being a Junior Developer at 30)</a></li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>수업 복습</li></ul>]]></content>
     
@@ -107,7 +107,7 @@
     <link href="http://girin-dev.github.io/2017/11/07/171107-TIL/"/>
     <id>http://girin-dev.github.io/2017/11/07/171107-TIL/</id>
     <published>2017-11-07T01:57:41.000Z</published>
-    <updated>2017-11-10T02:31:21.163Z</updated>
+    <updated>2017-11-10T02:32:27.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Angular<ul><li>Basic</li><li>Angular CLI</li><li>Architecture</li></ul></li><li>TypeScript, Angular 복습</li><li>자소서 완성</li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>PT Mono 폰트를 적용하고 vscode 설정에 “workbench.fontAliasing”: “antialiased”를 적용했다. 폰트는 마음에 들고 Aliasing은 화면이 살짝 어두워져서 좀 별로였다. 하지만 좋다고 하니까 일단 써보고 적응해봐야겠다.</li><li>개인 면담: 스타트업에 대한 정보 문의, 채용 상담에 대한 대비, 팀프로젝트와 패스트캠퍼스 운영에 대한 피드백, mongoDB 내용이 빠진 것에 대한 아쉬움 등</li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>알고리즘 퀴즈<ul><li>[미완]nextBigNumber()</li><li>jumpCase()</li></ul></li></ul>]]></content>
     
@@ -132,11 +132,11 @@
   </entry>
   
   <entry>
-    <title>171105-TIL</title>
+    <title>171106-TIL</title>
     <link href="http://girin-dev.github.io/2017/11/06/171106-TIL/"/>
     <id>http://girin-dev.github.io/2017/11/06/171106-TIL/</id>
     <published>2017-11-06T00:38:22.000Z</published>
-    <updated>2017-11-10T02:10:13.168Z</updated>
+    <updated>2017-11-10T02:32:27.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>TypeScript와 JS-SPA<ul><li>SPA</li></ul></li><li>Todo-list v2 완성(DB연결까지)</li><li>ES6 시험</li><li>HTML&amp;CSS 시험 예시 : 박스 모델이 뭐죠? grid는 어떻게 짜시나요? display 속성에 대해서 아시는대로 말씀해주세요.</li><li>TypeScript <ul><li>‘2-4. 외부 라이브러리의 사용을 위한 TypeScript Definition 설치’는 올드한 내용이라 읽을 필요가 없음.</li></ul></li><li>Angular 예습<ul><li>기존의 JavaScript/ES6 중 Class와 ES6에 대한 이해가 필요</li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2>]]></content>
     
