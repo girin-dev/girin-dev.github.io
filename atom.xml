@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2017-11-10T02:22:27.000Z</updated>
+  <updated>2017-11-10T02:24:33.175Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://girin-dev.github.io/2017/11/10/171110-TIL/"/>
     <id>http://girin-dev.github.io/2017/11/10/171110-TIL/</id>
     <published>2017-11-10T02:10:35.000Z</published>
-    <updated>2017-11-10T02:22:27.000Z</updated>
+    <updated>2017-11-10T02:24:33.175Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>복습</li><li><p>Angular Component 복습</p></li><li><p>해커톤 및 숙제</p></li><li>Todo-list v2(no mongoDB) 작성</li><li><p>상호작용하는 로그인 창 만들기(no css)</p></li><li><p>알고리즘 퀴즈</p><ul><li>[미완]caeser(s, n)</li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li><a href="https://medium.com/happyprogrammer-in-jeju/%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4-%EC%97%B0%EA%B2%B0%EB%9F%AC-%EC%95%B1-%EA%B3%B5%EA%B0%9C-%EA%B0%9C%EB%B0%9C-%ED%9B%84%EA%B8%B0-c0c5f88a86e8" target="_blank" rel="external">스타벅스 연결러 앱 공개 &amp; 개발 후기</a><ul><li>무료 어플 개발과 노동의 가시적 대가에 대한 욕심, 재미로 하는 코딩(지적유희)</li><li>신기한 한글 코딩(함수명을 한글로?) - 자바스크립트도 시도해봤는데 가능했다. 명령어나 메소드를 한글로 바꾸려는 움직임은 본 적이 있는데(말 그대로 한국어와 한글에 기반한 프로그래밍 언어 창조) 기존의 영어문 기반의 프로그래밍 언어에서도 한국어도 함수명이나 변수를 쓸 수 있는게 신기하다. 개인 프로젝트에는 한번 시도해봐야겠다. (물론 프로그래밍 언어의 작명 가이드라인에는 전혀 맞지 않을 것이다. 그 가이드라인 조차도 영어문 기준일테니.)<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> 더하기 = <span class="function">(<span class="params">정수<span class="number">1</span>, 정수<span class="number">2</span></span>) =&gt;</span> &#123;</div><div class="line">  <span class="keyword">return</span> 정수<span class="number">1</span> + 정수<span class="number">2</span>;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(더하기(<span class="number">1</span>, <span class="number">2</span>)); <span class="comment">// 3</span></div></pre></td></tr></table></figure></li></ul></li></ul><h2 id="주말동안-할-일"><a href="#주말동안-할-일" class="headerlink" title="주말동안 할 일"></a>주말동안 할 일</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>복습</li><li><p>Angular Component 복습</p></li><li><p>해커톤 및 숙제</p></li><li>Todo-list v2(no mongoDB) 작성</li><li><p>상호작용하는 로그인 창 만들기(no css)</p></li><li><p>알고리즘 퀴즈</p><ul><li>[미완]caeser(s, n)</li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li><a href="https://medium.com/happyprogrammer-in-jeju/%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4-%EC%97%B0%EA%B2%B0%EB%9F%AC-%EC%95%B1-%EA%B3%B5%EA%B0%9C-%EA%B0%9C%EB%B0%9C-%ED%9B%84%EA%B8%B0-c0c5f88a86e8" target="_blank" rel="external">스타벅스 연결러 앱 공개 &amp; 개발 후기</a><ul><li>무료 어플 개발과 노동의 가시적 대가에 대한 욕심, 재미로 하는 코딩(지적유희)</li><li>신기한 한글 코딩(함수명을 한글로?) - 자바스크립트도 시도해봤는데 가능했다. 명령어나 메소드를 한글로 바꾸려는 움직임은 본 적이 있는데(말 그대로 한국어와 한글에 기반한 프로그래밍 언어 창조) 기존의 영어문 기반의 프로그래밍 언어에서도 한국어도 함수명이나 변수를 쓸 수 있는게 신기하다. 개인 프로젝트에는 한번 시도해봐야겠다. (물론 프로그래밍 언어의 작명 가이드라인에는 전혀 맞지 않을 것이다. 그 가이드라인 조차도 영어문 기준일테니.)<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> 더하기 = <span class="function">(<span class="params">정수<span class="number">1</span>, 정수<span class="number">2</span></span>) =&gt;</span> &#123;</div><div class="line">  <span class="keyword">return</span> 정수<span class="number">1</span> + 정수<span class="number">2</span>;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(더하기(<span class="number">1</span>, <span class="number">2</span>)); <span class="comment">// 3</span></div></pre></td></tr></table></figure></li></ul></li></ul><h2 id="주말동안-할-일"><a href="#주말동안-할-일" class="headerlink" title="주말동안 할 일"></a>주말동안 할 일</h2><ul><li>한 주간 배운 내용 정리 &amp; 복습</li><li>Angular를 이용하여 Todo-list v1 만들어보기</li></ul>]]></content>
     
     <summary type="html">
     
@@ -103,11 +103,11 @@
   </entry>
   
   <entry>
-    <title>171106-TIL</title>
+    <title>171107-TIL</title>
     <link href="http://girin-dev.github.io/2017/11/07/171107-TIL/"/>
     <id>http://girin-dev.github.io/2017/11/07/171107-TIL/</id>
     <published>2017-11-07T01:57:41.000Z</published>
-    <updated>2017-11-10T02:22:28.000Z</updated>
+    <updated>2017-11-10T02:31:21.163Z</updated>
     
     <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Angular<ul><li>Basic</li><li>Angular CLI</li><li>Architecture</li></ul></li><li>TypeScript, Angular 복습</li><li>자소서 완성</li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>PT Mono 폰트를 적용하고 vscode 설정에 “workbench.fontAliasing”: “antialiased”를 적용했다. 폰트는 마음에 들고 Aliasing은 화면이 살짝 어두워져서 좀 별로였다. 하지만 좋다고 하니까 일단 써보고 적응해봐야겠다.</li><li>개인 면담: 스타트업에 대한 정보 문의, 채용 상담에 대한 대비, 팀프로젝트와 패스트캠퍼스 운영에 대한 피드백, mongoDB 내용이 빠진 것에 대한 아쉬움 등</li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>알고리즘 퀴즈<ul><li>[미완]nextBigNumber()</li><li>jumpCase()</li></ul></li></ul>]]></content>
     
