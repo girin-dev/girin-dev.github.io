@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2017-11-10T02:32:30.000Z</updated>
+  <updated>2017-11-22T03:05:54.000Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -17,23 +17,303 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>171110-TIL</title>
-    <link href="http://girin-dev.github.io/2017/11/10/171110-TIL/"/>
-    <id>http://girin-dev.github.io/2017/11/10/171110-TIL/</id>
-    <published>2017-11-10T02:10:35.000Z</published>
-    <updated>2017-11-10T02:32:30.000Z</updated>
+    <title>171122-TIL</title>
+    <link href="http://girin-dev.github.io/2017/11/22/171122-TIL/"/>
+    <id>http://girin-dev.github.io/2017/11/22/171122-TIL/</id>
+    <published>2017-11-22T02:21:48.000Z</published>
+    <updated>2017-11-22T03:05:54.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>복습</li><li><p>Angular Component 복습</p></li><li><p>해커톤 및 숙제</p></li><li>Todo-list v2(no mongoDB) 작성</li><li><p>상호작용하는 로그인 창 만들기(no css)</p></li><li><p>알고리즘 퀴즈</p><ul><li>[미완]caeser(s, n)</li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li><a href="https://medium.com/happyprogrammer-in-jeju/%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4-%EC%97%B0%EA%B2%B0%EB%9F%AC-%EC%95%B1-%EA%B3%B5%EA%B0%9C-%EA%B0%9C%EB%B0%9C-%ED%9B%84%EA%B8%B0-c0c5f88a86e8" target="_blank" rel="external">스타벅스 연결러 앱 공개 &amp; 개발 후기</a><ul><li>무료 어플 개발과 노동의 가시적 대가에 대한 욕심, 재미로 하는 코딩(지적유희)</li><li>신기한 한글 코딩(함수명을 한글로?) - 자바스크립트도 시도해봤는데 가능했다. 명령어나 메소드를 한글로 바꾸려는 움직임은 본 적이 있는데(말 그대로 한국어와 한글에 기반한 프로그래밍 언어 창조) 기존의 영어문 기반의 프로그래밍 언어에서도 한국어도 함수명이나 변수를 쓸 수 있는게 신기하다. 개인 프로젝트에는 한번 시도해봐야겠다. (물론 프로그래밍 언어의 작명 가이드라인에는 전혀 맞지 않을 것이다. 그 가이드라인 조차도 영어문 기준일테니.)<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> 더하기 = <span class="function">(<span class="params">정수<span class="number">1</span>, 정수<span class="number">2</span></span>) =&gt;</span> &#123;</div><div class="line">  <span class="keyword">return</span> 정수<span class="number">1</span> + 정수<span class="number">2</span>;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(더하기(<span class="number">1</span>, <span class="number">2</span>)); <span class="comment">// 3</span></div></pre></td></tr></table></figure></li></ul></li></ul><h2 id="주말동안-할-일"><a href="#주말동안-할-일" class="headerlink" title="주말동안 할 일"></a>주말동안 할 일</h2><ul><li>한 주간 배운 내용 정리 &amp; 복습</li><li>Angular를 이용하여 Todo-list v1 만들어보기</li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Angular 복습 &amp; 예습<ul><li>코드 일일이 치던 것 마저 진행</li><li>Service &amp; Dependency Injection, RxJS, HttpClient 복습</li><li>Todo-list v5 쌤 코드와 비교하고 다시 짜기</li><li>내일 수업 예습(Angular Routing/Module)</li></ul></li><li>반려견 프로젝트<ul><li>Wire Frame(레이아웃+기능구조) 짜기</li></ul></li><li>블로그 정리</li><li>GDG 후기</li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li><strong>Medium</strong> <a href="https://medium.com/@jwyeom63/번역-알고리즘과-자료구조를-즐겁게-배울-수-있는-앱을-만들어-보았다-641462409bc7" target="_blank" rel="external">[번역]알고리즘과 자료구조를 즐겁게 배울 수 있는 앱을 만들어 보았다</a><ul><li><a href="http://cs-playground-react.surge.sh/" target="_blank" rel="external">http://cs-playground-react.surge.sh/</a></li><li>저자가 발견한 알고리즘과 자료구조를 시각화한 사이트 (<a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" target="_blank" rel="external">https://www.cs.usfca.edu/~galles/visualization/Algorithms.html</a>)</li><li>비전공자로서 느꼈던 컴퓨터 공학 지식에 대한 갈망과 실무자로서 현업에 대한 스킬에 대한 감을 잃지는 않을까하는 갈등</li></ul></li><li><strong>CSS Weekly</strong> <a href="https://medium.freecodecamp.org/using-svg-as-placeholders-more-image-loading-techniques-bed1b810ab2c" target="_blank" rel="external">How to use SVG as a Placeholder, and Other Image Loading Techniques</a><ul><li>이미지 로딩이 완료되기 전에 사용자에게 보여줄 것</li><li>과거 여러 방법들<ul><li>아무것도 표시하지 않음: 퍼포먼스에서 이득일 수 있지만, 사용자의 경험상 최악. 레이아웃이 두두둑거리면서 바뀌기 때문에.</li><li>Placeholder: 미리 설정된 가벼운 이미지를 표시</li><li>Solid Color: 배경 색으로 설정되어 텅 비었지만 레이아웃을 유지</li><li>Progressive image loading or “Blur-up”: 특정한 처리를 통해 이미지 로딩 과정을 보여주거나, 원래 이미지를 작게 만들어 원래 사이즈로 뿌려줌으로써 블러 효과를 냄, 사용자에게 기다리면 곧 꺠끗한 이미지가 뜰 것이라는 생각을 하게함.</li></ul></li><li>SVG-based placeholders(기본적으로 이미지를 코드처리하여 여러 기교를 부리는 느낌)<ul><li><a href="https://codepen.io/jmperez/pen/oogqdp" target="_blank" rel="external">Edges</a>: 가장 충격적. 이미지를 로딩하는 동안 이미지의 테두리를 그리는 과정을 애니메이션으로 표시</li><li><a href="https://codepen.io/jmperez/pen/BmaWmQ" target="_blank" rel="external">Shapes</a>: 이미지의 내용을 삼각형 처리하여 표시. “Blur-up”과 유사</li><li><a href="https://github.com/technopagan/sqip" target="_blank" rel="external">SQIP</a>: 블러처리와 비슷, 그러나 용량을 획기적으로 줄일 수 있는 것 같음</li><li><a href="https://codepen.io/ainalem/pen/aLKxjm" target="_blank" rel="external">Silhouettes</a>: 두톤 실루엣을 보여주고 그 위로 원본 이미지가 로딩되면 덮어버리는 방식. 나쁘지 않음. 코드가 긴 건 Edges와 매한가지인듯</li></ul></li><li>여러 방식이 있었고 특히 SVG를 활용하여 코드 처리를 하면 사용자에게 지루한 로딩 시간을 더 좋은 경험으로 줄 수 있지 않을까 생각하게 됨.</li><li>너무 길어서 나중에 따로 빼서 정리해야겠다.</li></ul></li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>Angular Routing/Module</li><li>Angular 복습 &amp; 예습<ul><li>Todo-list v5 쌤 코드와 비교하고 다시 짜기</li></ul></li></ul>]]></content>
     
     <summary type="html">
     
       
       
         &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;복습&lt;/li&gt;
+&lt;li&gt;Angular 복습 &amp;amp; 예습&lt;ul&gt;
+&lt;li&gt;코드 일일이 치던 것 마저 진행&lt;/l
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>171121-TIL</title>
+    <link href="http://girin-dev.github.io/2017/11/21/171121-TIL/"/>
+    <id>http://girin-dev.github.io/2017/11/21/171121-TIL/</id>
+    <published>2017-11-21T01:17:57.000Z</published>
+    <updated>2017-11-22T02:40:43.325Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>블로그 정리</li><li>Angular Forms<ul><li>Template-driven Forms</li><li>Reactive Forms</li></ul></li><li>Angular 복습 &amp; 예습<ul><li>코드 일일이 치던 것 마저 진행</li><li>Service &amp; Dependency Injection, RxJS, HttpClient 복습</li><li>Todo-list v5 쌤 코드와 비교하고 다시 짜기</li><li>내일 수업 예습</li></ul></li><li>GDG 후기</li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>id의 유효성 검사해서 css를 변경하기</li><li><a href="https://medium.com/@jwyeom63/번역-정규표현식으로-5일-걸리는-작업-15분만에-끝내기-2e615a907048" target="_blank" rel="external">[번역]정규표현식으로는 5일 걸리는 작업, 15분만에 끝내기</a><ul><li><a href="https://github.com/vi3k6i5/flashtext" target="_blank" rel="external">FlashText</a></li><li>처리데이터의 증가량에 따라 처리시간이 늘어나는 정규표현식에 비해 처리데이터량에 관계없이 처리시간이 일정한, 순수 파이썬 기반의 라이브러리</li><li>찾고자 하는 단어가 문장안에 있는지를 찾는 방식이 아니라 문장을 분해하여 그것이 찾고자 하는 단어 뭉치(corpus)에 있느냐를 따지는 방식</li><li>특수문자를 지원하지 않고 찾아야 할 키워드가 500개 이상일 경우 유의미</li></ul></li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>블로그 정리</li><li>Angular<ul><li>Todo-list v5 쌤 코드와 비교하고 다시 짜기</li></ul></li><li>GDG 후기</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;블로그 정리&lt;/li&gt;
+&lt;li&gt;Angular Forms&lt;ul&gt;
+&lt;li&gt;Template-d
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>171120-TIL</title>
+    <link href="http://girin-dev.github.io/2017/11/20/171120-TIL/"/>
+    <id>http://girin-dev.github.io/2017/11/20/171120-TIL/</id>
+    <published>2017-11-20T01:28:41.000Z</published>
+    <updated>2017-11-22T02:40:46.155Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>블로그 정리</li><li>Angular Service<ul><li>Service &amp; Dependency Injection</li><li>RxJS</li><li>HTTP</li></ul></li><li>Angular 복습 &amp; 예습<ul><li>코드 일일이 치던 것 마저 진행</li><li>Service &amp; Dependency Injection, RxJS, HttpClient 복습</li><li>Todo-list v5 쌤 코드와 비교하고 다시 짜기</li><li>내일 수업 예습</li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>Angular 복습<ol><li>올체크하기() &amp; 올삭제하기(사실 안 됨)</li><li>체크된거 카운트하고 삭제하기</li><li>리스트 누르면 인풋으로 바뀌고 수정하기</li><li>전체지우기</li></ol></li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>블로그 정리</li><li>Angular<ul><li>Todo-list v5 쌤 코드와 비교하고 다시 짜기</li></ul></li><li>GDG 후기</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;블로그 정리&lt;/li&gt;
+&lt;li&gt;Angular Service&lt;ul&gt;
+&lt;li&gt;Service 
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>171118-171119-TIL</title>
+    <link href="http://girin-dev.github.io/2017/11/19/171118-171119-TIL/"/>
+    <id>http://girin-dev.github.io/2017/11/19/171118-171119-TIL/</id>
+    <published>2017-11-19T01:28:37.000Z</published>
+    <updated>2017-11-22T02:34:32.392Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="주말동안-한-일"><a href="#주말동안-한-일" class="headerlink" title="주말동안 한 일"></a>주말동안 한 일</h2><ul><li>GDG 컨퍼런스 참석</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;주말동안-한-일&quot;&gt;&lt;a href=&quot;#주말동안-한-일&quot; class=&quot;headerlink&quot; title=&quot;주말동안 한 일&quot;&gt;&lt;/a&gt;주말동안 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;GDG 컨퍼런스 참석&lt;/li&gt;
+&lt;/ul&gt;
+
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>171117-TIL</title>
+    <link href="http://girin-dev.github.io/2017/11/17/171117-TIL/"/>
+    <id>http://girin-dev.github.io/2017/11/17/171117-TIL/</id>
+    <published>2017-11-17T04:34:45.000Z</published>
+    <updated>2017-11-22T02:34:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>WebSocket, DataStructure, Gulp 특강</li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>김데레사님과의 만남<ul><li>HTTP/CSS, TypeScript와 Angular/웹접근성</li></ul></li></ul><h2 id="주말동안-할-일"><a href="#주말동안-할-일" class="headerlink" title="주말동안 할 일"></a>주말동안 할 일</h2><ul><li>GDG 컨퍼런스 참석</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;WebSocket, DataStructure, Gulp 특강&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>171116-TIL</title>
+    <link href="http://girin-dev.github.io/2017/11/17/171116-TIL/"/>
+    <id>http://girin-dev.github.io/2017/11/17/171116-TIL/</id>
+    <published>2017-11-17T04:34:39.000Z</published>
+    <updated>2017-11-22T02:34:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>Angular</p><ul><li>Todo-list v5 실습</li></ul></li><li><p>반려견 프로젝트</p><ul><li>Wire Frame(레이아웃+기능구조) 짜기</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Angular&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Todo-list v5 실습&lt;/li&gt;
+&lt;/u
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>171115-TIL</title>
+    <link href="http://girin-dev.github.io/2017/11/15/171115-TIL/"/>
+    <id>http://girin-dev.github.io/2017/11/15/171115-TIL/</id>
+    <published>2017-11-15T01:36:00.000Z</published>
+    <updated>2017-11-22T03:05:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Angular 복습<ul><li>코드 쭉 따라치기</li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>질문사항<ul><li>Interaction 부분. 부모-&gt;자식 상태전달시 FormModules를 써야만 하는 이유가 뭘까? (안 쓰면 자꾸 화면이 새로고침 된다.)</li><li>builtIn-directive 부분. 값 입력 후 input 창의 값을 지워지게 하려면 어떻게 해야 할까?</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Angular 복습&lt;ul&gt;
+&lt;li&gt;코드 쭉 따라치기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>171114-TIL</title>
+    <link href="http://girin-dev.github.io/2017/11/14/171114-TIL/"/>
+    <id>http://girin-dev.github.io/2017/11/14/171114-TIL/</id>
+    <published>2017-11-14T01:17:42.000Z</published>
+    <updated>2017-11-22T02:32:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Angular Directive<ul><li>Directive</li><li>Pipe</li><li>LifeCycle Hooks</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Angular Directive&lt;ul&gt;
+&lt;li&gt;Directive&lt;/li&gt;
+&lt;li&gt;Pip
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>171113-TIL</title>
+    <link href="http://girin-dev.github.io/2017/11/13/171113-TIL/"/>
+    <id>http://girin-dev.github.io/2017/11/13/171113-TIL/</id>
+    <published>2017-11-13T07:54:41.000Z</published>
+    <updated>2017-11-22T02:32:05.626Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Angular Component<ul><li>Interaction</li><li>Accessing Child</li><li>Style</li></ul></li><li>자소서 수정(자기 전에)</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Angular Component&lt;ul&gt;
+&lt;li&gt;Interaction&lt;/li&gt;
+&lt;li&gt;A
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>171111-171112-TIL</title>
+    <link href="http://girin-dev.github.io/2017/11/12/171111-171112-TIL/"/>
+    <id>http://girin-dev.github.io/2017/11/12/171111-171112-TIL/</id>
+    <published>2017-11-12T06:50:20.000Z</published>
+    <updated>2017-11-22T02:31:05.921Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="주말동안-한-일"><a href="#주말동안-한-일" class="headerlink" title="주말동안 한 일"></a>주말동안 한 일</h2><ul><li>한 주간 배운 내용 정리 &amp; 복습</li><li>Angular를 이용하여 Todo-list v1 만들어보기</li><li>MS Azure를 활용하여 챗봇 만들기<ul><li>Node.js를 활용</li><li><a href="https://portal.azure.com/" target="_blank" rel="external">Azure</a>와 <a href="https://www.luis.ai/" target="_blank" rel="external">luis.ai</a>를 활용.</li></ul></li><li>알고리즘 퀴즈<ul><li>[미완]caeser(s, n) </li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;주말동안-한-일&quot;&gt;&lt;a href=&quot;#주말동안-한-일&quot; class=&quot;headerlink&quot; title=&quot;주말동안 한 일&quot;&gt;&lt;/a&gt;주말동안 한 일&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;한 주간 배운 내용 정리 &amp;amp; 복습&lt;/li&gt;
+&lt;li&gt;Angular를
+      
+    
+    </summary>
+    
+      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
+    
+    
+      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>171110-TIL</title>
+    <link href="http://girin-dev.github.io/2017/11/10/171110-TIL/"/>
+    <id>http://girin-dev.github.io/2017/11/10/171110-TIL/</id>
+    <published>2017-11-10T02:10:35.000Z</published>
+    <updated>2017-11-22T03:05:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>Angular Component 복습</p></li><li><p>해커톤 및 숙제</p><ul><li>상호작용하는 로그인 창 만들기(no css)</li><li>변수 생성기<ul><li>변수 케이스 체크 및 저장된 변수 불러오기</li><li>Todo-list를 커스텀</li></ul></li></ul></li><li><p>알고리즘 퀴즈</p><ul><li>[미완]caeser(s, n)</li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>프론트엔드 개발자인데 HTML과 CSS를 거의 까먹었다. 더 잊기 전에 복습해야겠다.</li><li>다른 스쿨 사람들은 해커톤에서 재미있는 기획을 많이 해왔다. 프론트엔드 스쿨의 특성탓도 물론 있었겠지만 재미있는 이벤트로 다가오지 않았던 것이 아쉽다.</li></ul><h2 id="주말동안-할-일"><a href="#주말동안-할-일" class="headerlink" title="주말동안 할 일"></a>주말동안 할 일</h2><ul><li>한 주간 배운 내용 정리 &amp; 복습</li><li>Angular를 이용하여 Todo-list v1 만들어보기</li></ul><h2 id="읽을만한-글-링크"><a href="#읽을만한-글-링크" class="headerlink" title="읽을만한 글(링크)"></a>읽을만한 글(링크)</h2><ul><li><p><a href="https://medium.com/happyprogrammer-in-jeju/%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4-%EC%97%B0%EA%B2%B0%EB%9F%AC-%EC%95%B1-%EA%B3%B5%EA%B0%9C-%EA%B0%9C%EB%B0%9C-%ED%9B%84%EA%B8%B0-c0c5f88a86e8" target="_blank" rel="external">스타벅스 연결러 앱 공개 &amp; 개발 후기</a></p><ul><li>무료 어플 개발과 노동의 가시적 대가에 대한 욕심, 재미로 하는 코딩(지적유희)</li><li>신기한 한글 코딩(함수명을 한글로?) - 자바스크립트도 시도해봤는데 가능했다. 명령어나 메소드를 한글로 바꾸려는 움직임은 본 적이 있는데(말 그대로 한국어와 한글에 기반한 프로그래밍 언어 창조) 기존의 영어문 기반의 프로그래밍 언어에서도 한국어도 함수명이나 변수를 쓸 수 있는게 신기하다. 개인 프로젝트에는 한번 시도해봐야겠다. (물론 프로그래밍 언어의 작명 가이드라인에는 전혀 맞지 않을 것이다. 그 가이드라인 조차도 영어문 기준일테니.)<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> 더하기 = <span class="function">(<span class="params">정수<span class="number">1</span>, 정수<span class="number">2</span></span>) =&gt;</span> &#123;</div><div class="line">  <span class="keyword">return</span> 정수<span class="number">1</span> + 정수<span class="number">2</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(더하기(<span class="number">1</span>, <span class="number">2</span>)); <span class="comment">// 3</span></div></pre></td></tr></table></figure></li></ul></li><li><p><a href="http://www.mattzeunert.com/2017/10/30/javascript-free-todo-app.html?utm_source=CSS-Weekly&amp;utm_campaign=Issue-288&amp;utm_medium=email" target="_blank" rel="external">HTML&amp;CSS만으로 Todo-list 만들기</a></p></li><li><a href="https://medium.com/coding-artist/how-creating-css-images-made-me-a-better-developer-25b7a79f1af6" target="_blank" rel="external">How creating CSS images made me a better developer</a><ul><li>위 두 글에서도 나타나듯 최근엔 디자인적인 면, 애니메이션의 부분을 css만으로 처리하려는 경향이 있고 심지어 (물론 매우 괴랄맞게 길어진 코드지만) 유저와의 상호작용도 CSS만으로 처리해보려는 시도가 이어지고 있다. 프론트엔드 프레임워크를 대체할리는 없겠지만, css가 더 발전한다면 jQuery 정도는 대체하는 날이 올 수 있지도 않을까? 하는 생각이 들었다.</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Angular Component 복습&lt;/p&gt;
 &lt;/li&gt;
-&lt;l
+&lt;li&gt;&lt;p&gt;해커톤 및 숙
       
     
     </summary>
@@ -288,288 +568,6 @@
 &lt;li&gt;&lt;p&gt;Sass를 이용한 Grid 만들기(임기완 조교님)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a h
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript-23-Array</title>
-    <link href="http://girin-dev.github.io/2017/10/31/JavaScript-23-Array/"/>
-    <id>http://girin-dev.github.io/2017/10/31/JavaScript-23-Array/</id>
-    <published>2017-10-31T11:03:40.000Z</published>
-    <updated>2017-11-02T03:15:04.827Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="JavaScript-23-배열-Array"><a href="#JavaScript-23-배열-Array" class="headerlink" title="JavaScript 23. 배열 (Array)"></a>JavaScript 23. 배열 (Array)</h1><h2 id="배열의-생성"><a href="#배열의-생성" class="headerlink" title="배열의 생성"></a>배열의 생성</h2><h2 id="배열-요소의-추가와-삭제"><a href="#배열-요소의-추가와-삭제" class="headerlink" title="배열 요소의 추가와 삭제"></a>배열 요소의 추가와 삭제</h2><h2 id="배열-요소의-열거"><a href="#배열-요소의-열거" class="headerlink" title="배열 요소의 열거"></a>배열 요소의 열거</h2><h2 id="Array-Property"><a href="#Array-Property" class="headerlink" title="Array Property"></a>Array Property</h2><h2 id="Array-Method"><a href="#Array-Method" class="headerlink" title="Array Method"></a>Array Method</h2><ul><li><code>Array.prototype.forEach()</code><ul><li>각 요소 순회하면서 무언가 함</li><li>원본배열 유지(콜백함수의 세번째 인자로 원본배열 조작가능)</li><li>두번째 인자 this 가능</li></ul></li><li><code>Array.prototype.map()</code><ul><li>원본배열을 1:1 매핑하는 새로운 배열 생성</li><li>원본배열 유지(콜백함수의 세번째 인자로 원본배열 조작가능)</li><li>두번째 인자 this 가능</li></ul></li><li><code>Array.prototype.filter()</code><ul><li>return값이 true인 값만을 추려 새로운 배열 생성(if문처럼 다양하게 활용가능)</li><li>원본배열 유지</li><li>두번째 인자 this 가능</li></ul></li><li><code>Array.prototype.reduce()</code><ul><li>이전 콜백의 반환값(이전 순회에서 반환한 값)을 인자로 받아와 이용.(재귀적 특징)</li><li>원본배열에 영향을 주지 않음.ㅍ</li></ul></li><li><code>Array.prototype.find()</code><ul><li>있는지 없는지가 중요하기 때문에 처음으로 찾으면 그 값을 반환.</li><li>원본배열에 영향을 주지 않음.</li><li>ES6에 새롭게 도입 (IE미지원)</li><li><strong>객체를 가진 배열</strong>에 유용하게 쓸 수 있음.</li><li>filter()가 콜백함수에 의해 반환된 것들을 묶은 배열을 반환하는 것에 반해, find()는 콜백함수에 의해 반환된 첫번째 요소를 반환</li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;JavaScript-23-배열-Array&quot;&gt;&lt;a href=&quot;#JavaScript-23-배열-Array&quot; class=&quot;headerlink&quot; title=&quot;JavaScript 23. 배열 (Array)&quot;&gt;&lt;/a&gt;JavaScript 23. 배열
-      
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="http://girin-dev.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="http://girin-dev.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171031-TIL</title>
-    <link href="http://girin-dev.github.io/2017/10/31/171031-TIL/"/>
-    <id>http://girin-dev.github.io/2017/10/31/171031-TIL/</id>
-    <published>2017-10-31T00:56:09.000Z</published>
-    <updated>2017-11-01T11:29:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>Express</p><ul><li>Basic(Routing, Middleware, Static file, Template engine)</li></ul></li><li><p><a href="https://github.com/girin-dev/Todo-List-v3" target="_blank" rel="external">Todo-list.v3</a></p><ul><li>axios, babel-polyfill, body-parser, dotenv, express, mongoose</li><li>sass, webpack, eslint</li><li>MongoDB와 mLab(<a href="https://mlab.com/" target="_blank" rel="external">https://mlab.com/</a>) 활용</li><li>Back-end와 서버는 ungmo2님 제공</li></ul></li><li><p>JavaScript 집중 체크리스트</p></li><li><p>res.data와 err.response</p></li></ul><h1 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h1><ul><li>사파리의 주소창에서 enter키가 작동하지 않는 오류로 며칠동안 고생했는데, 맥을 껐다켰더니 해결되었다.</li><li>사실 코멘트(주석)이 없이 읽혀지는 코드가 베스트. 하지만 반드시 그럴 수는 없기 때문에 약간의 코멘트를 추가해주는 것. 너무 많아도 좋지 않다.</li><li>CSS 프레임워크 <a href="https://cssauthor.com/css-frameworks" target="_blank" rel="external">100+ Best CSS Frameworks for Responsive Design</a>, <a href="https://semantic-ui.com/" target="_blank" rel="external">Semantic UI</a>, <a href="http://getbootstrap.com/" target="_blank" rel="external">Bootstratp</a>, <a href="http://www.material-ui.com/#/" target="_blank" rel="external">Material Design</a></li><li>팀프로젝트가 잘 되었으면 좋겠다. 팀프로젝트를 통해 협업과 소통의 경험을 쌓고, 몰랐던 지식을 습득적용하며, 부수적으로는 가시적 결과물로 만족감도 얻고 싶다.</li><li>axios: promise를 지원하는 HTTP 클라이언트 라이브러리</li><li><a href="https://medium.com/@jwyeom63/더-이상-배우려-하지-않는-개발자-expert-beginner의-등장-dd40c40aeedf" target="_blank" rel="external">더 이상 배우려 하지 않는 개발자 : Expert Beginner의 등장</a><ul><li>신기술에 관심없는 개발자 이야기일 줄 알았는데, 자신이 부족한 점을 잘 알지 못한 채 주변 몇몇 성과물을 갖고 더이상 발전할 필요를 느끼지 못하는 개발자에 대한 이야기.</li><li>지난 2년동안의 나의 모습이 이런 Expert Beginner의 모습이 아니었을까?</li><li>언제든지 다시 올 수 있고, 그 사실조차 알아챌 수 없을지도 모른다. 해결방법은 피어리뷰(peer review)와 개발자 커뮤니티와의 교류.</li></ul></li></ul><h1 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h1><ul><li><p>팀프로젝트: 반려동물</p><ul><li>depth 짜기(Information Architecture)</li></ul></li><li><p>알고리즘 퀴즈</p><ul><li>[미완]nextBigNumber()</li><li>[미완]isPair() 괄호 확인하기</li></ul></li><li><p>Todo-list v2</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Express&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Basic(Routing, Middlewar
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171030-TIL</title>
-    <link href="http://girin-dev.github.io/2017/10/30/171030-TIL/"/>
-    <id>http://girin-dev.github.io/2017/10/30/171030-TIL/</id>
-    <published>2017-10-30T01:24:04.000Z</published>
-    <updated>2017-10-31T11:53:09.168Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>ES6<ul><li>Promise</li></ul></li><li>Node.js &amp; Express<ul><li>Node.js<ul><li>basics</li><li>모듈화와 npm<ul><li><a href="http://d2.naver.com/helloworld/12864" target="_blank" rel="external">JavaScript 표준을 위한 움직임: CommonJS와 AMD</a></li></ul></li><li>Module loading system</li></ul></li><li>Express<ul><li>Basic(Routing, Middleware, Static file, Template engine) 맛보기</li></ul></li></ul></li><li>Todo-list.v1 복기</li><li>알고리즘 퀴즈<ul><li>[미완]nextBigNumber()</li></ul></li><li>맘에 드는 codepen<ul><li><a href="https://codepen.io/tonkec/pen/jWmgqN" target="_blank" rel="external">https://codepen.io/tonkec/pen/jWmgqN</a></li><li><a href="https://codepen.io/2016/popular/pens/" target="_blank" rel="external">2016 인기있는 codepen</a></li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>HTTP error code 304<ul><li>이미 캐시에 저장이 되어 받아온 데이터의 변경이 없어 캐시에 저장된 데이터를 그대로 불러올 때.</li><li><a href="http://ohgyun.com/175" target="_blank" rel="external">http://ohgyun.com/175</a></li></ul></li><li>좋은 책<ul><li><a href="http://www.aladin.co.kr/shop/common/wseriesitem.aspx?SRID=96627" target="_blank" rel="external">You don’t know JS</a></li></ul></li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>Express<ul><li>Error handling</li></ul></li><li>알고리즘 퀴즈<ul><li>[미완]nextBigNumber()</li><li>[미완]isPair() 괄호 확인하기</li></ul></li><li>JavaScript 집중 체크리스트</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;ES6&lt;ul&gt;
-&lt;li&gt;Promise&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Node.js
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171028-171029-TIL</title>
-    <link href="http://girin-dev.github.io/2017/10/28/171028-171029-TIL/"/>
-    <id>http://girin-dev.github.io/2017/10/28/171028-171029-TIL/</id>
-    <published>2017-10-28T13:22:23.000Z</published>
-    <updated>2017-10-30T16:49:04.320Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="주말동안-한-일"><a href="#주말동안-한-일" class="headerlink" title="주말동안 한 일"></a>주말동안 한 일</h2><ul><li><p>알고리즘 퀴즈</p><ul><li>getMinSum() 최솟값 만들기</li><li>isPair() 미완</li></ul></li><li><p>Todo-list 복기</p></li><li><p>JavaScript 집중 체크리스트</p><ul><li><code>Array.prototype.(map, filter, reduce, forEach)</code><ul><li><code>forEach</code>: 각 요소 순회하면서 무언가 함, 원본배열 유지(콜백함수의 세번째 인자로 원본배열 조작가능), 두번째 인자 this 가능</li><li><code>map</code>: 원본배열을 1:1 매핑하는 새로운 배열 생성, 원본배열 유지(콜백함수의 세번째 인자로 원본배열 조작가능), 두번째 인자 this 가능</li><li><code>filter</code>: return값이 true인 값만을 추려 새로운 배열 생성(if문처럼 다양하게 활용가능), 원본배열 유지, 두번째 인자 this 가능</li><li><code>reduce</code>: 이전 콜백의 반환값(이전 순회에서 반환한 값)을 인자로 받아와 이용.(재귀적 특징), 원본배열 유지, </li></ul></li></ul></li><li><p>예습</p><ul><li>ES6-Promise</li><li>Node.js</li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;주말동안-한-일&quot;&gt;&lt;a href=&quot;#주말동안-한-일&quot; class=&quot;headerlink&quot; title=&quot;주말동안 한 일&quot;&gt;&lt;/a&gt;주말동안 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;알고리즘 퀴즈&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;getMinSum() 최솟값 
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171027-TIL</title>
-    <link href="http://girin-dev.github.io/2017/10/27/171027-TIL/"/>
-    <id>http://girin-dev.github.io/2017/10/27/171027-TIL/</id>
-    <published>2017-10-27T08:36:38.000Z</published>
-    <updated>2017-10-30T14:22:53.044Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>Network &amp; Database 특강</p><ul><li>Network<ul><li>LAN, WAN, MAN, WLAN</li><li>네트워크 연결 구조 방식: Star, Ring, Bus</li><li>Network OSI 7 layers</li><li>Packet에서 byte와 octet</li><li>HTTP(HyperText Transfer Protocol)의 TCP/UDP</li><li>IP갯수와 인구수의 괴리?(사설IP와 공인IP</li><li>IPv4와 IPv6</li></ul></li><li>Database<ul><li>DB와 DBMS(DataBase Management System)<ul><li>흔히 떠올리는 Oracle, Mysql 등은 DB가 아니라 DBMS</li></ul></li><li>DataBase와 File System(OS의 저장방식)의 차이<ul><li>자기기술성, 어플리케이션 종석성이 DBMS에는 없다. File System에서 1.hwp를 열려면 한글 프로그램이 있어야 한다.</li></ul></li><li>SQL과 NoSQL</li><li>MongoDB &amp; robomongo 설치</li></ul></li></ul></li><li><p>알고리즘 퀴즈</p><ul><li>(미완)isPair() 괄호 확인하기</li></ul></li><li><p>LINE PLUS 동계인턴 채용상담</p><ul><li>이태원 라인프렌즈샵</li></ul></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul><li><p>IPv4와 IPv6</p><ul><li>처음에 255.255.255.0처럼 각 자리를 세 자리 수로 끊는 IPv4와 IPv6가 왜 각 자리를 네 자리 수로 끊는지 궁금했다.(FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF)서양인들한테는 숫자를 세자리 수로 끊어 읽는게 편할텐데.</li><li>그런데 다시 생각해보니 이 의문이 지극히 인문학적이라는 생각이 들었다. 사실 저 숫자의 자리 수는 십육진수를 몇 개 표현할 것인가에 따른 것으로 인간이 읽는 십진수와는 전혀 다른 것인데, 몇 자리로 끊은들 그것으 무슨 상관이겠느냐는 생각이다.</li></ul></li><li><p>LINE PLUS 동계인턴 채용상담</p><ul><li>수업 1시간을 뺴먹으면서까지 받고 싶었던 상담이었는데 1시간 반을 넘게 기다려도 순서가 안 오길래 결국 받지 못하고 나왔다. 나오면서 채용담당자는 아니지만 행사 책임자로 보이는 직원 분이 간단하게 질의응답을 해주셨다. 하지만 질의응답 공식 루트인 페북 페이지로 구체적 답변을 받아야겠다. </li><li>이해가 가지 않았던 것이 웹 Front-End 직군도 Python이나 C/C++, Java 시험을 통해 뽑는다는 것이다. HTML이나 CSS는 아니더라도 JavaScript로 볼 수 있는 기회는 줘야 하는 것이 아닌가 싶은데… 접수 책임자분이 잘못 알려주신 것이기를 바랄 수 밖에 없을 듯 싶다.</li><li>개발 직군이야 당연히 그렇겠지만 전공지식(컴공)을 많이 물어본다고 한다. 코딩시험 언어 제한도 그렇고… 뭐 당연한거겠지만, 전공과 무관하게 뽑겠다고 했으면서도 왠만하면 전공인 사람이 오길 바라는 것 같았다.</li></ul></li></ul><h2 id="주말동안-할-일"><a href="#주말동안-할-일" class="headerlink" title="주말동안 할 일"></a>주말동안 할 일</h2><ul><li>Todo-list3 까지 마무리</li><li>JavaScript 집중 체크리스트</li><li>예습</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Network &amp;amp; Database 특강&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Networ
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171026-TIL</title>
-    <link href="http://girin-dev.github.io/2017/10/26/171026-TIL/"/>
-    <id>http://girin-dev.github.io/2017/10/26/171026-TIL/</id>
-    <published>2017-10-26T08:41:51.000Z</published>
-    <updated>2017-10-30T01:59:36.383Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>ES6</p><ul><li>Destructuring</li><li>Class</li><li>Module</li></ul></li><li><p>알고리즘 퀴즈</p><ul><li>lv2_sumBetween</li></ul></li><li><p>프로젝트 팀 빌딩</p><ul><li>반려동물팀</li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;ES6&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Destructuring&lt;/li&gt;
-&lt;li&gt;Class
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171025-TIL</title>
-    <link href="http://girin-dev.github.io/2017/10/25/171025-TIL/"/>
-    <id>http://girin-dev.github.io/2017/10/25/171025-TIL/</id>
-    <published>2017-10-25T12:51:32.000Z</published>
-    <updated>2017-10-30T14:23:54.732Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>알고리즘 퀴즈<ul><li>lv2_logestPalindrom</li></ul></li><li>Todo-list2<ul><li>임기완 조교님의 라이브코딩</li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;알고리즘 퀴즈&lt;ul&gt;
-&lt;li&gt;lv2_logestPalindrom&lt;/li&gt;
-&lt;/ul&gt;
-&lt;
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171024-TIL</title>
-    <link href="http://girin-dev.github.io/2017/10/24/171024-TIL/"/>
-    <id>http://girin-dev.github.io/2017/10/24/171024-TIL/</id>
-    <published>2017-10-24T02:16:09.000Z</published>
-    <updated>2017-10-30T16:49:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>ES6<ul><li>let, const</li><li>Template Literals</li><li>Arrow function</li><li>Extended Parameter Handling</li><li>Enhanced Object property</li></ul></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul><li>동욱형과 만났다. 이 형도 프론트엔드 개발을 하고 있고, IT분야에 대한 관심이 많아서 서로간에 이야기할 것이 많았다. 11월에 있을 <a href="https://devfest17-seoul.firebaseapp.com/" target="_blank" rel="external">GDG</a>에서도 만나기로 했다.</li><li>동욱형이 알려준 사이트<ul><li><a href="https://www.youtube.com/user/as3as3as3as3" target="_blank" rel="external">Hika Maeng의 유튜브</a></li><li><a href="http://wesbos.com/javascript30/" target="_blank" rel="external">JavaScript, ES6 참고사이트</a></li></ul></li><li>며칠 전부터 갑작스럽게 ‘컴공 부전공으로라도 할까?’라는 생각이 든다. 30학점만 들으면 되니까 1학기만 추가해서 다니면 충분할 것 같기도 한데… 원래 수료후 바로 구직활동을 하려고 했는데 고민이다.</li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;ES6&lt;ul&gt;
-&lt;li&gt;let, const&lt;/li&gt;
-&lt;li&gt;Template Literal
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171023-TIL</title>
-    <link href="http://girin-dev.github.io/2017/10/23/171023-TIL/"/>
-    <id>http://girin-dev.github.io/2017/10/23/171023-TIL/</id>
-    <published>2017-10-23T06:33:37.000Z</published>
-    <updated>2017-10-29T14:51:26.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>JavaScript</p><ul><li>시험 + 복습</li><li>Todo-list2 복습</li></ul></li><li><p>Sass 특강</p><ul><li>Basics</li><li>SassScript</li><li>CSS Extensions</li><li>Built-in Function</li></ul></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul><li>시험을 봤는데 부족한 점이 많은 것이 느껴진다.</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;JavaScript&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;시험 + 복습&lt;/li&gt;
-&lt;li&gt;Todo
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171021-171022-TIL</title>
-    <link href="http://girin-dev.github.io/2017/10/22/171021-171022-TIL/"/>
-    <id>http://girin-dev.github.io/2017/10/22/171021-171022-TIL/</id>
-    <published>2017-10-22T00:12:35.000Z</published>
-    <updated>2017-10-29T06:26:11.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="주말동안-한-일"><a href="#주말동안-한-일" class="headerlink" title="주말동안 한 일"></a>주말동안 한 일</h2><ul><li><p>2017 FEconf</p><ol><li>Performance Optimization</li><li>JavaScript Fatigue</li><li>electron으로 만드는 데스크탑 메신저</li><li>Redux-thunk에서 Redux-saga로</li><li>쉽게 써봅시다. RxJS!</li><li>Angular 컴포넌트 대화법</li><li>TypeScript가 그대를 이롭게 할지니!</li></ol></li><li><p>Todo-list2</p><ul><li>기본 기능 구현 완료</li><li>그러나 id값 함수은 구현하지 못하고, 삭제 기능도 불완전(값만을 삭제)</li></ul></li><li><p>시험대비 복습</p></li></ul><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2><ul><li>퍼포먼스 최적화<ul><li>서비스를 단 0.1초라도 빠르게 만들고자 하는 개발자들의 고충이 느껴진다. 이미지를 줄이고 코드를 줄이고 렌더 방식을 손보고 등등 현업에서 개발자들이 어떻게든 빠르게 화면을 띄우려는 노력이 중요한 것 같다.</li></ul></li><li>2017 FEconf에 가서 사실 많은 내용은 이해하기 어려운 내용이었다. 내가 아직 모르는 것들이 많았고, TypeScript나 Angular도 내가 아직 배우지 않은 내용이라 멀뚱멀뚱 볼 수 밖에 없었다. electron이 역시 신기하다는 것이 기억이 나고 계속해서 변천사를 겪고 있는 JavaScript의 얄궂은 운명을 알 수 있었다. </li><li>무엇을 해야 가장 좋을지는 모르겠다. 그렇다고 모든 걸 마스터할때까지 기다릴 수는 없는 법이다.</li><li>최신의 기술, 트렌드는 무엇이고 개발자들의 열정만큼은 확실히 알 수 있었다. 최근의 트렌드는 <strong>컴포넌트화</strong>이다.</li><li>사실 가장 큰 성과는 우연히 지인을 만난 것이다. 프로그래밍 동아리 Codrug 창립자 중 한 명이었던 동욱이 형인데, 같이 서로간의 공부 내용을 공유하고 진로 방향에 대해서도 이야기를 나눌 수 있었다. 신사역 근처에서 일하고 계신다는 내용도 알게 되어 나중에 한번 만나 커피라도 마시자고 했다.</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;주말동안-한-일&quot;&gt;&lt;a href=&quot;#주말동안-한-일&quot; class=&quot;headerlink&quot; title=&quot;주말동안 한 일&quot;&gt;&lt;/a&gt;주말동안 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;2017 FEconf&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Performance 
       
     
     </summary>
