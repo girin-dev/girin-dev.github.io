@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 180118-TypeScript_Meetup · 기린개발의 일지</title><meta name="description" content="180118-TypeScript_Meetup - Girin-dev"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://girin-dev.github.io/atom.xml" title="기린개발의 일지"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/categories/" target="_self" class="nav-list-link">CATEGORY</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="https://github.com/girin-dev" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">180118-TypeScript_Meetup</h1><div class="post-info">2018년 1월 18일</div><div class="post-content"><h1 id="TypeScript-Meetup"><a href="#TypeScript-Meetup" class="headerlink" title="TypeScript Meetup"></a>TypeScript Meetup</h1><h2 id="손찬욱님-NAVER-TypeScript로부터-얻은-것과-잃은-것"><a href="#손찬욱님-NAVER-TypeScript로부터-얻은-것과-잃은-것" class="headerlink" title="손찬욱님 (NAVER) - TypeScript로부터 얻은 것과 잃은 것"></a>손찬욱님 (NAVER) - TypeScript로부터 얻은 것과 잃은 것</h2><ul>
+<li>egjs, 다형성, <a href="https://naver.github.io/egjs-axes/" target="_blank" rel="external">eg.Axes</a></li>
+<li>TypeScript를 도입하기 전까지<ul>
+<li>인터페이스를 이용하면 좋았을텐데</li>
+<li>다양한 인터페이스(좌표이동, 손가락 오무리기, 마우스 휠 등) 를 지원하고 싶다.</li>
+</ul>
+</li>
+<li>얻은 것<ul>
+<li><ol>
+<li>코드 설계 의도가 분명</li>
+</ol>
+<ul>
+<li>definition 파일이 자동으로 생서</li>
+</ul>
+</li>
+<li><ol>
+<li>안정성</li>
+</ol>
+<ul>
+<li>툴의 도움을 받을 수 있음</li>
+</ul>
+</li>
+<li><ol>
+<li>편의성</li>
+</ol>
+<ul>
+<li>codeAssist, 코드 이동(추적)</li>
+<li>map, reduce 등을 동시에 여러번 적용하게 될 때 인자들에 대한 타입을 지정해줄 수 있다. =&gt; 데이터의 변형과 전달의 흐름 추적에 용이.(안정성)</li>
+<li>lodash, rxjs와의 케미도 좋음.</li>
+</ul>
+</li>
+<li>이 밖에도 ES3까지 지원되는 TypeScript 위엄.</li>
+</ul>
+</li>
+<li>잃은 것<ul>
+<li><ol>
+<li>서드파티 라이브러리 사용할 때</li>
+</ol>
+<ul>
+<li>서드파티 라이브러리가 UMD, CommonJS 형식으로 만들어진 모듈의 경우 ES6 Module이라는 표준형식으로 호출시 호출이 안되는 상황이 발생(?)</li>
+<li><code>import * as \___ from &quot;___.js&quot;</code>, <code>import \___ from &quot;___.js&quot;</code></li>
+<li>그나마 다행인 것은 최근 라이브러리들은 ES6 Module 용도 함께 배포</li>
+</ul>
+</li>
+<li><ol>
+<li>서드파티 라이브러리 @types 사용 시</li>
+</ol>
+<ul>
+<li>외부 type definition 파일이 완벽하지 않음</li>
+<li>서드파티 라이브러리 내부의 타입들을 다룰때 아예 타입을 재정의해버려야 하는 경우가 발생.</li>
+</ul>
+</li>
+<li><ol>
+<li>과한 사용은 오히려 독!</li>
+</ol>
+<ul>
+<li>과도한 타입설정과 표시는 가독성을 해침.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>결론<ul>
+<li>장점: 코드의 명확, 주석없이 명세화 가능, 안전성, 편의성, ES3 지원</li>
+<li>단점: 외부 모듈 사용이 불편(TypeScript 사용 환경이 아직 덜 보급), 과한 사용이 가독성을 떨어뜨림.</li>
+<li>하지만 이 단점들이 대개 기존 시스템과의 이질감과 미진한 보급에서 비롯. 장점을 살려서 적절히 사용해보도록 해보아요~^^</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="김상원님-Tumblbug-코드-한-줄-없는-Typescript-사용기"><a href="#김상원님-Tumblbug-코드-한-줄-없는-Typescript-사용기" class="headerlink" title="김상원님 (Tumblbug) - 코드 한 줄 없는 Typescript 사용기"></a><a href="http://vichyssoise.io/" target="_blank" rel="external">김상원님</a> (Tumblbug) - 코드 한 줄 없는 Typescript 사용기</h2><ul>
+<li>TypeScript: JavaScript의 offset(=superset).</li>
+<li>TypeScript가 준 신뢰<ul>
+<li>기억이 안나도 과거의 코드를 믿을 수 있게 되었다.</li>
+<li><ol>
+<li>빠른 디버깅</li>
+</ol>
+</li>
+<li><ol>
+<li>코드의 양이 줄어듦</li>
+</ol>
+</li>
+<li><ol>
+<li>코드 자체가 문서가 됨</li>
+</ol>
+</li>
+<li><ol>
+<li>팀원간의 신뢰도를 높여줌. 정해진 규칙, 즉 타입을 공유하고 있기 때문.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>TypeScript가 준 실망<ul>
+<li>세팅: 빌드 프로세스 수립 과정이 복잡</li>
+<li><code>[변수] as any</code> =&gt; 해당 변수의 type을 무시. Type system의 장점을 희석시키지만 어쩔 수 없이 써야 하는 상황이 발생</li>
+<li>코드와 타입이 불일치</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="한승호님-에멘탈-Typescript-개발-문화"><a href="#한승호님-에멘탈-Typescript-개발-문화" class="headerlink" title="한승호님 (에멘탈) - Typescript 개발 문화"></a>한승호님 (에멘탈) - Typescript 개발 문화</h2><h3 id="타입스크립트-도입을-위한-넓고-얕은-지식"><a href="#타입스크립트-도입을-위한-넓고-얕은-지식" class="headerlink" title="타입스크립트 도입을 위한 넓고 얕은 지식"></a>타입스크립트 도입을 위한 넓고 얕은 지식</h3><ul>
+<li>Generic과 Decorator(를 활용한 깔끔한 Data Model)을 잘 활용하고 있음.</li>
+<li>서버 관련해서 <a href="https://hapijs.com/" target="_blank" rel="external">hapi</a>라는게 있어요. express도 물론 있고.</li>
+<li>타입스크립트로 백엔드도 구성할 수 있는 신세계가 있군요!</li>
+<li><p>egghead.io/ typescriptlang.org/play/</p>
+</li>
+<li><p>사실 무슨 말을 하고 있는건지 이해하지 못함. </p>
+</li>
+<li>Node.js? 백엔드 기준으로 하고 있는 듯함.</li>
+<li>백엔드에서 타입스크립트는 Node.js에서의 한계가 보이며 DevOps 구축시에도 손이 많이간다.</li>
+</ul>
+<hr>
+<h2 id="최종욱님-후이서울-트릴리어네어-React-with-Typescript"><a href="#최종욱님-후이서울-트릴리어네어-React-with-Typescript" class="headerlink" title="최종욱님 (후이서울(트릴리어네어)) - React with Typescript"></a><a href="https://github.com/johnwook" target="_blank" rel="external">최종욱님</a> (후이서울(트릴리어네어)) - React with Typescript</h2><ul>
+<li>React는 킹왕짱이에요.<ul>
+<li>GraphQL이 뭐지..?</li>
+<li>리엑트와 뷰js는 달라요. 리엑트는 선언적이고 효율적이며 어디든 적용할 수 있는 유연함을 갖고 있어요. </li>
+</ul>
+</li>
+<li>TypeScript는 리엑트와 함께^^<ul>
+<li>관련 레포(<a href="https://github.com/johnwook/ts-meetup-2018-1" target="_blank" rel="external">https://github.com/johnwook/ts-meetup-2018-1</a>)</li>
+<li>interface를 정의하고 그를 따르는 것은 생각보다 큰 차이를 만들어낸다.</li>
+<li>아마도… 코드와 컴포넌트에 대한 사전 설계에 대해 스스로 명확하게 인식한 이후 코딩을 할 수 있다는 게 그 차이가 아닐까 싶다. </li>
+</ul>
+</li>
+<li>타입스크립트의 장점<ul>
+<li>함수를 자기묘사를 할 수 있게끔 하고</li>
+<li>인터페이스를 먼저 정의하고 이에 집중하게 한다.</li>
+</ul>
+</li>
+<li>말 잘하고 재치가 있는 분인 듯</li>
+</ul>
+<hr>
+</div></article></div></main><footer><div class="paginator"><a href="/2018/01/18/180118-TIL/" class="prev">이전글</a><a href="/2017/12/17/review-FC/" class="next">다음글</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'girin-dev';
+var disqus_identifier = '2018/01/18/Conf-TypeScript-Meetup(180118)/';
+var disqus_title = '180118-TypeScript_Meetup';
+var disqus_url = 'http://girin-dev.github.io/2018/01/18/Conf-TypeScript-Meetup(180118)/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//girin-dev.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 - 2018 <a href="http://girin-dev.github.io">Girin-dev</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>

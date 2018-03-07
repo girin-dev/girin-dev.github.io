@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> HTML 01. 새로운 표준, HTML5 · 기린개발의 일지</title><meta name="description" content="HTML 01. 새로운 표준, HTML5 - Girin-dev"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://girin-dev.github.io/atom.xml" title="기린개발의 일지"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/categories/" target="_self" class="nav-list-link">CATEGORY</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="https://github.com/girin-dev" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">HTML 01. 새로운 표준, HTML5</h1><div class="post-info">2018년 1월 29일</div><div class="post-content"><h1 id="HMTL의-탄생"><a href="#HMTL의-탄생" class="headerlink" title="HMTL의 탄생"></a>HMTL의 탄생</h1><ul>
+<li>HTML5 이전<ul>
+<li>W3C의 XHTML 1.0과 XHTML 2.0(2.0은 기존 웹의 하위 호환성을 고려하지 않아 이후 폐기)</li>
+<li>콘텐츠의 표시의 역할이 강조되던 시기</li>
+<li>어플리케이션의 필요한 부분은 Flash나 Silver light, Active X 등을 통해 구현하였으나 브라우저별 호환성 이슈와 플러그인 강제설치 등의 이슈가 발생</li>
+</ul>
+</li>
+<li>WHATWG(Web Hypertext Application Technology Working Group, Apple/Mozila/Opera 등)<ul>
+<li>W3C의 XHTML 2.0에 반대하여 결성</li>
+<li>Web Application 1.0, Web Forms 2.0</li>
+</ul>
+</li>
+<li>W3C가 XHTML 2.0을 포기하고 WHATWG의 권고안을 받아들이면서 HTML5 탄생</li>
+</ul>
+<hr>
+<h1 id="HTML4-01-XHTML-1-0과-HTML5의-차이점"><a href="#HTML4-01-XHTML-1-0과-HTML5의-차이점" class="headerlink" title="HTML4.01, XHTML 1.0과 HTML5의 차이점"></a>HTML4.01, XHTML 1.0과 HTML5의 차이점</h1><h2 id="1-콘텐츠-모델"><a href="#1-콘텐츠-모델" class="headerlink" title="1. 콘텐츠 모델"></a>1. 콘텐츠 모델</h2><ul>
+<li>인라인요소와 블록요소(기존 HTML 기반 마크업) 이외에 명확한 정보 구조 설계와 구성을 위해 카테고리를 정의하여 각 요소별로 비슷한 성격을 가지고 있는 것끼리 그룹화한 것.</li>
+<li><p>구조와 구성을 중시하는 마크업으로 진화한 것.</p>
+<h3 id="1-섹셔닝-루트-Sectioning-Root"><a href="#1-섹셔닝-루트-Sectioning-Root" class="headerlink" title="1. 섹셔닝 루트(Sectioning Root)"></a>1. 섹셔닝 루트(Sectioning Root)</h3></li>
+<li>장이나 절과 같은 계층 구조로 구분되지 않고 독립적인 콘텐츠로 분리</li>
+<li><p>아웃라인에 영향을 주지 않음  </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">blockquote</span>&gt;</span> <span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span> <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">detail</span>&gt;</span> <span class="tag">&lt;/<span class="name">detail</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">fieldset</span>&gt;</span> <span class="tag">&lt;/<span class="name">fieldset</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">figure</span>&gt;</span> <span class="tag">&lt;/<span class="name">figure</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">td</span>&gt;</span> <span class="tag">&lt;/<span class="name">td</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="2-메타데이터-콘텐츠-Metadata-Content"><a href="#2-메타데이터-콘텐츠-Metadata-Content" class="headerlink" title="2. 메타데이터 콘텐츠(Metadata Content)"></a>2. 메타데이터 콘텐츠(Metadata Content)</h3></li>
+<li><p>문서의 정보를 포함하는 <code>메타데이터</code>, 스타일 표현을 위한 <code>&lt;style&gt;</code> 요소, 행동을 설정하는 <code>&lt;script&gt;</code> 요소 등을 나타냄</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">base</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">meta</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">noscript</span>&gt;</span><span class="tag">&lt;/<span class="name">noscript</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="3-플로우-콘텐츠-Flow-Content"><a href="#3-플로우-콘텐츠-Flow-Content" class="headerlink" title="3. 플로우 콘텐츠(Flow Content)"></a>3. 플로우 콘텐츠(Flow Content)</h3></li>
+<li><code>메타데이터 콘텐츠</code> 요소 중 일부를 제외하고 문서 본문에 해당하는 body 요소에 들어가는 대부분의 요소</li>
+<li><p><code>&lt;area&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;style&gt;&lt;/style&gt;</code> 요소는 조건부로 플로우 콘텐츠</p>
+<h3 id="4-섹셔닝-콘텐츠-Sectioning-Content"><a href="#4-섹셔닝-콘텐츠-Sectioning-Content" class="headerlink" title="4. 섹셔닝 콘텐츠(Sectioning Content)"></a>4. 섹셔닝 콘텐츠(Sectioning Content)</h3></li>
+<li>섹셔닝 콘텐츠는 대부분 HTML5에 새롭게 추가된 요소</li>
+<li>제목과 그 내용을 포함한 범위를 지정하는 콘텐츠 표시</li>
+<li><p>헤딩과 아웃라인을 가짐</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">article</span>&gt;</span> <span class="tag">&lt;/<span class="name">article</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">aside</span>&gt;</span> <span class="tag">&lt;/<span class="name">aside</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">nav</span>&gt;</span> <span class="tag">&lt;/<span class="name">nav</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">section</span>&gt;</span> <span class="tag">&lt;/<span class="name">section</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="5-헤딩-콘텐츠-Heading-Content"><a href="#5-헤딩-콘텐츠-Heading-Content" class="headerlink" title="5. 헤딩 콘텐츠(Heading Content)"></a>5. 헤딩 콘텐츠(Heading Content)</h3></li>
+<li><p>세션의 제목을 나타내며 문서의 아웃라인을 고려해서 사용해야 함</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>, <span class="tag">&lt;<span class="name">h2</span>&gt;</span>, <span class="tag">&lt;<span class="name">h3</span>&gt;</span>, <span class="tag">&lt;<span class="name">h4</span>&gt;</span>, <span class="tag">&lt;<span class="name">h5</span>&gt;</span>, <span class="tag">&lt;<span class="name">h6</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="6-프레이징-콘텐츠-Phrasing-Content"><a href="#6-프레이징-콘텐츠-Phrasing-Content" class="headerlink" title="6. 프레이징 콘텐츠(Phrasing Content)"></a>6. 프레이징 콘텐츠(Phrasing Content)</h3></li>
+<li>문서의 텍스트 지칭하며 문단의 내부 레벨로 마크업하는 요소 / 문단의 구성 요소</li>
+<li><code>&lt;a&gt;</code> 처럼 콘텐츠로 다른 요소를 포함하지 않는 경우에 한해 조건부 프레이징 콘텐츠가 되는 요소도 존재</li>
+<li>대부분 <code>플로우 콘텐츠</code> 전체를 포함할 수 없으며 프레이징 콘텐츠로 분류된 요소만을 포함할 수 있음.</li>
+<li><p>텍스트 이외에도 <code>임베디드 콘텐츠</code>를 포함할 수 있음</p>
+<h3 id="7-임베디드-콘텐츠-Embeded-Content"><a href="#7-임베디드-콘텐츠-Embeded-Content" class="headerlink" title="7. 임베디드 콘텐츠(Embeded Content)"></a>7. 임베디드 콘텐츠(Embeded Content)</h3></li>
+<li>문서 안에 외부 자원(외부 리소스)나 HTML이 아닌 다른 언어의 콘텐츠를 표현</li>
+<li><p>이미지, 동영상, 플로그인, iframe 등과 MathML, SVG 등</p>
+<h3 id="8-인터렉티브-콘텐츠-Interactive-Content"><a href="#8-인터렉티브-콘텐츠-Interactive-Content" class="headerlink" title="8. 인터렉티브 콘텐츠(Interactive Content)"></a>8. 인터렉티브 콘텐츠(Interactive Content)</h3></li>
+<li>사용자가 어떤 기능을 조작할 수 있는 (상호 작용 가능한) 콘텐츠</li>
+<li><p><code>&lt;audio&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;object&gt;</code>, <code>&lt;video&gt;</code>의 경우 조건부 인터렉티브 콘텐츠</p>
+<h3 id="9-팰퍼브-콘텐츠-Palpable-Content"><a href="#9-팰퍼브-콘텐츠-Palpable-Content" class="headerlink" title="9. 팰퍼브 콘텐츠(Palpable Content)"></a>9. 팰퍼브 콘텐츠(Palpable Content)</h3></li>
+<li>새롭게 추가된 개념으로 구체적으로 보여지고 이해할 수 있는 콘텐츠 요소(?)</li>
+<li><p>최소 하나 이상의 요소가 존재해야 함.(숨김 상태이면 안 됨)</p>
+<h3 id="10-스크립트-지원-요소-Script-supporting-Elements"><a href="#10-스크립트-지원-요소-Script-supporting-Elements" class="headerlink" title="10. 스크립트 지원 요소(Script-supporting Elements)"></a>10. 스크립트 지원 요소(Script-supporting Elements)</h3></li>
+<li>요소 자체는 어떤 정보를 표현하지 않음</li>
+<li><p>스크립트 지원</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"> </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="11-트랜스-패어런트-콘텐츠-Transparent-Content"><a href="#11-트랜스-패어런트-콘텐츠-Transparent-Content" class="headerlink" title="11. 트랜스 패어런트 콘텐츠(Transparent Content)"></a>11. 트랜스 패어런트 콘텐츠(Transparent Content)</h3></li>
+<li>콘텐츠 모델을 가지지만, 앞에서 설명한 카테고리에 속하지 않은 경우</li>
+<li><p>트랜스 패어런트 콘텐츠 요소와 그 안에 담긴 콘텐츠를 바꾸어 마크업해도 HTML5 문법 오류가 없음</p>
+<h2 id="2-아웃라인-알고리즘-Outline-Algorithm"><a href="#2-아웃라인-알고리즘-Outline-Algorithm" class="headerlink" title="2. 아웃라인 알고리즘(Outline Algorithm)"></a>2. 아웃라인 알고리즘(Outline Algorithm)</h2><h3 id="1-gg"><a href="#1-gg" class="headerlink" title="1. gg"></a>1. gg</h3></li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2018/01/29/SL-howtoStudy(Joy)/" class="prev">이전글</a><a href="/2018/01/21/Book-01-TEOO-180121/" class="next">다음글</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'girin-dev';
+var disqus_identifier = '2018/01/29/HTML-01-HTML5/';
+var disqus_title = 'HTML 01. 새로운 표준, HTML5';
+var disqus_url = 'http://girin-dev.github.io/2018/01/29/HTML-01-HTML5/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//girin-dev.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 - 2018 <a href="http://girin-dev.github.io">Girin-dev</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
