@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> review-programming-together · 기린개발의 일지</title><meta name="description" content="review-programming-together - Girin-dev"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://girin-dev.github.io/atom.xml" title="기린개발의 일지"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/categories/" target="_self" class="nav-list-link">CATEGORY</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="https://github.com/girin-dev" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">review-programming-together</h1><div class="post-info">2018년 4월 3일</div><div class="post-content"><p>기초튼튼 코드튼튼</p>
+<h1 id="다-함께-프로그래밍"><a href="#다-함께-프로그래밍" class="headerlink" title="다 함께 프로그래밍"></a>다 함께 프로그래밍</h1><p>타니지리 카오리 지음 / 제이펍 출판</p>
+<h2 id="프로그래밍의-일곱-절차"><a href="#프로그래밍의-일곱-절차" class="headerlink" title="프로그래밍의 일곱 절차"></a>프로그래밍의 일곱 절차</h2><ol>
+<li>테마 정하기</li>
+<li>줄거리 만들기</li>
+<li>시나리오 작성</li>
+<li>프로그래밍 언어로 번역</li>
+<li>움직여보기</li>
+<li>확인하기</li>
+<li>버전업</li>
+</ol>
+<h2 id="줄거리와-시나리오-작성을-위한-힌트"><a href="#줄거리와-시나리오-작성을-위한-힌트" class="headerlink" title="줄거리와 시나리오 작성을 위한 힌트"></a>줄거리와 시나리오 작성을 위한 힌트</h2><p>데이터의 변화를 고려한다.(자료구조를 어떻게 가져갈 것인가?)</p>
+<h2 id="변수명-붙이는-방법"><a href="#변수명-붙이는-방법" class="headerlink" title="변수명 붙이는 방법"></a>변수명 붙이는 방법</h2><ul>
+<li>테이터의 의미를 알 수 있는 이름</li>
+<li>프로그래밍 언어의 규칙 준수</li>
+<li>명령어와 동일한 이름 사용 금지</li>
+<li>팀 내 규칙 준수</li>
+<li>프로그래머 세계의 상식 준수</li>
+</ul>
+<h2 id="계산식에서-문제-발생-원인은"><a href="#계산식에서-문제-발생-원인은" class="headerlink" title="계산식에서 문제 발생 원인은?"></a>계산식에서 문제 발생 원인은?</h2><ul>
+<li>2진법의 프로그래밍상 오차(실수 계산)</li>
+<li>식작성법에서의 오류나 산술연산자의 우선순위 실수<ul>
+<li><code>(</code>, <code>)</code>을 잘못 작성한 경우</li>
+<li>사칙연상의 우선순위 고려해야 함(부호&gt;곱셈/나눗셈&gt;덧셈/뺄샘&gt;대입)</li>
+</ul>
+</li>
+<li>데이터 타입 선정의 오류<ul>
+<li>실수형 자료를 정수형에 넣고 계산하는 경우</li>
+</ul>
+</li>
+<li>나누기 오류<ul>
+<li>0으로 나누기를 시도한 경우</li>
+<li>실수 데이터를을 정수형 변수에 넣어 0이 되어버린 경우(나누기0은 성립할 수 없다.)</li>
+</ul>
+</li>
+</ul>
+<h2 id="프로그래밍의-흐름"><a href="#프로그래밍의-흐름" class="headerlink" title="프로그래밍의 흐름"></a>프로그래밍의 흐름</h2><p>프로그래밍은 <code>순차실행</code>, <code>조건판단</code>, <code>반복</code>이라는 세 개의 구조만으로 이루어진다.<br><code>점프명령</code>은 꼭 필요한 경우(에러검출 등)가 아니면 사용금지</p>
+<ul>
+<li><code>순차실행</code><ul>
+<li>프로그램에 기술한 순서대로 명령을 실행하는 것</li>
+<li>순차실행이 꼬이는 경우 ‘이해하기 어려운 프로그램’이 될 수 있음(의도적으로 명령 순서를 바꾼 프로그램)</li>
+</ul>
+</li>
+<li><code>조건판단</code><ul>
+<li><code>조건판단</code> 구조에서 주의할 것은 지정한 모든 조건에 해당하지 않을 때 실행할 처리를 준비해야 한다는 것.</li>
+<li>이것은 버그 발견이나 사용자 경험에도 유익</li>
+<li>조건판단의 종류<ul>
+<li>만약~라면(<code>if</code>)</li>
+<li>먄약~라면, 그 이외의 경우는(<code>if</code>, <code>else if</code>, <code>else</code>)</li>
+<li>만약이 많은 경우(<code>switch</code>)</li>
+<li>중첩된 조건판단(nest)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>반복</code><ul>
+<li>횟수를 정해주는 반복 <code>for</code></li>
+<li>횟수를 모르는 상황에서의 반복 <code>while</code><ul>
+<li>선조건판단: 조건이 참인지 판단 -&gt; 명령 시행 후 조건 검사 -&gt; 반복</li>
+<li>후조건판단: 명령 시행 -&gt; 조건이 참인지 판단 -&gt; 반복</li>
+<li>후조건 판단시 카운터의 증가분과 종료값의 관계에 주의할 것(무한루프에 빠질 수 있기 때문)</li>
+<li>무한루프에 빠지지 않도록 주의할 것</li>
+</ul>
+</li>
+<li><code>무한루프</code>에 빠지는 경우<ul>
+<li>반복한 횟수를 세는 카운터가 갱신되지 않을 경우</li>
+<li>카운터의 증가분과 종료값의 관계가 틀린 경우</li>
+<li>특정 조건이 성립하기까지 반복을 실행할 때, 판단에 사용하는 값을 갱신하지 않는 경우</li>
+</ul>
+</li>
+<li><code>반복</code>의 중첩(이중반복문, 네스트)<ul>
+<li>반복의 횟수는 <code>외부 반복 횟수 * 내부 반복 횟수</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>비교 연산/</code><br>## </li>
+</ul>
+<h2 id="총평"><a href="#총평" class="headerlink" title="총평"></a>총평</h2><ul>
+<li>프로그램을 만들기 시작할 때 먼저 해야 할 순서 등을 차근차근 알려주는 느낌</li>
+<li>어떤 부분에서 어떤 문제가 발생했을 경우 이러한 원인일 확률이 있다고 미리 알려주는 느낌</li>
+<li>프로그래밍 파트별로 어떤 곳을 주의해야 하는지 알려주는 주의사항 노트</li>
+<li>특정 프로그래밍 언어에 함몰되지 않고 전 분야에 공통적으로 적용할 수 있는 내용 위주로 적혀 있어 조음</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2018/04/16/Network-01-message/" class="prev">이전글</a><a href="/2018/03/30/frontend-camp-with-yamoo9/" class="next">다음글</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'girin-dev';
+var disqus_identifier = '2018/04/03/review-programming-together/';
+var disqus_title = 'review-programming-together';
+var disqus_url = 'http://girin-dev.github.io/2018/04/03/review-programming-together/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//girin-dev.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 - 2018 <a href="http://girin-dev.github.io">Girin-dev</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2018-03-13T02:01:53.000Z</updated>
+  <updated>2018-04-23T15:33:38.545Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -15,6 +15,125 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>review-FC-frontend-yamoo9</title>
+    <link href="http://girin-dev.github.io/2018/04/23/review-FC-frontend-yamoo9/"/>
+    <id>http://girin-dev.github.io/2018/04/23/review-FC-frontend-yamoo9/</id>
+    <published>2018-04-23T14:51:05.000Z</published>
+    <updated>2018-04-23T15:33:38.545Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Fastcampus-프론트엔드-개발-시작하기-CAMP-0-Orientation"><a href="#Fastcampus-프론트엔드-개발-시작하기-CAMP-0-Orientation" class="headerlink" title="Fastcampus 프론트엔드 개발 시작하기 CAMP #0. Orientation"></a>Fastcampus 프론트엔드 개발 시작하기 CAMP #0. Orientation</h1><h2 id="패스트캠퍼스의-온라인-강의-체험단"><a href="#패스트캠퍼스의-온라인-강의-체험단" class="headerlink" title="패스트캠퍼스의 온라인 강의 체험단"></a>패스트캠퍼스의 온라인 강의 체험단</h2><p>이번에 FastCampus의 온라인 강의 체험단이 되어 &lt;프론트엔드 개발 시작하기 CAMP&gt;라는 강의를 리뷰하게 되었습니다. 사실은 3월부터 들어왔던 수업인데 너무나도 뒤늦게 리뷰를 작성하고 있어 담당자 분께는 다소 죄송스러운 마음도 갖고 있습니다ㅎㅎ;; 어찌되었든 앞으로 차근차근 리뷰를 작성해보려고 합니다.</p><p>원래 패스트캠퍼스는 오프라인 강의(캠프와 스쿨)를 위주로 운영되는 곳입니다. 그런데 이번에 온라인 강의를 시작하면서 다양한 시도를 하는 것 같습니다. 특히 이번 프론트엔드 관련 온라인 강의는 야무님(yamoo9)님과 같이 진행되어 더욱 기대감이 컸습니다.</p><p><img src="../img/book-yamoo9.jpg" alt="야무님의 대표저서"></p><p>야무님은 &lt;<a href="http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=56468578" target="_blank" rel="external">만들면서 배우는 모던 웹사이트 제작</a>&gt;의 저자이시기도 합니다.</p><h2 id="왜-듣게-되었나"><a href="#왜-듣게-되었나" class="headerlink" title="왜 듣게 되었나"></a>왜 듣게 되었나</h2><p> 제가 이 체험단을 신청하게 된 가장 큰 이유도 야무님의 수업을 듣고 싶었기 때문입니다. 야무님은 이미 웹개발자와 웹디자이너 사이에서 유명하시고, 저 또한 주변 개발자들로부터 좋은 이야기를 듣고 있었던 터라 수업을 꼭 들어보고 싶었습니다.</p><p>무엇보다 HTML과 CSS에 대한 기본 지식이 많이 부족하다고 생각했기에 이를 공부해야 할 필요를 느꼈습니다. 작년에 들었던 패스트캠퍼스 프론트엔드 스쿨 과정에서도 많이 아쉬웠던 점이 HTML과 CSS 부분이었기 때문입니다.</p><h2 id="그거-퍼블리싱-아니야"><a href="#그거-퍼블리싱-아니야" class="headerlink" title="그거 퍼블리싱 아니야?"></a>그거 퍼블리싱 아니야?</h2><p>HTML과 CSS를 공부한다고 하면 많은 분들이 ‘프론트엔드’보다 ‘퍼블리싱’을 떠올립니다. 거기에 퍼블리싱에 대한 막연한 편견까지 더해지기까지 합니다. 하지만 웹문서/웹어플리케이션의 구조를 짜지 못하고 레이아웃을 못 잡고 CSS 스타일링에 미숙하다면 그 사람을 프론트엔드 개발자라고 할 수 있을까요?</p><p>저는 JavaScript의 주요 역할 중 하나가 여전히 HTML과 CSS를 지원하는 것이라고 생각하고 있습니다.(물론 이게 전부는 아닙니다.) JavaScript를 아무리 잘하고 Angular와 React, Vue.js 등의 최신 웹 프레임워크를 아무리 잘 한다고 할지라도 HTML과 CSS를 못하면 말짱 도로묵이라고 생각합니다.</p><h2 id="JavaScript는-얼마나-배우는가"><a href="#JavaScript는-얼마나-배우는가" class="headerlink" title="JavaScript는 얼마나 배우는가"></a>JavaScript는 얼마나 배우는가</h2><p>사실 아직 강의를 전부 듣지 못하였기 때문에 정확하게는 알지 못합니다만, 분명 이 수업은 최신 웹 프레임워크를 전문적으로 파는 강의도 JavaScript의 전문적, 학문적 수준의 깊이있는 원리를 다루지도 않을 것입니다. 예상하건데 JavaScript에 대한 기본 문법 강의와 jQuery, Ajax 등을 다루게 될 것입니다.</p><h2 id="그래서-누구를-위한-강의인가"><a href="#그래서-누구를-위한-강의인가" class="headerlink" title="그래서 누구를 위한 강의인가"></a>그래서 누구를 위한 강의인가</h2><p>따라서 이 강의는 정말 프로그래밍을 한번도 겪어보지 않은 분들에게 유효한 강의라고 생각합니다. 물론 시중에 많은 강의들이 있고 심지어 생활코딩이나 Codecademy 등 비슷한 주제를 무료로 들을 수 있는 방법도 있습니다. 그러나 이러한 강의에 비해 패스트캠퍼스 프론트엔드 개발 시작하기 CAMP는 Yamoo9님의 강의를 생생하게 들을 수 있다는 점, 그리고 꾸준한 피드백과 QnA를 통해 직접 수업을 듣고 있다는 느낌을 줍니다. 이것은 온라인 강의에서 쉽게 느낄 수 있는 ‘중도포기’를 방지하는데 큰 도움이 됩니다. 프로그래밍을 대충 맛만 보고 끝내는 것이 아니라 ‘자신의 포트폴리오 제작’ 이라는 목표를 달성하는 본 강의는 프로그래밍을 처음으로 하게 되는 학생들에게 좌절과 어려움의 기억이 아니라 성공과 결과물이라는 자신감을 안겨줄 것입니다. 그렇기 때문에 완전히 프로그래밍을 해보지 않은 사람이 차근차근 따라할 수 있는 강의라고 생각합니다.</p><h2 id="이후에-쓸-리뷰는"><a href="#이후에-쓸-리뷰는" class="headerlink" title="이후에 쓸 리뷰는?"></a>이후에 쓸 리뷰는?</h2><p>지금까지 아직 강의를 다 듣지도 않고 쓴 오리엔테이션 성격의 중간 리뷰였습니다. 앞으로는 구체적으로 강의를 들으면서 느꼈던 점, 아쉬웠던 점, 개선점들을 위주로 작성해볼까 합니다. 지금까지 읽어주셔서 감사합니다.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Fastcampus-프론트엔드-개발-시작하기-CAMP-0-Orientation&quot;&gt;&lt;a href=&quot;#Fastcampus-프론트엔드-개발-시작하기-CAMP-0-Orientation&quot; class=&quot;headerlink&quot; title=&quot;Fastca
+      
+    
+    </summary>
+    
+      <category term="Self_Review" scheme="http://girin-dev.github.io/categories/Self-Review/"/>
+    
+    
+      <category term="Self_Review, Fastcampus, yamoo9, frontend" scheme="http://girin-dev.github.io/tags/Self-Review-Fastcampus-yamoo9-frontend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Network-00-orientation</title>
+    <link href="http://girin-dev.github.io/2018/04/16/Network-00-orientation/"/>
+    <id>http://girin-dev.github.io/2018/04/16/Network-00-orientation/</id>
+    <published>2018-04-16T13:56:23.000Z</published>
+    <updated>2018-04-23T15:33:51.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Network" scheme="http://girin-dev.github.io/categories/Network/"/>
+    
+    
+      <category term="네트워크" scheme="http://girin-dev.github.io/tags/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Network-01-message</title>
+    <link href="http://girin-dev.github.io/2018/04/16/Network-01-message/"/>
+    <id>http://girin-dev.github.io/2018/04/16/Network-01-message/</id>
+    <published>2018-04-16T13:38:06.000Z</published>
+    <updated>2018-04-23T15:33:49.447Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="웹-브라우저가-메시지를-만든다"><a href="#웹-브라우저가-메시지를-만든다" class="headerlink" title="웹 브라우저가 메시지를 만든다"></a>웹 브라우저가 메시지를 만든다</h1><h2 id="01-HTTP-리퀘스트-메시지를-작성한다"><a href="#01-HTTP-리퀘스트-메시지를-작성한다" class="headerlink" title="01. HTTP 리퀘스트 메시지를 작성한다"></a>01. HTTP 리퀘스트 메시지를 작성한다</h2><ul><li><code>protocol</code> 쌍방간의 약속</li></ul><h3 id="http"><a href="#http" class="headerlink" title="http"></a><code>http</code></h3><ul><li><p>인터넷 통신 프로토콜, TCP/IP 의존적(더 깊은 layer)</p></li><li><p>Web에서 데이터를 주고 받기 위한 protocol로 요청과 응답이라는 쌍으로 이루어져있다.</p><ul><li>요청이 와야 응답이 오고, 요청이 없으면 응답도 없다.</li><li>무한 대기할 필요가 없으니 서버 부하가 적고, 이를 통해 http가 서버에 유리하게 설계되어 있음을 알 수 있다.</li><li>이러한 특성으로 서버 하나가 다량의 클라이언트를 상대할 수 있다.</li></ul></li><li>1요청에 1응답이 가능할 뿐이므로 상태를 유지할 수 없다.<code>stateless</code></li></ul><h3 id="URL과-URI"><a href="#URL과-URI" class="headerlink" title="URL과 URI"></a><code>URL</code>과 <code>URI</code></h3><ul><li><code>URL</code><ul><li>URL(Uniform/Universal Resource Locator)은 어디에서나 접근 가능한 장소(한정적)를 나타내는 말</li><li>http: ftp: file: mailto: 등 브라우저의 클라이언트 기능에 따라 다양하게 존재</li><li><code>protocol</code>과 <code>서버이름</code>, <code>리소스의 위치</code>로 구성</li><li>URL 마지막에 <code>/</code>를 생략해도 무관하며 이 경우 index.html 파일을 불러오거나 적절한 파일/디렉토리를 연다</li><li>URL 자체가 반드시 요청자의 바람대로 응답이 온다는 것을 보장하지 않는다. 응답은 전적으로 서버의 몫이며, 요청은 단순히 요청일 뿐이다.(W3C는 신뢰성을 위해 URL을 배포할 때 변화가 없는 것을 권장한다.)</li></ul></li><li><code>URI</code><ul><li>URI(Uniform/Universal Resource Identifier)로 URL보다 다양한 의미를 가지며 떄로 <code>URL</code>이 <code>URI</code>가 되기도 한다.</li></ul></li></ul><h3 id="요청메시지와-응답메시지"><a href="#요청메시지와-응답메시지" class="headerlink" title="요청메시지와 응답메시지"></a>요청메시지와 응답메시지</h3><ul><li>요청메시지<ul><li>요청 메시지 자체는 특별한 형식으로 작성되어 있다는 것을 내포하며, <code>헤더</code>, <code>바디</code>로 구성되어 있다.</li><li><code>메소드</code>는 URI와 함께 쓰여 요청메시지를 구성하며, 해당 메시지의 목적을 나타낸다.<ul><li>GET(받겠다)</li><li>POST(보내겠다)</li><li>HEAD(head만 보겠다)</li><li>OPTIONS(통신의 옵션을 통지/조사하겠다)</li><li>PUT(놓겠다/넣겠다)</li><li>DELETE(지정한 서버의 파일을 삭제하겠다)</li><li>TRACE(리퀘스트 라인과 헤더를 그대로 클라이언트에 반송한다)</li><li>CONNECT(암호화한 메시지를 프록시로 전송하겠다)</li></ul></li></ul></li><li>응답메시지<ul><li><code>응답코드</code>+<code>헤더</code>+<code>바디</code></li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;웹-브라우저가-메시지를-만든다&quot;&gt;&lt;a href=&quot;#웹-브라우저가-메시지를-만든다&quot; class=&quot;headerlink&quot; title=&quot;웹 브라우저가 메시지를 만든다&quot;&gt;&lt;/a&gt;웹 브라우저가 메시지를 만든다&lt;/h1&gt;&lt;h2 id=&quot;01-HTTP-리
+      
+    
+    </summary>
+    
+      <category term="Network" scheme="http://girin-dev.github.io/categories/Network/"/>
+    
+    
+      <category term="네트워크" scheme="http://girin-dev.github.io/tags/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>review-programming-together</title>
+    <link href="http://girin-dev.github.io/2018/04/03/review-programming-together/"/>
+    <id>http://girin-dev.github.io/2018/04/03/review-programming-together/</id>
+    <published>2018-04-03T02:50:13.000Z</published>
+    <updated>2018-04-16T07:12:16.202Z</updated>
+    
+    <content type="html"><![CDATA[<p>기초튼튼 코드튼튼</p><h1 id="다-함께-프로그래밍"><a href="#다-함께-프로그래밍" class="headerlink" title="다 함께 프로그래밍"></a>다 함께 프로그래밍</h1><p>타니지리 카오리 지음 / 제이펍 출판</p><h2 id="프로그래밍의-일곱-절차"><a href="#프로그래밍의-일곱-절차" class="headerlink" title="프로그래밍의 일곱 절차"></a>프로그래밍의 일곱 절차</h2><ol><li>테마 정하기</li><li>줄거리 만들기</li><li>시나리오 작성</li><li>프로그래밍 언어로 번역</li><li>움직여보기</li><li>확인하기</li><li>버전업</li></ol><h2 id="줄거리와-시나리오-작성을-위한-힌트"><a href="#줄거리와-시나리오-작성을-위한-힌트" class="headerlink" title="줄거리와 시나리오 작성을 위한 힌트"></a>줄거리와 시나리오 작성을 위한 힌트</h2><p>데이터의 변화를 고려한다.(자료구조를 어떻게 가져갈 것인가?)</p><h2 id="변수명-붙이는-방법"><a href="#변수명-붙이는-방법" class="headerlink" title="변수명 붙이는 방법"></a>변수명 붙이는 방법</h2><ul><li>테이터의 의미를 알 수 있는 이름</li><li>프로그래밍 언어의 규칙 준수</li><li>명령어와 동일한 이름 사용 금지</li><li>팀 내 규칙 준수</li><li>프로그래머 세계의 상식 준수</li></ul><h2 id="계산식에서-문제-발생-원인은"><a href="#계산식에서-문제-발생-원인은" class="headerlink" title="계산식에서 문제 발생 원인은?"></a>계산식에서 문제 발생 원인은?</h2><ul><li>2진법의 프로그래밍상 오차(실수 계산)</li><li>식작성법에서의 오류나 산술연산자의 우선순위 실수<ul><li><code>(</code>, <code>)</code>을 잘못 작성한 경우</li><li>사칙연상의 우선순위 고려해야 함(부호&gt;곱셈/나눗셈&gt;덧셈/뺄샘&gt;대입)</li></ul></li><li>데이터 타입 선정의 오류<ul><li>실수형 자료를 정수형에 넣고 계산하는 경우</li></ul></li><li>나누기 오류<ul><li>0으로 나누기를 시도한 경우</li><li>실수 데이터를을 정수형 변수에 넣어 0이 되어버린 경우(나누기0은 성립할 수 없다.)</li></ul></li></ul><h2 id="프로그래밍의-흐름"><a href="#프로그래밍의-흐름" class="headerlink" title="프로그래밍의 흐름"></a>프로그래밍의 흐름</h2><p>프로그래밍은 <code>순차실행</code>, <code>조건판단</code>, <code>반복</code>이라는 세 개의 구조만으로 이루어진다.<br><code>점프명령</code>은 꼭 필요한 경우(에러검출 등)가 아니면 사용금지</p><ul><li><code>순차실행</code><ul><li>프로그램에 기술한 순서대로 명령을 실행하는 것</li><li>순차실행이 꼬이는 경우 ‘이해하기 어려운 프로그램’이 될 수 있음(의도적으로 명령 순서를 바꾼 프로그램)</li></ul></li><li><code>조건판단</code><ul><li><code>조건판단</code> 구조에서 주의할 것은 지정한 모든 조건에 해당하지 않을 때 실행할 처리를 준비해야 한다는 것.</li><li>이것은 버그 발견이나 사용자 경험에도 유익</li><li>조건판단의 종류<ul><li>만약~라면(<code>if</code>)</li><li>먄약~라면, 그 이외의 경우는(<code>if</code>, <code>else if</code>, <code>else</code>)</li><li>만약이 많은 경우(<code>switch</code>)</li><li>중첩된 조건판단(nest)</li></ul></li></ul></li><li><code>반복</code><ul><li>횟수를 정해주는 반복 <code>for</code></li><li>횟수를 모르는 상황에서의 반복 <code>while</code><ul><li>선조건판단: 조건이 참인지 판단 -&gt; 명령 시행 후 조건 검사 -&gt; 반복</li><li>후조건판단: 명령 시행 -&gt; 조건이 참인지 판단 -&gt; 반복</li><li>후조건 판단시 카운터의 증가분과 종료값의 관계에 주의할 것(무한루프에 빠질 수 있기 때문)</li><li>무한루프에 빠지지 않도록 주의할 것</li></ul></li><li><code>무한루프</code>에 빠지는 경우<ul><li>반복한 횟수를 세는 카운터가 갱신되지 않을 경우</li><li>카운터의 증가분과 종료값의 관계가 틀린 경우</li><li>특정 조건이 성립하기까지 반복을 실행할 때, 판단에 사용하는 값을 갱신하지 않는 경우</li></ul></li><li><code>반복</code>의 중첩(이중반복문, 네스트)<ul><li>반복의 횟수는 <code>외부 반복 횟수 * 내부 반복 횟수</code></li></ul></li></ul></li><li><code>비교 연산/</code><br>## </li></ul><h2 id="총평"><a href="#총평" class="headerlink" title="총평"></a>총평</h2><ul><li>프로그램을 만들기 시작할 때 먼저 해야 할 순서 등을 차근차근 알려주는 느낌</li><li>어떤 부분에서 어떤 문제가 발생했을 경우 이러한 원인일 확률이 있다고 미리 알려주는 느낌</li><li>프로그래밍 파트별로 어떤 곳을 주의해야 하는지 알려주는 주의사항 노트</li><li>특정 프로그래밍 언어에 함몰되지 않고 전 분야에 공통적으로 적용할 수 있는 내용 위주로 적혀 있어 조음</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;기초튼튼 코드튼튼&lt;/p&gt;
+&lt;h1 id=&quot;다-함께-프로그래밍&quot;&gt;&lt;a href=&quot;#다-함께-프로그래밍&quot; class=&quot;headerlink&quot; title=&quot;다 함께 프로그래밍&quot;&gt;&lt;/a&gt;다 함께 프로그래밍&lt;/h1&gt;&lt;p&gt;타니지리 카오리 지음 / 제이펍 출판&lt;
+      
+    
+    </summary>
+    
+      <category term="Programming" scheme="http://girin-dev.github.io/categories/Programming/"/>
+    
+    
+      <category term="Self_Review, Programming" scheme="http://girin-dev.github.io/tags/Self-Review-Programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Frontend Camp with Yamoo9 OT</title>
+    <link href="http://girin-dev.github.io/2018/03/30/frontend-camp-with-yamoo9/"/>
+    <id>http://girin-dev.github.io/2018/03/30/frontend-camp-with-yamoo9/</id>
+    <published>2018-03-29T15:09:40.000Z</published>
+    <updated>2018-03-29T15:28:24.007Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="야무님과-함께하는-패캠-프론트엔드-캠프-체험단-0-OT"><a href="#야무님과-함께하는-패캠-프론트엔드-캠프-체험단-0-OT" class="headerlink" title="야무님과 함께하는 패캠 프론트엔드 캠프 체험단 (0). OT"></a>야무님과 함께하는 패캠 프론트엔드 캠프 체험단 (0). OT</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;야무님과-함께하는-패캠-프론트엔드-캠프-체험단-0-OT&quot;&gt;&lt;a href=&quot;#야무님과-함께하는-패캠-프론트엔드-캠프-체험단-0-OT&quot; class=&quot;headerlink&quot; title=&quot;야무님과 함께하는 패캠 프론트엔드 캠프 체험단 (0). O
+      
+    
+    </summary>
+    
+      <category term="Self_Review" scheme="http://girin-dev.github.io/categories/Self-Review/"/>
+    
+    
+      <category term="fastcampus, yamoo9" scheme="http://girin-dev.github.io/tags/fastcampus-yamoo9/"/>
+    
+  </entry>
   
   <entry>
     <title>CS 03. 실수(Real Number)</title>
@@ -384,146 +503,6 @@
 &lt;li&gt;Module&lt;/li&gt;
 &lt;li&gt;Routing&lt;/li&gt;
 &lt;/u
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171122-TIL</title>
-    <link href="http://girin-dev.github.io/2017/11/22/171122-TIL/"/>
-    <id>http://girin-dev.github.io/2017/11/22/171122-TIL/</id>
-    <published>2017-11-22T02:21:48.000Z</published>
-    <updated>2017-11-23T00:45:24.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li><p>Angular 복습 &amp; 예습</p><ul><li>코드 일일이 치던 것 마저 진행</li><li>Angular-Forms 복습</li><li>Todo-list v5 쌤 코드와 비교하고 다시 짜기</li><li>내일 수업 예습(Angular Routing/Module)</li></ul></li><li><p>반려견 프로젝트</p><ul><li>Wire Frame(레이아웃+기능구조) 짜기</li><li><a href="https://github.com/girin-dev/chartjs-practice" target="_blank" rel="external">chartjs practice</a></li></ul></li><li>블로그 정리</li><li>GDG 후기</li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li><strong>Medium</strong> <a href="https://medium.com/@jwyeom63/번역-알고리즘과-자료구조를-즐겁게-배울-수-있는-앱을-만들어-보았다-641462409bc7" target="_blank" rel="external">[번역]알고리즘과 자료구조를 즐겁게 배울 수 있는 앱을 만들어 보았다</a><ul><li><a href="http://cs-playground-react.surge.sh/" target="_blank" rel="external">http://cs-playground-react.surge.sh/</a></li><li>저자가 발견한 알고리즘과 자료구조를 시각화한 사이트 (<a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" target="_blank" rel="external">https://www.cs.usfca.edu/~galles/visualization/Algorithms.html</a>)</li><li>비전공자로서 느꼈던 컴퓨터 공학 지식에 대한 갈망과 실무자로서 현업에 대한 스킬에 대한 감을 잃지는 않을까하는 갈등</li></ul></li><li><strong>Medium</strong> <a href="https://medium.freecodecamp.org/heres-a-new-way-to-learn-coding-tools-and-concepts-right-when-you-need-them-ee82d15c576d" target="_blank" rel="external">Here’s a new way to learn coding tools and concepts right when you need them</a><ul><li>freecodecamp 가이드 페이지(<a href="https://guide.freecodecamp.org" target="_blank" rel="external">https://guide.freecodecamp.org</a>)</li></ul></li><li><strong>CSS Weekly</strong> <a href="https://medium.freecodecamp.org/using-svg-as-placeholders-more-image-loading-techniques-bed1b810ab2c" target="_blank" rel="external">How to use SVG as a Placeholder, and Other Image Loading Techniques</a><ul><li>이미지 로딩이 완료되기 전에 사용자에게 보여줄 것</li><li>과거 여러 방법들<ul><li>아무것도 표시하지 않음: 퍼포먼스에서 이득일 수 있지만, 사용자의 경험상 최악. 레이아웃이 두두둑거리면서 바뀌기 때문에.</li><li>Placeholder: 미리 설정된 가벼운 이미지를 표시</li><li>Solid Color: 배경 색으로 설정되어 텅 비었지만 레이아웃을 유지</li><li>Progressive image loading or “Blur-up”: 특정한 처리를 통해 이미지 로딩 과정을 보여주거나, 원래 이미지를 작게 만들어 원래 사이즈로 뿌려줌으로써 블러 효과를 냄, 사용자에게 기다리면 곧 꺠끗한 이미지가 뜰 것이라는 생각을 하게함.</li></ul></li><li>SVG-based placeholders(기본적으로 이미지를 코드처리하여 여러 기교를 부리는 느낌)<ul><li><a href="https://codepen.io/jmperez/pen/oogqdp" target="_blank" rel="external">Edges</a>: 가장 충격적. 이미지를 로딩하는 동안 이미지의 테두리를 그리는 과정을 애니메이션으로 표시</li><li><a href="https://codepen.io/jmperez/pen/BmaWmQ" target="_blank" rel="external">Shapes</a>: 이미지의 내용을 삼각형 처리하여 표시. “Blur-up”과 유사</li><li><a href="https://github.com/technopagan/sqip" target="_blank" rel="external">SQIP</a>: 블러처리와 비슷, 그러나 용량을 획기적으로 줄일 수 있는 것 같음</li><li><a href="https://codepen.io/ainalem/pen/aLKxjm" target="_blank" rel="external">Silhouettes</a>: 두톤 실루엣을 보여주고 그 위로 원본 이미지가 로딩되면 덮어버리는 방식. 나쁘지 않음. 코드가 긴 건 Edges와 매한가지인듯</li></ul></li><li>여러 방식이 있었고 특히 SVG를 활용하여 코드 처리를 하면 사용자에게 지루한 로딩 시간을 더 좋은 경험으로 줄 수 있지 않을까 생각하게 됨.</li><li>너무 길어서 나중에 따로 빼서 정리해야겠다.</li></ul></li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>Angular 복습 &amp; 예습<ul><li>코드 일일이 치던 것 마저 진행</li><li>Todo-list v5 쌤 코드와 비교하고 다시 짜기</li></ul></li><li>반려견 프로젝트<ul><li>담당 Wire Frame(레이아웃+기능구조) 짜서 ovenapp.io에 올리기</li><li><a href="https://github.com/girin-dev/chartjs-practice" target="_blank" rel="external">chartjs practice</a></li></ul></li><li>블로그 정리</li><li>GDG 후기</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Angular 복습 &amp;amp; 예습&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;코드 일일이 치던 것 
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171121-TIL</title>
-    <link href="http://girin-dev.github.io/2017/11/21/171121-TIL/"/>
-    <id>http://girin-dev.github.io/2017/11/21/171121-TIL/</id>
-    <published>2017-11-21T01:17:57.000Z</published>
-    <updated>2017-11-22T02:40:43.325Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>블로그 정리</li><li>Angular Forms<ul><li>Template-driven Forms</li><li>Reactive Forms</li></ul></li><li>Angular 복습 &amp; 예습<ul><li>코드 일일이 치던 것 마저 진행</li><li>Service &amp; Dependency Injection, RxJS, HttpClient 복습</li><li>Todo-list v5 쌤 코드와 비교하고 다시 짜기</li><li>내일 수업 예습</li></ul></li><li>GDG 후기</li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>id의 유효성 검사해서 css를 변경하기</li><li><a href="https://medium.com/@jwyeom63/번역-정규표현식으로-5일-걸리는-작업-15분만에-끝내기-2e615a907048" target="_blank" rel="external">[번역]정규표현식으로는 5일 걸리는 작업, 15분만에 끝내기</a><ul><li><a href="https://github.com/vi3k6i5/flashtext" target="_blank" rel="external">FlashText</a></li><li>처리데이터의 증가량에 따라 처리시간이 늘어나는 정규표현식에 비해 처리데이터량에 관계없이 처리시간이 일정한, 순수 파이썬 기반의 라이브러리</li><li>찾고자 하는 단어가 문장안에 있는지를 찾는 방식이 아니라 문장을 분해하여 그것이 찾고자 하는 단어 뭉치(corpus)에 있느냐를 따지는 방식</li><li>특수문자를 지원하지 않고 찾아야 할 키워드가 500개 이상일 경우 유의미</li></ul></li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>블로그 정리</li><li>Angular<ul><li>Todo-list v5 쌤 코드와 비교하고 다시 짜기</li></ul></li><li>GDG 후기</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;블로그 정리&lt;/li&gt;
-&lt;li&gt;Angular Forms&lt;ul&gt;
-&lt;li&gt;Template-d
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171120-TIL</title>
-    <link href="http://girin-dev.github.io/2017/11/20/171120-TIL/"/>
-    <id>http://girin-dev.github.io/2017/11/20/171120-TIL/</id>
-    <published>2017-11-20T01:28:41.000Z</published>
-    <updated>2017-11-22T02:40:46.155Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>블로그 정리</li><li>Angular Service<ul><li>Service &amp; Dependency Injection</li><li>RxJS</li><li>HTTP</li></ul></li><li>Angular 복습 &amp; 예습<ul><li>코드 일일이 치던 것 마저 진행</li><li>Service &amp; Dependency Injection, RxJS, HttpClient 복습</li><li>Todo-list v5 쌤 코드와 비교하고 다시 짜기</li><li>내일 수업 예습</li></ul></li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>Angular 복습<ol><li>올체크하기() &amp; 올삭제하기(사실 안 됨)</li><li>체크된거 카운트하고 삭제하기</li><li>리스트 누르면 인풋으로 바뀌고 수정하기</li><li>전체지우기</li></ol></li></ul><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2><ul><li>블로그 정리</li><li>Angular<ul><li>Todo-list v5 쌤 코드와 비교하고 다시 짜기</li></ul></li><li>GDG 후기</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;블로그 정리&lt;/li&gt;
-&lt;li&gt;Angular Service&lt;ul&gt;
-&lt;li&gt;Service 
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171118-171119-TIL</title>
-    <link href="http://girin-dev.github.io/2017/11/19/171118-171119-TIL/"/>
-    <id>http://girin-dev.github.io/2017/11/19/171118-171119-TIL/</id>
-    <published>2017-11-19T01:28:37.000Z</published>
-    <updated>2017-11-22T02:34:32.392Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="주말동안-한-일"><a href="#주말동안-한-일" class="headerlink" title="주말동안 한 일"></a>주말동안 한 일</h2><ul><li>GDG 컨퍼런스 참석</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;주말동안-한-일&quot;&gt;&lt;a href=&quot;#주말동안-한-일&quot; class=&quot;headerlink&quot; title=&quot;주말동안 한 일&quot;&gt;&lt;/a&gt;주말동안 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;GDG 컨퍼런스 참석&lt;/li&gt;
-&lt;/ul&gt;
-
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>171117-TIL</title>
-    <link href="http://girin-dev.github.io/2017/11/17/171117-TIL/"/>
-    <id>http://girin-dev.github.io/2017/11/17/171117-TIL/</id>
-    <published>2017-11-17T04:34:45.000Z</published>
-    <updated>2017-11-22T02:34:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>WebSocket, DataStructure, Gulp 특강</li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><ul><li>김데레사님과의 만남<ul><li>HTTP/CSS, TypeScript와 Angular/웹접근성</li></ul></li></ul><h2 id="주말동안-할-일"><a href="#주말동안-할-일" class="headerlink" title="주말동안 할 일"></a>주말동안 할 일</h2><ul><li>GDG 컨퍼런스 참석</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;WebSocket, DataStructure, Gulp 특강&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2
       
     
     </summary>
