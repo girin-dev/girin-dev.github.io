@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2019-01-03T04:40:42.000Z</updated>
+  <updated>2019-01-03T04:42:43.000Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -17,11 +17,45 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ECMAScript6-exception</title>
+    <link href="http://girin-dev.github.io/2019/01/03/ECMAScript6-exception/"/>
+    <id>http://girin-dev.github.io/2019/01/03/ECMAScript6-exception/</id>
+    <published>2019-01-03T04:41:46.000Z</published>
+    <updated>2019-01-03T04:42:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="예외와-예외처리"><a href="#예외와-예외처리" class="headerlink" title="예외와 예외처리"></a>예외와 예외처리</h2><ul><li>예외와 예외처리<ul><li>에러 발생 가능성은 인정</li><li>에러를 예상하고 타당한 방법으로 처리</li></ul></li><li>예외처리(exception handling): 에러를 컨트롤하는 메커니즘</li><li><code>예상할 수 있는 에러</code>와 <code>예상치 못한 에러</code></li></ul><h2 id="11-1-Error-객체"><a href="#11-1-Error-객체" class="headerlink" title="11.1 Error 객체"></a>11.1 Error 객체</h2><ul><li><code>const err = new Error(‘invalid Error’);</code></li><li>내장된 Error 객체 활용해 에러메세지 지정 가능</li><li>252쪽 코드 구현해 볼 것</li></ul><h2 id="11-2-try-catch와-예외처리"><a href="#11-2-try-catch와-예외처리" class="headerlink" title="11.2 try/catch와 예외처리"></a>11.2 try/catch와 예외처리</h2><ul><li>뭔가를 시도(try)하고, 예외가 있으면 캐치(catch)함</li><li>이메일 주소를 받는 form에서 @를 빼먹는 것을 방지하는 것은 예상할 수 있는 에러이지만,</li><li>email에서 null 같은게 들어온다 등은 예상치 못한 에러</li><li>이때 <code>try…catch 문</code>을 사용<br>try {…실행부분} catch(err) {…에러감지시 실행}</li><li>즉, 에러를 캐치했다고 해서 프로그램이 멈추지 않고, 계속 진행되며 다만 에러를 기록함(문제가 해결된 건 아님)</li></ul><h2 id="11-3-에러-일으키기"><a href="#11-3-에러-일으키기" class="headerlink" title="11.3 에러 일으키기"></a>11.3 에러 일으키기</h2><ul><li>JavaScript는 에러가 일어날 때까지 기다릴 필요없이 직접 에러를 일으켜서(<code>throw</code>, <code>raise</code>) 예외처리 작업을 시작할 수 있음.</li><li>JavaScript는 에러를 일으킬 때, 꼭 객체만이 아니라 숫자, 문자열 등 어떤 값이든 catch절에 넘길 수 있음.(그러나 <code>Error 인스턴스</code>에 넘기는 것이 가장 편리함)</li><li><code>throw</code>를 호출하면 현재 함수는 즉시 실행을 멈춤.</li></ul><h2 id="11-4-예외처리와-호출스택"><a href="#11-4-예외처리와-호출스택" class="headerlink" title="11.4 예외처리와 호출스택"></a>11.4 예외처리와 호출스택</h2><ul><li>자바스크립트 인터프리터는 이런 과정을 모두 추적(스택에 차곡차곡)</li><li>호출스택: 완료되지 않은 함수가 쌓이는 것</li><li>에러는 캐치될 때까지 호출스택을 따라 올라감</li><li>에러는 호출스택 어디에서든 캐치가능, 어디에서도 캐치하지 않으면 자바스크립트 인터프리터는 프로그램을 멈춤<ul><li><code>unhandled</code> 예외(처리하지 않은), <code>uncaught</code> 예외(캐치하지 않은) =&gt; 프로그램 충돌의 원인</li></ul></li><li>에러를 캐치하면 호출스택에서 문제해결의 유용한 정보를 얻을 수 있다.</li><li><code>Error 인스턴스</code>에는 스택을 문자열로 표현한 <code>stack 프로퍼티</code> 존재(표준은 아니지만 대부분의 환경에서 지원)</li><li>255-256쪽 코드 참고(@가 있는 행은 스택추적)</li></ul><h2 id="11-5-try…catch…finally"><a href="#11-5-try…catch…finally" class="headerlink" title="11.5 try…catch…finally"></a>11.5 try…catch…finally</h2><ul><li>try 블록 코드가 HTTP연결파일과 같은 일종의 ‘자원’을 처리할 때가 있는데, 에러 여부와 관계없이 어느 시점에는 이 자원을 해제해야 할 때 <code>finally</code>를 써야 한다.</li><li>try 블록에 해제 구문을 쓴다면? <ul><li>try 블록 내에서 에러가 발생해 자원 해제의 기회를 잃을 수 있음</li></ul></li><li>catch 블록에 해제 구문을 쓴다면?<ul><li>에러가 발생하지 않으면 실행되지 않으니 해제의 기회가 없을 수 있음</li></ul></li><li>이때 필요한 것이 <code>finally 블록</code><ul><li>finally 블록은 에러가 일어나든 말든 반드시 호출.<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;…&#125; <span class="keyword">catch</span>(err) &#123;…&#125; <span class="keyword">finally</span> &#123;...&#125;</span><br></pre></td></tr></table></figure></li></ul></li></ul><h2 id="11-6-요약"><a href="#11-6-요약" class="headerlink" title="11.6 요약"></a>11.6 요약</h2><ul><li>이제 모든 에러를 잡으려고 예상가능한 에러나 예상불가한 예외 중 어느 쪽이든 예외처리를 사용하고 싶을 것이나 예외처리는 비용이 요구됨<ul><li>예외를 캐치하지 못할 수 있음</li><li>예외처리 자체도 연산비용 소요</li></ul></li><li>예상할 수 없는 상황에 대한 마지노선 =&gt; 예외처리</li><li>예상할 수 있는 에러는 조건문으로 처리할 것을 추천</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;예외와-예외처리&quot;&gt;&lt;a href=&quot;#예외와-예외처리&quot; class=&quot;headerlink&quot; title=&quot;예외와 예외처리&quot;&gt;&lt;/a&gt;예외와 예외처리&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;예외와 예외처리&lt;ul&gt;
+&lt;li&gt;에러 발생 가능성은 인정&lt;/li&gt;
+&lt;li&gt;
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://girin-dev.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="ES6" scheme="http://girin-dev.github.io/tags/ES6/"/>
+    
+      <category term="JavaScript" scheme="http://girin-dev.github.io/tags/JavaScript/"/>
+    
+      <category term="예외" scheme="http://girin-dev.github.io/tags/%EC%98%88%EC%99%B8/"/>
+    
+      <category term="예외처리" scheme="http://girin-dev.github.io/tags/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ECMAScript6 Map과 Set</title>
-    <link href="http://girin-dev.github.io/2019/01/03/JavaScript-Map-Set/"/>
-    <id>http://girin-dev.github.io/2019/01/03/JavaScript-Map-Set/</id>
+    <link href="http://girin-dev.github.io/2019/01/03/ECMAScript6-Map-Set/"/>
+    <id>http://girin-dev.github.io/2019/01/03/ECMAScript6-Map-Set/</id>
     <published>2019-01-03T04:36:43.000Z</published>
-    <updated>2019-01-03T04:40:42.000Z</updated>
+    <updated>2019-01-03T04:41:03.060Z</updated>
     
     <content type="html"><![CDATA[<ul><li>맵: 객체와 비슷</li><li>셋: 배열과 비슷<h2 id="10-1-맵-Map"><a href="#10-1-맵-Map" class="headerlink" title="10.1 맵(Map)"></a>10.1 맵(Map)</h2></li><li>객체의 단점<ul><li>프로토타입 체인으로 의도치 않은 연결 생김</li><li>객체 안의 연결된 키와 값이 몇개나 되는지 쉽게 알 수 있는 방법이 없음</li><li>키는 심볼/문자열이어야 하므로, 객체를 키로 써서 값과 연결불가</li><li>객체는 프로퍼티 순서를 전혀 보장하지 않음</li></ul></li><li><p>Map</p><ul><li>이러한 결함을 모두 해결한 것으로 키-값 연결의 목적이라면 map이 객체보다 더 나은 선택<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> u1 = &#123;<span class="attr">name</span>:’Cynthia’&#125;;</span><br><span class="line"><span class="keyword">const</span> u2 = &#123;<span class="attr">name</span>:’Jackson’&#125;;</span><br><span class="line"><span class="keyword">const</span> u3 = &#123;<span class="attr">name</span>:’Olive’&#125;;</span><br><span class="line"><span class="keyword">const</span> u4 = &#123;<span class="attr">name</span>:’James’&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> userRoles = <span class="keyword">new</span> <span class="built_in">Map</span>();</span><br><span class="line"></span><br><span class="line">userRoles.set(u1, ‘User’);</span><br><span class="line">userRoles.set(u2, ‘User’);</span><br><span class="line">userRoles.set(u3, ‘Admin’);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 표현방법1</span></span><br><span class="line"><span class="comment">// userRoles</span></span><br><span class="line"><span class="comment">//     .set(u1, ‘User')</span></span><br><span class="line"><span class="comment">//     .set(u2. ‘User’)</span></span><br><span class="line"><span class="comment">//     .set(u3. ‘Admin’)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 표현방법2</span></span><br><span class="line"><span class="comment">// const userRoles = new Map([</span></span><br><span class="line"><span class="comment">//     [u1, ‘User’], [u2, ‘User’], [u3, ‘Admin’],</span></span><br><span class="line"><span class="comment">// ]);</span></span><br></pre></td></tr></table></figure></li></ul></li><li><p>읽기</p><ul><li><p>존재하지 않는 키에 <code>get()</code> 호출시 undefined 반환</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">userRoles.get(u2); <span class="comment">// “User"</span></span><br></pre></td></tr></table></figure></li><li><p><code>has()</code> 맵에 해당 키가 존재하는지 확인</p></li><li><code>set()</code> 쓰기. 이미 존재하는 키에 set()을 호출하면 값이 교체됨</li><li><code>size</code> 맵의 요소 숫자 반환</li><li><code>keys()</code> 맵의 키</li><li><code>values()</code> 값</li><li><code>entries()</code> 첫번째 요소가 키, 두번째 요소가 값인 배열 반환</li><li>keys(), values(), entries()는 모두 이터러블 객체이므로 <code>for…of 루프</code> 사용가능, 확산 연산자 활용해 배열로 변환가능</li><li><code>delete()</code> 맵의 요소 삭제</li><li><code>clear()</code> 맵의 요소 전체삭제</li></ul></li></ul><h2 id="10-2-위크맵-WeakMap"><a href="#10-2-위크맵-WeakMap" class="headerlink" title="10.2 위크맵(WeakMap)"></a>10.2 위크맵(WeakMap)</h2><ul><li>WeakMap은 다음 차이점을 빼면 Map과 완전히 동일<ul><li>키는 반드시 객체이어야 함</li><li>WeakMap의 키는 가비지콜렉션에 포함될 수 있음</li><li>WeakMap은 이터러블이 아니며 <code>clear()</code> 메서드가 없음<br>=&gt; 일반적으로 JavaScript에서는 코드 어딘가에서 객체를 참조하는 한 그 객체를 계속 메모리에 유지.(WeakMap은 가비지콜렉션 중인 객체를 노출할 가능성이 있기 때문에 이터러블이 될 수 없음)</li></ul></li><li>이런 특징으로 객체 인스턴스의 전용(private) 키를 저장하기에 알맞음.<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> SecretHolder = (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">const</span> secrets = <span class="keyword">new</span> <span class="built_in">WeakMap</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="class"><span class="keyword">class</span> </span>&#123;</span><br><span class="line">        setSecret(secret)&#123;</span><br><span class="line">            secrets.set(<span class="keyword">this</span>, secret);</span><br><span class="line">        &#125;</span><br><span class="line">        getSecret()&#123;</span><br><span class="line">            <span class="keyword">return</span> secrets.get(<span class="keyword">this</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></li></ul><p>=&gt; WeakMap과 위크맵을 사용하는 클래스를 함께 IIFE에 넣었음. IIFE 외부에서는 그 인스턴스에 비밀스런 내용을 저장할 수 있는 SecretHolder라는 클래스를 얻음. 비밀저장(setSecret), 비밀조회(getSecret) 메서드<br>=&gt; Map을 써도 되지만 이 경우 저장내용이 가비지콜렉션에 포함되지 않음</p><h2 id="10-3-셋-Set"><a href="#10-3-셋-Set" class="headerlink" title="10.3 셋(Set)"></a>10.3 셋(Set)</h2><ul><li><p>셋: 중복을 허용하지 않는 데이터 집합</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> roles = <span class="keyword">new</span> <span class="built_in">Set</span>();</span><br></pre></td></tr></table></figure></li><li><p>메소드와 프로퍼티</p><ul><li><code>add()</code> 요소 추가 (예시 - 사용자 역할 추가), 추가하려는 것이 셋에 이미 있는지 확인할 필요없으며 이미 있는 것을 추가하려하면 아무 일도 일어나지 않음</li><li><code>size</code> 배열의 length와 비슷</li><li><code>delete()</code> 요소 제거, 제거에 성공했다면(그런 요소가 셋에 존재했다면) <code>true</code> 반환 / 그렇지 않다면 <code>false</code> 반환</li></ul></li></ul><h2 id="10-4-위크셋-WeakSet"><a href="#10-4-위크셋-WeakSet" class="headerlink" title="10.4 위크셋(WeakSet)"></a>10.4 위크셋(WeakSet)</h2><ul><li>위크셋: 객체만 포함할 수 있으며, 이 객체들은 가비지콜렉션의 대상이 됨</li><li>이터러블 객체 아니며 그래서 용도가 적음</li><li>보통 위크셋의 실제 용도는 주어진 객체가 셋 안에 존재하는지 알아보는 것 정도.</li></ul>]]></content>
     
@@ -510,35 +544,6 @@
     
       <category term="ETC" scheme="http://girin-dev.github.io/categories/ETC/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>171123-TIL</title>
-    <link href="http://girin-dev.github.io/2017/11/23/171123-TIL/"/>
-    <id>http://girin-dev.github.io/2017/11/23/171123-TIL/</id>
-    <published>2017-11-23T00:44:03.000Z</published>
-    <updated>2017-11-23T11:56:06.123Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h2><ul><li>Angular<ul><li>Module</li><li>Routing</li></ul></li><li>Angular 복습 &amp; 예습<ul><li>코드 일일이 치던 것 마저 진행</li><li>Todo-list v5 쌤 코드와 비교하고 다시 짜기</li></ul></li><li>반려견 프로젝트<ul><li>담당 Wire Frame(레이아웃+기능구조) 짜서 ovenapp.io에 올리기</li><li><a href="https://github.com/girin-dev/chartjs-practice" target="_blank" rel="noopener">chartjs practice</a></li></ul></li><li>GDG 후기</li></ul><h2 id="메모"><a href="#메모" class="headerlink" title="메모"></a>메모</h2><h2 id="내일-할-일"><a href="#내일-할-일" class="headerlink" title="내일 할 일"></a>내일 할 일</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;오늘-한-일&quot;&gt;&lt;a href=&quot;#오늘-한-일&quot; class=&quot;headerlink&quot; title=&quot;오늘 한 일&quot;&gt;&lt;/a&gt;오늘 한 일&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Angular&lt;ul&gt;
-&lt;li&gt;Module&lt;/li&gt;
-&lt;li&gt;Routing&lt;/li&gt;
-&lt;/u
-      
-    
-    </summary>
-    
-      <category term="TIL" scheme="http://girin-dev.github.io/categories/TIL/"/>
-    
-    
-      <category term="TIL(Today I Learned)" scheme="http://girin-dev.github.io/tags/TIL-Today-I-Learned/"/>
     
   </entry>
   
