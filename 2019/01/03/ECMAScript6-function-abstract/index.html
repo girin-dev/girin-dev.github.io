@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="ko"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> ECMAScript6-function-abstract · 기린개발의 일지</title><meta name="description" content="ECMAScript6-function-abstract - Girin-dev"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://girin-dev.github.io/atom.xml" title="기린개발의 일지"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="https://github.com/girin-dev" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">ECMAScript6-function-abstract</h1><div class="post-info">2019년 1월 3일</div><div class="post-content"><h2 id="13-1-서브루틴으로서의-함수"><a href="#13-1-서브루틴으로서의-함수" class="headerlink" title="13.1 서브루틴으로서의 함수"></a>13.1 서브루틴으로서의 함수</h2><ul>
+<li>서브루틴<ul>
+<li>매우 단순하고 범용적인, 호출할 수 있는 한 단위</li>
+<li>유사어 - 프로시저, 루틴, 서브프로그램, 매크로</li>
+</ul>
+</li>
+<li>함수이름의 중요성<ul>
+<li>함수명은 누가 봐도 바로 알 수 있게 명명하는 것이 좋음</li>
+</ul>
+</li>
+</ul>
+<h2 id="13-2-값을-반환하는-서브루틴으로서의-함수"><a href="#13-2-값을-반환하는-서브루틴으로서의-함수" class="headerlink" title="13.2 값을 반환하는 서브루틴으로서의 함수"></a>13.2 값을 반환하는 서브루틴으로서의 함수</h2><ul>
+<li>한단계 더 추상화</li>
+<li>불리언이 필요한 컨텍스트에서 쓰도록 만든 함수명엔 <code>is</code>가 맨 앞에 들어가는게 일반적이며, “현재기준”이 중요하다면 <code>current</code>가 들어감</li>
+</ul>
+<h2 id="13-3-함수로서의-함수"><a href="#13-3-함수로서의-함수" class="headerlink" title="13.3 함수로서의 함수"></a>13.3 함수로서의 함수</h2><ul>
+<li>순수함수<ul>
+<li>수학적 정의에 충실한 함수</li>
+<li>입력이 들어가면 결과가 나오는 관계</li>
+</ul>
+</li>
+<li>순수함수와 일반적함수의 차이점<ul>
+<li><ol>
+<li>순수함수에선 입력이 같으면 결과도 같다.(일반적 함수는 입력을 안 받기도 하고, 입력이 아닌 다른 요소에 의해 결과가 바뀌기도 함)</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>순수함수에는 부수효과가 없다.<ul>
+<li>부수효과: 함수에 속하는 않는 변수가 바뀐다는 등 함수 이외에서 나타나는 효과</li>
+<li>함수를 호출했다고 해서 프로그램의 상태가 바뀌어선 안 된다.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>일반함수를 순수함수로 바꿔보자<ul>
+<li>외부변수를 클로저로 감싸는 것도 방법</li>
+<li>이터레이터를 쓸 수 있음<ul>
+<li>이터레이터는 독립적이므로 다른 프로그램에서 이터레이터를 생성해 다루더라도 다른 이터레이터를 간섭하지 않는다.</li>
+<li><code>next</code>는 매번 다른 값을 반환할테니 문제를 뒤로 미룬 것이긴 하지만 그래도 순수함수임.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="13-4-그래서-함수는-왜"><a href="#13-4-그래서-함수는-왜" class="headerlink" title="13.4 그래서 함수는 왜?"></a>13.4 그래서 함수는 왜?</h2><ul>
+<li>함수의 3가지 측면</li>
+</ul>
+<ol>
+<li>서브루틴</li>
+<li>값을 반환하는 서브루틴</li>
+<li>순수함수</li>
+</ol>
+<ul>
+<li>함수는 왜 쓰는가?<ul>
+<li>반복을 없애기 위해</li>
+</ul>
+</li>
+<li>순수함수는 왜 쓰는가?<ul>
+<li>순수한 함수를 쓰면 코드를 테스하기 쉽고, 이해하기 쉽고, 재사용하기도 쉽다.</li>
+<li>컨텍스트에 좌우되는 함수(상황에 따라 다른 값 반환, 부수효과 등)는 다른 프로그램에서 사용하려 할 때 문제 발생</li>
+<li>순수함수 권장(습관화하자)</li>
+<li>객체지향 프로그래밍은 스코프를 밀접하게 관리하여 함수의 부수효과 제어</li>
+</ul>
+</li>
+</ul>
+<h3 id="13-4-1-함수도-객체다"><a href="#13-4-1-함수도-객체다" class="headerlink" title="13.4.1 함수도 객체다."></a>13.4.1 함수도 객체다.</h3><ul>
+<li>자바스크립트 함수는 <code>Function</code> 객체의 인스턴스</li>
+<li><code>typeof v</code>로 함수인지 아닌지 정확히 알 수 있다.</li>
+<li><code>v instanceof Object</code>도 true이기 때문에 (객체가 아닌) 함수임을 알고 싶다면 <code>typeof v</code>를 쓰자</li>
+</ul>
+<h2 id="13-5-IIFE와-비동기적코드"><a href="#13-5-IIFE와-비동기적코드" class="headerlink" title="13.5 IIFE와 비동기적코드"></a>13.5 IIFE와 비동기적코드</h2><ul>
+<li>IIFE(즉시 호출하는 함수표현식)으로 비동기적 코드를 처리해보자</li>
+<li><p>‘5,4,3,2,1,go!’을 출력하는 코드를 짜보자</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> i;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">5</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i===<span class="number">0</span> ? “go!” : i);</span><br><span class="line">    &#125;, (<span class="number">5</span>-i)*<span class="number">1000</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>위 코드는 5, 4, 3, 2, 1, go! 가 출력될 것 가지만 -1만 6번 출력된다. </p>
+</li>
+<li>원인은<ul>
+<li>setTimeout에 전달된 함수(콜백함수)가 루프 안에서 실행되지 않고 루프가 종료된 뒤 실행되었기 떄문이다.</li>
+<li>즉, 루프가 종료되어 -1이 되기 전까지 콜백함수는 전혀 호출되지 않음(콜백함수 호출시점의 i는 -1)</li>
+</ul>
+</li>
+<li>대안<ul>
+<li><ol>
+<li><code>let</code>을 사용하는 방법<ul>
+<li>블록 수준 스코프를 사용하면 간단히 해결되지만 비동기적 프로그래밍에 대해 익숙해질 필요있음.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>함수를 하나 더 쓰는 방법<ul>
+<li>함수를 하나 더 쓰면 스코프가 새롭게 생성되고 각 단계에서 i의 값이 클로저에 캡쳐된다.<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">loopBody</span>(<span class="params">i</span>)</span>&#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i===<span class="number">0</span> ? “go!” : i);</span><br><span class="line">    &#125;, (<span class="number">5</span>-i)*<span class="number">1000</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> i;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">5</span>;i&gt;=<span class="number">0</span>;i—)&#123;loopBody(i);&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<p>이 경우 루프의 각 단계에서 loopBody 함수가 호출되고, JavaScript는 매개변수를 값으로 넘긴다. 즉, 루프의 각 단계에서 함수에 전달되는 것은 변수 i가 아니라 <code>i의 값</code>임. 중요한 것은 스코프가 7개 만들어졌고 변수도 7개가 만들어짐(하나는 외부스코프, 나머지 여섯은 loopBody를 호출할 때마다 생성되는 스코프)</p>
+<ul>
+<li><p>루프에 쓸 함수에 일일히 이름을 붙이는 것은 성가시므로, 익명함수를 만들고 이를 즉시실행함수로 처리가능(아래 코드)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> i;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&gt;=<span class="number">0</span>;i—)&#123;</span><br><span class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params">i</span>)</span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(i===<span class="number">0</span> ? “go!” : i);</span><br><span class="line">        &#125;, (<span class="number">5</span>-i)*<span class="number">1000</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>ES6의 블록스코프 변수선언 키워드 <code>let</code>을 사용하면 극도로 단순하게 처리가능</p>
+<ul>
+<li>JavaScript는 루프의 각 단계마다 변수 i의 복사본을 만들고, setTimeout에 전달한 함수가 실행될 때는 독립 스코프에서 변수를 받는다.<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">5</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i===<span class="number">0</span> ? “go!” : i);</span><br><span class="line">    &#125;, (<span class="number">5</span>-i)*<span class="number">1000</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<p>하지만 여기서도 let을 반복문(for 루프) 외부에 쓰면 같은 문제가 발생한다.</p>
+<h2 id="13-6-변수로서의-함수"><a href="#13-6-변수로서의-함수" class="headerlink" title="13.6 변수로서의 함수"></a>13.6 변수로서의 함수</h2><ul>
+<li>함수는 호출하였을 때 능동적이지만 호출하기 전엔 다른 변수와 마찬가지로 수동적</li>
+<li>변수가 있을 수 있는 곳에 함수도 있을 수 있음<ul>
+<li><ol>
+<li>함수를 가리키는 변수를 반들어 별명을 정할 수 있음</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>배열에 함수를 넣을 수 있고, 다른 데이터와 섞일 수 있음</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>함수를 객체 프로퍼티로 사용할 수 있음</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>함수를 함수에 전달할 수 있음</li>
+</ol>
+</li>
+<li><ol start="5">
+<li>함수가 함수를 반환할 수 있음</li>
+</ol>
+</li>
+<li><ol start="6">
+<li>함수를 매개변수로 받는 함수를 반환하는 것도 가능</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>이런 유연성이 JavaScript 함수의 가장 강력한 특징이며 매우 자주 사용함</li>
+</ul>
+<h3 id="13-6-1-변수를-이용해-함수에-별명-붙이기"><a href="#13-6-1-변수를-이용해-함수에-별명-붙이기" class="headerlink" title="13.6.1 변수를 이용해 함수에 별명 붙이기"></a>13.6.1 변수를 이용해 함수에 별명 붙이기</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">abc</span>…<span class="title">z</span>(<span class="params">x</span>)</span>&#123;…&#125;</span><br><span class="line"><span class="keyword">const</span> f = abc…z; <span class="comment">// 이제 함수 abc…z는 f 함수로 호출 가능</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>const f1 = abc…z;</code>와 <code>const f2 = abc…z()</code>의 차이점은 전자는 함수에 별명을 붙인 것이고, 후자는 함수의 결과값을 f2변수에 할당한 것.</li>
+<li>위 패턴은 노드 개발에서 자주 쓰이는 네임스페이스에서 계속 쓰는 패턴<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Money = <span class="built_in">require</span>(‘math-money’); <span class="comment">// require는 라이브러리를 불러오는 노드 함수</span></span><br><span class="line"><span class="keyword">const</span> oneDollar = Money.Dollar(<span class="number">1</span>);</span><br><span class="line"><span class="keyword">const</span> Dollar = Money.Dollar;</span><br><span class="line"><span class="keyword">const</span> twoDollar = Dollar(<span class="number">2</span>); <span class="comment">// oneDollar와 twoDollar는 같은 타입의 인스턴스</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="13-6-2-배열-안의-함수"><a href="#13-6-2-배열-안의-함수" class="headerlink" title="13.6.2 배열 안의 함수"></a>13.6.2 배열 안의 함수</h3><ul>
+<li>특정 상황에서 대단히 유용</li>
+<li>자주 하는 일을 한 셋으로 묶는 파이프라인이 대표적</li>
+<li>배열을 사용하면 작업 단계를 언제든 쉽게 바꿀 수 있다는 장점<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> sin = <span class="built_in">Math</span>.sin;</span><br><span class="line"><span class="keyword">const</span> cos = <span class="built_in">Math</span>.cos;</span><br><span class="line"><span class="keyword">const</span> theta = <span class="built_in">Math</span>.PI/<span class="number">4</span>;</span><br><span class="line"><span class="keyword">const</span> zoom = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">const</span> offset = [<span class="number">1</span>,<span class="number">-3</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> pipeline = [</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">retate</span>(<span class="params">p</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">            x: p.x * cos(theta) - p.y * sin(theta),</span><br><span class="line">            y: p.x * sin(theta) + p.y * cos(theta),</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">scale</span>(<span class="params">p</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> &#123; <span class="attr">x</span>: p.x * zoom, <span class="attr">y</span>: p.y * zoom&#125;;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">translate</span>(<span class="params">p</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> &#123; <span class="attr">x</span>: p.x + offset[<span class="number">0</span>], <span class="attr">y</span>: p.y + offset[<span class="number">1</span>] &#125;;</span><br><span class="line">    &#125;,</span><br><span class="line">];</span><br><span class="line"><span class="comment">// 이제 pipeline은 2D 변형에 필요한 함수의 배열입니다.</span></span><br><span class="line"><span class="comment">// 점 하나를 변형해 봅시다.</span></span><br><span class="line"><span class="keyword">const</span> p = &#123;<span class="attr">x</span>:<span class="number">1</span>, <span class="attr">y</span>:<span class="number">1</span>&#125;;</span><br><span class="line"><span class="keyword">let</span> p2 = p;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;pipeline.length;i++)&#123;</span><br><span class="line">    p2 = pipeline[i](p2);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// p2는 이제 p1을 좌표 원점 기준으로 45도 회전하고(rotate)</span></span><br><span class="line"><span class="comment">// 원점에서 2 단위만큼 떨어뜨린 후(scale)</span></span><br><span class="line"><span class="comment">// 1단위 오른쪽, 3단위 아래쪽으로 움직인(translate) 점입니다.</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="13-6-3-함수에-함수-전달"><a href="#13-6-3-함수에-함수-전달" class="headerlink" title="13.6.3 함수에 함수 전달"></a>13.6.3 함수에 함수 전달</h3><ul>
+<li>함수에 함수를 전달하는 다른 용도는 비동기적 프로그래밍. 이러한 용도로 전달하는 함수를 콜백함수라고 함(setTimeout, forEach 등)</li>
+<li>콜백함수는 자신을 감싼 함수가 실행을 마쳤을 때 호출된다.</li>
+<li>함수에 함수를 전달하는 대표적 사례가 콜백함수이지만 그것만 있는건 아님.</li>
+<li>함수는 동작이고, 함수를 받은 함수는 그 동작을 활용할 수 있음.<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">arr, f</span>)</span>&#123;</span><br><span class="line">    <span class="comment">// 함수가 전달되지 않았으면 매개변수를 그대로 반환하는 null 함수를 씁니다.</span></span><br><span class="line">    <span class="keyword">if</span>(<span class="keyword">typeof</span> f != ‘<span class="function"><span class="keyword">function</span>’) <span class="title">f</span> = <span class="title">x</span> =&gt; <span class="title">x</span>;</span></span><br><span class="line"><span class="function">    <span class="title">return</span> <span class="title">arr</span>.<span class="title">reduce</span>(<span class="params">(a,x</span>) =&gt; <span class="title">a</span> += <span class="title">f</span>(<span class="params">x</span>), 0);</span></span><br><span class="line"><span class="function">&#125;</span></span><br><span class="line"><span class="function"><span class="title">sum</span>(<span class="params">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span>);                     // 6</span></span><br><span class="line"><span class="function"><span class="title">sum</span>(<span class="params">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>], x =&gt; x*x</span>)            // 14</span></span><br><span class="line"><span class="function"><span class="title">sum</span>(<span class="params">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>], x =&gt; Math.pow(x,<span class="number">3</span></span>)); // 36</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="13-6-4-함수를-반환하는-함수"><a href="#13-6-4-함수를-반환하는-함수" class="headerlink" title="13.6.4 함수를 반환하는 함수"></a>13.6.4 함수를 반환하는 함수</h3><ul>
+<li>난해하나 유용함</li>
+<li>매개변수를 여러개 받는 함수를 하나만 받는 함수로 바꾸는 것을 커링(currying)이라고 함</li>
+<li>express나 koa 같은 미들웨어 패키지가 함수를 반환하는 형태로 제작됨<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sumOfSquares</span>(<span class="params">arr</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> sum(arr, x =&gt; x*x);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 변수를 하나만 받도록 변경(currying)</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">newSummer</span>(<span class="params">f</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="params">arr</span> =&gt;</span> sum(arr, f);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 새 함수 newSummer가 반환하는 함수는 단 하나의 매개변수만 받으면서도, 우리가 원하는 중간 함수를 마음대로 쓸 수 있음</span></span><br><span class="line"><span class="keyword">const</span> sumOfSquares = newSummer(<span class="function"><span class="params">x</span> =&gt;</span> x*x);</span><br><span class="line"><span class="keyword">const</span> sumOfCubes = newSummer(<span class="function"><span class="params">x</span> =&gt;</span> <span class="built_in">Math</span>.pow(x,<span class="number">3</span>));</span><br><span class="line">sumOfSquares([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]);    <span class="comment">// returns 14</span></span><br><span class="line">sumOfCubes([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]);      <span class="comment">// returns 36</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="13-7-재귀"><a href="#13-7-재귀" class="headerlink" title="13.7 재귀"></a>13.7 재귀</h3><ul>
+<li>재귀: 자기 자신을 호출하는 함수</li>
+<li>재귀함수에는 <code>종료조건</code>이 있어야 함</li>
+<li>건초찾기와 계승(factorial) 찾기 예제</li>
+</ul>
+<h3 id="13-8-요약"><a href="#13-8-요약" class="headerlink" title="13.8 요약"></a>13.8 요약</h3><ul>
+<li>함수형 언어(ML,하스켈,클로저,F# 등)에서 흔히 사용하는 함수형 사고방식</li>
+<li>똑같은 일을 해도 방법은 다양함</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2019/01/03/ECMAScript6-iterator-generater/" class="next">다음글</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'girin-dev';
+var disqus_identifier = '2019/01/03/ECMAScript6-function-abstract/';
+var disqus_title = 'ECMAScript6-function-abstract';
+var disqus_url = 'http://girin-dev.github.io/2019/01/03/ECMAScript6-function-abstract/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//girin-dev.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 - 2019 <a href="http://girin-dev.github.io">Girin-dev</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>

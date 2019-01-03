@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://girin-dev.github.io/2019/01/03/ECMAScript6-function-abstract/</loc>
+    
+    <lastmod>2019-01-03T04:53:18.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://girin-dev.github.io/2019/01/03/ECMAScript6-iterator-generater/</loc>
+    
+    <lastmod>2019-01-03T04:50:18.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://girin-dev.github.io/2019/01/03/ECMAScript6-exception/</loc>
     
-    <lastmod>2019-01-03T04:47:31.610Z</lastmod>
+    <lastmod>2019-01-03T04:48:13.000Z</lastmod>
     
   </url>
   
