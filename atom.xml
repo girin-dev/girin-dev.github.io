@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2018-04-23T15:43:08.000Z</updated>
+  <updated>2019-01-03T03:22:37.396Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://girin-dev.github.io/2018/04/23/review-FC-frontend-yamoo9/"/>
     <id>http://girin-dev.github.io/2018/04/23/review-FC-frontend-yamoo9/</id>
     <published>2018-04-23T14:51:05.000Z</published>
-    <updated>2018-04-23T15:43:08.000Z</updated>
+    <updated>2019-01-03T03:22:37.396Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Fastcampus-프론트엔드-개발-시작하기-CAMP-0-Orientation"><a href="#Fastcampus-프론트엔드-개발-시작하기-CAMP-0-Orientation" class="headerlink" title="Fastcampus 프론트엔드 개발 시작하기 CAMP #0. Orientation"></a>Fastcampus 프론트엔드 개발 시작하기 CAMP #0. Orientation</h1><h2 id="패스트캠퍼스의-온라인-강의-체험단"><a href="#패스트캠퍼스의-온라인-강의-체험단" class="headerlink" title="패스트캠퍼스의 온라인 강의 체험단"></a>패스트캠퍼스의 온라인 강의 체험단</h2><p>이번에 FastCampus의 온라인 강의 체험단이 되어 <a href="http://www.fastcampus.co.kr/dev_online_fep/" target="_blank" rel="noopener">&lt;프론트엔드 개발 시작하기 CAMP&gt;</a>라는 강의를 리뷰하게 되었습니다. 사실은 3월부터 들어왔던 수업인데 너무나도 뒤늦게 리뷰를 작성하고 있어 담당자 분께는 다소 죄송스러운 마음도 갖고 있습니다ㅎㅎ;; 어찌되었든 앞으로 차근차근 리뷰를 작성해보려고 합니다.</p><p>원래 패스트캠퍼스는 오프라인 강의(캠프와 스쿨)를 위주로 운영되는 곳입니다. 그런데 이번에 온라인 강의를 시작하면서 다양한 시도를 하는 것 같습니다. 특히 이번 프론트엔드 관련 온라인 강의는 야무님(yamoo9)님과 같이 진행되어 더욱 기대감이 컸습니다.</p><p><img src="https://raw.githubusercontent.com/girin-dev/girin-dev.github.io/master/img/book-yamoo9.jpg" alt="야무님의 대표저서"></p><p>야무님은 <a href="http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=56468578" target="_blank" rel="noopener">&lt;만들면서 배우는 모던 웹사이트 제작&gt;</a>의 저자이시기도 합니다.</p><h2 id="왜-듣게-되었나"><a href="#왜-듣게-되었나" class="headerlink" title="왜 듣게 되었나"></a>왜 듣게 되었나</h2><p> 제가 이 체험단을 신청하게 된 가장 큰 이유도 야무님의 수업을 듣고 싶었기 때문입니다. 야무님은 이미 웹개발자와 웹디자이너 사이에서 유명하시고, 저 또한 주변 개발자들로부터 좋은 이야기를 듣고 있었던 터라 수업을 꼭 들어보고 싶었습니다.</p><p>무엇보다 HTML과 CSS에 대한 기본 지식이 많이 부족하다고 생각했기에 이를 공부해야 할 필요를 느꼈습니다. 작년에 들었던 패스트캠퍼스 프론트엔드 스쿨 과정에서도 많이 아쉬웠던 점이 HTML과 CSS 부분이었기 때문입니다.</p><h2 id="그거-퍼블리싱-아니야"><a href="#그거-퍼블리싱-아니야" class="headerlink" title="그거 퍼블리싱 아니야?"></a>그거 퍼블리싱 아니야?</h2><p>HTML과 CSS를 공부한다고 하면 많은 분들이 ‘프론트엔드’보다 ‘퍼블리싱’을 떠올립니다. 거기에 퍼블리싱에 대한 막연한 편견까지 더해지기까지 합니다. 하지만 웹문서/웹어플리케이션의 구조를 짜지 못하고 레이아웃을 못 잡고 CSS 스타일링에 미숙하다면 그 사람을 프론트엔드 개발자라고 할 수 있을까요?</p><p>저는 JavaScript의 주요 역할 중 하나가 여전히 HTML과 CSS를 지원하는 것이라고 생각하고 있습니다.(물론 이게 전부는 아닙니다.) JavaScript를 아무리 잘하고 Angular와 React, Vue.js 등의 최신 웹 프레임워크를 아무리 잘 한다고 할지라도 HTML과 CSS를 못하면 말짱 도로묵이라고 생각합니다.</p><h2 id="JavaScript는-얼마나-배우는가"><a href="#JavaScript는-얼마나-배우는가" class="headerlink" title="JavaScript는 얼마나 배우는가"></a>JavaScript는 얼마나 배우는가</h2><p>사실 아직 강의를 전부 듣지 못하였기 때문에 정확하게는 알지 못합니다만, 분명 이 수업은 최신 웹 프레임워크를 전문적으로 파는 강의도 JavaScript의 전문적, 학문적 수준의 깊이있는 원리를 다루지도 않을 것입니다. 예상하건데 JavaScript에 대한 기본 문법 강의와 jQuery, Ajax 등을 다루게 될 것입니다.</p><h2 id="그래서-누구를-위한-강의인가"><a href="#그래서-누구를-위한-강의인가" class="headerlink" title="그래서 누구를 위한 강의인가"></a>그래서 누구를 위한 강의인가</h2><p>따라서 이 강의는 정말 프로그래밍을 한번도 겪어보지 않은 분들에게 유효한 강의라고 생각합니다. 물론 시중에 많은 강의들이 있고 심지어 생활코딩이나 Codecademy 등 비슷한 주제를 무료로 들을 수 있는 방법도 있습니다. 그러나 이러한 강의에 비해 패스트캠퍼스 프론트엔드 개발 시작하기 CAMP는 Yamoo9님의 강의를 생생하게 들을 수 있다는 점, 그리고 꾸준한 피드백과 QnA를 통해 직접 수업을 듣고 있다는 느낌을 줍니다. 이것은 온라인 강의에서 쉽게 느낄 수 있는 ‘중도포기’를 방지하는데 큰 도움이 됩니다. 프로그래밍을 대충 맛만 보고 끝내는 것이 아니라 ‘자신의 포트폴리오 제작’ 이라는 목표를 달성하는 본 강의는 프로그래밍을 처음으로 하게 되는 학생들에게 좌절과 어려움의 기억이 아니라 성공과 결과물이라는 자신감을 안겨줄 것입니다. 그렇기 때문에 완전히 프로그래밍을 해보지 않은 사람이 차근차근 따라할 수 있는 강의라고 생각합니다.</p><h2 id="이후에-쓸-리뷰는"><a href="#이후에-쓸-리뷰는" class="headerlink" title="이후에 쓸 리뷰는?"></a>이후에 쓸 리뷰는?</h2><p>지금까지 아직 강의를 다 듣지도 않고 쓴 오리엔테이션 성격의 중간 리뷰였습니다. 앞으로는 구체적으로 강의를 들으면서 느꼈던 점, 아쉬웠던 점, 개선점들을 위주로 작성해볼까 합니다. 지금까지 읽어주셔서 감사합니다.</p>]]></content>
     
@@ -34,7 +34,7 @@
     
     </summary>
     
-      <category term="Self_Review" scheme="http://girin-dev.github.io/categories/Self-Review/"/>
+      <category term="ETC" scheme="http://girin-dev.github.io/categories/ETC/"/>
     
     
       <category term="Self_Review, Fastcampus, yamoo9, frontend" scheme="http://girin-dev.github.io/tags/Self-Review-Fastcampus-yamoo9-frontend/"/>
@@ -46,13 +46,13 @@
     <link href="http://girin-dev.github.io/2018/04/16/Network-00-orientation/"/>
     <id>http://girin-dev.github.io/2018/04/16/Network-00-orientation/</id>
     <published>2018-04-16T13:56:23.000Z</published>
-    <updated>2018-04-23T15:33:51.000Z</updated>
+    <updated>2019-01-03T03:22:21.642Z</updated>
     
     <summary type="html">
     
     </summary>
     
-      <category term="Network" scheme="http://girin-dev.github.io/categories/Network/"/>
+      <category term="Network/HTTP" scheme="http://girin-dev.github.io/categories/Network-HTTP/"/>
     
     
       <category term="네트워크" scheme="http://girin-dev.github.io/tags/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/"/>
@@ -64,7 +64,7 @@
     <link href="http://girin-dev.github.io/2018/04/16/Network-01-message/"/>
     <id>http://girin-dev.github.io/2018/04/16/Network-01-message/</id>
     <published>2018-04-16T13:38:06.000Z</published>
-    <updated>2018-04-23T15:33:49.447Z</updated>
+    <updated>2019-01-03T03:22:24.640Z</updated>
     
     <content type="html"><![CDATA[<h1 id="웹-브라우저가-메시지를-만든다"><a href="#웹-브라우저가-메시지를-만든다" class="headerlink" title="웹 브라우저가 메시지를 만든다"></a>웹 브라우저가 메시지를 만든다</h1><h2 id="01-HTTP-리퀘스트-메시지를-작성한다"><a href="#01-HTTP-리퀘스트-메시지를-작성한다" class="headerlink" title="01. HTTP 리퀘스트 메시지를 작성한다"></a>01. HTTP 리퀘스트 메시지를 작성한다</h2><ul><li><code>protocol</code> 쌍방간의 약속</li></ul><h3 id="http"><a href="#http" class="headerlink" title="http"></a><code>http</code></h3><ul><li><p>인터넷 통신 프로토콜, TCP/IP 의존적(더 깊은 layer)</p></li><li><p>Web에서 데이터를 주고 받기 위한 protocol로 요청과 응답이라는 쌍으로 이루어져있다.</p><ul><li>요청이 와야 응답이 오고, 요청이 없으면 응답도 없다.</li><li>무한 대기할 필요가 없으니 서버 부하가 적고, 이를 통해 http가 서버에 유리하게 설계되어 있음을 알 수 있다.</li><li>이러한 특성으로 서버 하나가 다량의 클라이언트를 상대할 수 있다.</li></ul></li><li>1요청에 1응답이 가능할 뿐이므로 상태를 유지할 수 없다.<code>stateless</code></li></ul><h3 id="URL과-URI"><a href="#URL과-URI" class="headerlink" title="URL과 URI"></a><code>URL</code>과 <code>URI</code></h3><ul><li><code>URL</code><ul><li>URL(Uniform/Universal Resource Locator)은 어디에서나 접근 가능한 장소(한정적)를 나타내는 말</li><li>http: ftp: file: mailto: 등 브라우저의 클라이언트 기능에 따라 다양하게 존재</li><li><code>protocol</code>과 <code>서버이름</code>, <code>리소스의 위치</code>로 구성</li><li>URL 마지막에 <code>/</code>를 생략해도 무관하며 이 경우 index.html 파일을 불러오거나 적절한 파일/디렉토리를 연다</li><li>URL 자체가 반드시 요청자의 바람대로 응답이 온다는 것을 보장하지 않는다. 응답은 전적으로 서버의 몫이며, 요청은 단순히 요청일 뿐이다.(W3C는 신뢰성을 위해 URL을 배포할 때 변화가 없는 것을 권장한다.)</li></ul></li><li><code>URI</code><ul><li>URI(Uniform/Universal Resource Identifier)로 URL보다 다양한 의미를 가지며 떄로 <code>URL</code>이 <code>URI</code>가 되기도 한다.</li></ul></li></ul><h3 id="요청메시지와-응답메시지"><a href="#요청메시지와-응답메시지" class="headerlink" title="요청메시지와 응답메시지"></a>요청메시지와 응답메시지</h3><ul><li>요청메시지<ul><li>요청 메시지 자체는 특별한 형식으로 작성되어 있다는 것을 내포하며, <code>헤더</code>, <code>바디</code>로 구성되어 있다.</li><li><code>메소드</code>는 URI와 함께 쓰여 요청메시지를 구성하며, 해당 메시지의 목적을 나타낸다.<ul><li>GET(받겠다)</li><li>POST(보내겠다)</li><li>HEAD(head만 보겠다)</li><li>OPTIONS(통신의 옵션을 통지/조사하겠다)</li><li>PUT(놓겠다/넣겠다)</li><li>DELETE(지정한 서버의 파일을 삭제하겠다)</li><li>TRACE(리퀘스트 라인과 헤더를 그대로 클라이언트에 반송한다)</li><li>CONNECT(암호화한 메시지를 프록시로 전송하겠다)</li></ul></li></ul></li><li>응답메시지<ul><li><code>응답코드</code>+<code>헤더</code>+<code>바디</code></li></ul></li></ul>]]></content>
     
@@ -77,7 +77,7 @@
     
     </summary>
     
-      <category term="Network" scheme="http://girin-dev.github.io/categories/Network/"/>
+      <category term="Network/HTTP" scheme="http://girin-dev.github.io/categories/Network-HTTP/"/>
     
     
       <category term="네트워크" scheme="http://girin-dev.github.io/tags/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/"/>
@@ -89,7 +89,7 @@
     <link href="http://girin-dev.github.io/2018/04/03/review-programming-together/"/>
     <id>http://girin-dev.github.io/2018/04/03/review-programming-together/</id>
     <published>2018-04-03T02:50:13.000Z</published>
-    <updated>2018-04-16T07:12:16.202Z</updated>
+    <updated>2019-01-03T03:22:50.000Z</updated>
     
     <content type="html"><![CDATA[<p>기초튼튼 코드튼튼</p><h1 id="다-함께-프로그래밍"><a href="#다-함께-프로그래밍" class="headerlink" title="다 함께 프로그래밍"></a>다 함께 프로그래밍</h1><p>타니지리 카오리 지음 / 제이펍 출판</p><h2 id="프로그래밍의-일곱-절차"><a href="#프로그래밍의-일곱-절차" class="headerlink" title="프로그래밍의 일곱 절차"></a>프로그래밍의 일곱 절차</h2><ol><li>테마 정하기</li><li>줄거리 만들기</li><li>시나리오 작성</li><li>프로그래밍 언어로 번역</li><li>움직여보기</li><li>확인하기</li><li>버전업</li></ol><h2 id="줄거리와-시나리오-작성을-위한-힌트"><a href="#줄거리와-시나리오-작성을-위한-힌트" class="headerlink" title="줄거리와 시나리오 작성을 위한 힌트"></a>줄거리와 시나리오 작성을 위한 힌트</h2><p>데이터의 변화를 고려한다.(자료구조를 어떻게 가져갈 것인가?)</p><h2 id="변수명-붙이는-방법"><a href="#변수명-붙이는-방법" class="headerlink" title="변수명 붙이는 방법"></a>변수명 붙이는 방법</h2><ul><li>테이터의 의미를 알 수 있는 이름</li><li>프로그래밍 언어의 규칙 준수</li><li>명령어와 동일한 이름 사용 금지</li><li>팀 내 규칙 준수</li><li>프로그래머 세계의 상식 준수</li></ul><h2 id="계산식에서-문제-발생-원인은"><a href="#계산식에서-문제-발생-원인은" class="headerlink" title="계산식에서 문제 발생 원인은?"></a>계산식에서 문제 발생 원인은?</h2><ul><li>2진법의 프로그래밍상 오차(실수 계산)</li><li>식작성법에서의 오류나 산술연산자의 우선순위 실수<ul><li><code>(</code>, <code>)</code>을 잘못 작성한 경우</li><li>사칙연상의 우선순위 고려해야 함(부호&gt;곱셈/나눗셈&gt;덧셈/뺄샘&gt;대입)</li></ul></li><li>데이터 타입 선정의 오류<ul><li>실수형 자료를 정수형에 넣고 계산하는 경우</li></ul></li><li>나누기 오류<ul><li>0으로 나누기를 시도한 경우</li><li>실수 데이터를을 정수형 변수에 넣어 0이 되어버린 경우(나누기0은 성립할 수 없다.)</li></ul></li></ul><h2 id="프로그래밍의-흐름"><a href="#프로그래밍의-흐름" class="headerlink" title="프로그래밍의 흐름"></a>프로그래밍의 흐름</h2><p>프로그래밍은 <code>순차실행</code>, <code>조건판단</code>, <code>반복</code>이라는 세 개의 구조만으로 이루어진다.<br><code>점프명령</code>은 꼭 필요한 경우(에러검출 등)가 아니면 사용금지</p><ul><li><code>순차실행</code><ul><li>프로그램에 기술한 순서대로 명령을 실행하는 것</li><li>순차실행이 꼬이는 경우 ‘이해하기 어려운 프로그램’이 될 수 있음(의도적으로 명령 순서를 바꾼 프로그램)</li></ul></li><li><code>조건판단</code><ul><li><code>조건판단</code> 구조에서 주의할 것은 지정한 모든 조건에 해당하지 않을 때 실행할 처리를 준비해야 한다는 것.</li><li>이것은 버그 발견이나 사용자 경험에도 유익</li><li>조건판단의 종류<ul><li>만약~라면(<code>if</code>)</li><li>먄약~라면, 그 이외의 경우는(<code>if</code>, <code>else if</code>, <code>else</code>)</li><li>만약이 많은 경우(<code>switch</code>)</li><li>중첩된 조건판단(nest)</li></ul></li></ul></li><li><code>반복</code><ul><li>횟수를 정해주는 반복 <code>for</code></li><li>횟수를 모르는 상황에서의 반복 <code>while</code><ul><li>선조건판단: 조건이 참인지 판단 -&gt; 명령 시행 후 조건 검사 -&gt; 반복</li><li>후조건판단: 명령 시행 -&gt; 조건이 참인지 판단 -&gt; 반복</li><li>후조건 판단시 카운터의 증가분과 종료값의 관계에 주의할 것(무한루프에 빠질 수 있기 때문)</li><li>무한루프에 빠지지 않도록 주의할 것</li></ul></li><li><code>무한루프</code>에 빠지는 경우<ul><li>반복한 횟수를 세는 카운터가 갱신되지 않을 경우</li><li>카운터의 증가분과 종료값의 관계가 틀린 경우</li><li>특정 조건이 성립하기까지 반복을 실행할 때, 판단에 사용하는 값을 갱신하지 않는 경우</li></ul></li><li><code>반복</code>의 중첩(이중반복문, 네스트)<ul><li>반복의 횟수는 <code>외부 반복 횟수 * 내부 반복 횟수</code></li></ul></li></ul></li><li><code>비교 연산/</code><br>## </li></ul><h2 id="총평"><a href="#총평" class="headerlink" title="총평"></a>총평</h2><ul><li>프로그램을 만들기 시작할 때 먼저 해야 할 순서 등을 차근차근 알려주는 느낌</li><li>어떤 부분에서 어떤 문제가 발생했을 경우 이러한 원인일 확률이 있다고 미리 알려주는 느낌</li><li>프로그래밍 파트별로 어떤 곳을 주의해야 하는지 알려주는 주의사항 노트</li><li>특정 프로그래밍 언어에 함몰되지 않고 전 분야에 공통적으로 적용할 수 있는 내용 위주로 적혀 있어 조음</li></ul>]]></content>
     
@@ -103,7 +103,7 @@
     
     </summary>
     
-      <category term="Programming" scheme="http://girin-dev.github.io/categories/Programming/"/>
+      <category term="Computer Science" scheme="http://girin-dev.github.io/categories/Computer-Science/"/>
     
     
       <category term="Self_Review, Programming" scheme="http://girin-dev.github.io/tags/Self-Review-Programming/"/>
@@ -115,7 +115,7 @@
     <link href="http://girin-dev.github.io/2018/03/12/CS-03-Real-Number/"/>
     <id>http://girin-dev.github.io/2018/03/12/CS-03-Real-Number/</id>
     <published>2018-03-12T07:47:30.000Z</published>
-    <updated>2018-03-13T02:01:53.000Z</updated>
+    <updated>2019-01-03T03:21:28.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="컴퓨터공학-실수"><a href="#컴퓨터공학-실수" class="headerlink" title="[컴퓨터공학] 실수"></a>[컴퓨터공학] 실수</h1><p>소수점의 등장<br>실수 표현은 표현 범위가 넓은 대신 정밀도가 낮다.</p><h2 id="1-실수-연산의-함정"><a href="#1-실수-연산의-함정" class="headerlink" title="1. 실수 연산의 함정"></a>1. 실수 연산의 함정</h2><p>컴퓨터로 소수점 계산을 하면 오류가 나는 경우가 있다.<br>가령 0.01을 10번 더하면 1을 기대하지만 실제 컴퓨터는 1.000000..007을 반환한다. 이것은 컴퓨터가 실수를 표현할 때, <code>부동소수점</code>을 이용하기 때문이다.</p><h2 id="2-부동소수점-floating-point"><a href="#2-부동소수점-floating-point" class="headerlink" title="2. 부동소수점(floating-point)"></a>2. 부동소수점(floating-point)</h2><p>실수는 같은 수라도 소수점의 위치에 따라 표현방식이 다양하다.</p><p>123.456<br>= 1.23456&#215;10<sup>2</sup><br>= 12.3456&#215;10<sup>1</sup><br>= 1234.56&#215;10<sup>-1</sup><br>= 12345.6&#215;10<sup>-2</sup>  </p><h2 id="3-단정도와-배정도"><a href="#3-단정도와-배정도" class="headerlink" title="3. 단정도와 배정도"></a>3. 단정도와 배정도</h2><ul><li>단정도<br>실수를 32bit(4byte)로 표혆하며 부호 1bit, 지수부 8bit, 가수부 23bit로 구성</li><li>배정도<br>실수를 64bit(8byte)로 표현하며 부호 1bit, 지수부 11bit, 가수부 52bit로 구성<br>파이썬에서 사용하는 방식으로 정밀도가 단정도보다 높음</li><li>파이썬의 부동소수점  <ul><li>배정도 부동소수점으로 표현할 수 있는 가장 큰 수(sys.float_info.max)<br><code>1.7976931348623157e+308</code></li><li>배정도 부동소수점으로 표현할 수 있는 가장 작은 수(sys.float_info.min)<br><code>2.2250738585072014e-308</code><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> sys</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sys.float_info</span><br><span class="line">sys.float_info(max=<span class="number">1.7976931348623157e+308</span>, max_exp=<span class="number">1024</span>, max_10_exp=<span class="number">308</span>, min=<span class="number">2.2250738585072014e-308</span>, min_exp=<span class="number">-1021</span>, min_10_exp=<span class="number">-307</span>, dig=<span class="number">15</span>, mant_dig=<span class="number">53</span>,epsilon=<span class="number">2.220446049250313e-16</span>, radix=<span class="number">2</span>, rounds=<span class="number">1</span>)</span><br></pre></td></tr></table></figure></li></ul></li></ul><!-- ## 4. 1바이트 실수 자료형 설계 -->]]></content>
     
@@ -128,7 +128,7 @@
     
     </summary>
     
-      <category term="ComputerScience" scheme="http://girin-dev.github.io/categories/ComputerScience/"/>
+      <category term="Computer Science" scheme="http://girin-dev.github.io/categories/Computer-Science/"/>
     
     
       <category term="컴퓨터공학, 실수" scheme="http://girin-dev.github.io/tags/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B3%B5%ED%95%99-%EC%8B%A4%EC%88%98/"/>
@@ -291,7 +291,7 @@
     <link href="http://girin-dev.github.io/2018/01/29/SL-howtoStudy(Joy)/"/>
     <id>http://girin-dev.github.io/2018/01/29/SL-howtoStudy(Joy)/</id>
     <published>2018-01-29T11:02:57.000Z</published>
-    <updated>2018-02-07T10:03:11.451Z</updated>
+    <updated>2019-01-03T03:23:06.300Z</updated>
     
     <content type="html"><![CDATA[<!-- # Joy님의 특강 --><p>FDS5기 수료생 Joy Kim님의 특강<br>(<a href="https://github.com/feel5ny" target="_blank" rel="noopener">https://github.com/feel5ny</a>)</p><h2 id="1-How-to-Study"><a href="#1-How-to-Study" class="headerlink" title="1. How to Study"></a>1. How to Study</h2><p><code>그때그때하기</code></p><h3 id="1-이해-amp-정리"><a href="#1-이해-amp-정리" class="headerlink" title="(1) 이해 &amp; 정리"></a>(1) 이해 &amp; 정리</h3><ul><li>너무 deep하지 않게</li><li>형식적인 정리말고 이해를 해서 스스로 정리</li><li>러버덕(스스로 말할 수 있을 정도)까지하면 최선</li></ul><h3 id="2-체화"><a href="#2-체화" class="headerlink" title="(2) 체화"></a>(2) 체화</h3><ul><li>그 주의 이해가 안되는 부분을 주단위로 주말 체화</li><li>프레임워크, 라이브러리는 인터넷 번역과 나만의 요약(그림)으로 하는게 좋았던 것 같음.</li></ul><h2 id="2-Project"><a href="#2-Project" class="headerlink" title="2. Project"></a>2. Project</h2><ul><li>욕심 부리지 말기</li><li>완성도 있는 결과물과 협업 능력을 목표로 하자</li><li>견고한 초반 기획(전체 메뉴 구조, 와이어프레임, 컨셉, 디자인)</li><li>문서화를 꼼꼼히 하는 습관(선례 <a href="https://github.com/huusz/Da-Da/blob/master/README.md" target="_blank" rel="noopener">https://github.com/huusz/Da-Da/blob/master/README.md</a>)</li><li>추천 CSS 프레임워크<ul><li>Ant design</li><li>Semantic UI</li></ul></li><li>디자인 팁<ul><li>툴 - 스케치, invision, zeplin</li><li>고퀄사진, 메인배경은 영상처리, 굵은 영문 타이포(Google font-Open Sans, Lato), 한글 타이포(스포카 한 산스/노트산스)</li></ul></li></ul><h2 id="3-협업능력"><a href="#3-협업능력" class="headerlink" title="3. 협업능력"></a>3. 협업능력</h2><h3 id="1-코드-컨벤션-초반에-꼭-정하기"><a href="#1-코드-컨벤션-초반에-꼭-정하기" class="headerlink" title="(1) 코드 컨벤션 초반에 꼭 정하기"></a>(1) 코드 컨벤션 초반에 꼭 정하기</h3><ul><li>class명, 카멜케이스, 플러그인(prettier, lint 등)</li></ul><h3 id="2-깃-git"><a href="#2-깃-git" class="headerlink" title="(2) 깃 git"></a>(2) 깃 git</h3><ul><li>깃 branch 컨벤션도 정하면 굳(git flow 참고)</li></ul><h3 id="3-Github"><a href="#3-Github" class="headerlink" title="(3) Github"></a>(3) Github</h3><ul><li>issue와 Pull Request 활용</li></ul><h3 id="4-칸반보드-trello-같은거"><a href="#4-칸반보드-trello-같은거" class="headerlink" title="(4) 칸반보드(trello 같은거)"></a>(4) 칸반보드(trello 같은거)</h3><h2 id="4-이후"><a href="#4-이후" class="headerlink" title="4. 이후"></a>4. 이후</h2><h3 id="1-이론"><a href="#1-이론" class="headerlink" title="(1) 이론"></a>(1) 이론</h3><h3 id="2-실습"><a href="#2-실습" class="headerlink" title="(2) 실습"></a>(2) 실습</h3><ul><li>토이프로젝트</li><li>블로그</li></ul><h3 id="3-네트워크-외부행사"><a href="#3-네트워크-외부행사" class="headerlink" title="(3) 네트워크(외부행사)"></a>(3) 네트워크(외부행사)</h3><ul><li>다니는 것도 좋은데 스텝으로도 해보면 의외의 기회가 나올 수 있음(구직)</li></ul><h2 id="추천책"><a href="#추천책" class="headerlink" title="추천책"></a>추천책</h2><ul><li><a href="http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=26434671" target="_blank" rel="noopener">프론트엔드 개발자를 위한 자바스크립트 프로그래밍</a></li></ul>]]></content>
     
@@ -304,6 +304,8 @@
       
     
     </summary>
+    
+      <category term="ETC" scheme="http://girin-dev.github.io/categories/ETC/"/>
     
     
   </entry>
@@ -392,7 +394,7 @@
     <link href="http://girin-dev.github.io/2018/01/18/Conf-TypeScript-Meetup(180118)/"/>
     <id>http://girin-dev.github.io/2018/01/18/Conf-TypeScript-Meetup(180118)/</id>
     <published>2018-01-18T10:04:22.000Z</published>
-    <updated>2018-02-16T13:02:17.757Z</updated>
+    <updated>2019-01-03T03:23:30.741Z</updated>
     
     <content type="html"><![CDATA[<h1 id="TypeScript-Meetup"><a href="#TypeScript-Meetup" class="headerlink" title="TypeScript Meetup"></a>TypeScript Meetup</h1><h2 id="손찬욱님-NAVER-TypeScript로부터-얻은-것과-잃은-것"><a href="#손찬욱님-NAVER-TypeScript로부터-얻은-것과-잃은-것" class="headerlink" title="손찬욱님 (NAVER) - TypeScript로부터 얻은 것과 잃은 것"></a>손찬욱님 (NAVER) - TypeScript로부터 얻은 것과 잃은 것</h2><ul><li>egjs, 다형성, <a href="https://naver.github.io/egjs-axes/" target="_blank" rel="noopener">eg.Axes</a></li><li>TypeScript를 도입하기 전까지<ul><li>인터페이스를 이용하면 좋았을텐데</li><li>다양한 인터페이스(좌표이동, 손가락 오무리기, 마우스 휠 등) 를 지원하고 싶다.</li></ul></li><li>얻은 것<ul><li><ol><li>코드 설계 의도가 분명</li></ol><ul><li>definition 파일이 자동으로 생서</li></ul></li><li><ol start="2"><li>안정성</li></ol><ul><li>툴의 도움을 받을 수 있음</li></ul></li><li><ol start="3"><li>편의성</li></ol><ul><li>codeAssist, 코드 이동(추적)</li><li>map, reduce 등을 동시에 여러번 적용하게 될 때 인자들에 대한 타입을 지정해줄 수 있다. =&gt; 데이터의 변형과 전달의 흐름 추적에 용이.(안정성)</li><li>lodash, rxjs와의 케미도 좋음.</li></ul></li><li>이 밖에도 ES3까지 지원되는 TypeScript 위엄.</li></ul></li><li>잃은 것<ul><li><ol><li>서드파티 라이브러리 사용할 때</li></ol><ul><li>서드파티 라이브러리가 UMD, CommonJS 형식으로 만들어진 모듈의 경우 ES6 Module이라는 표준형식으로 호출시 호출이 안되는 상황이 발생(?)</li><li><code>import * as \___ from &quot;___.js&quot;</code>, <code>import \___ from &quot;___.js&quot;</code></li><li>그나마 다행인 것은 최근 라이브러리들은 ES6 Module 용도 함께 배포</li></ul></li><li><ol start="2"><li>서드파티 라이브러리 @types 사용 시</li></ol><ul><li>외부 type definition 파일이 완벽하지 않음</li><li>서드파티 라이브러리 내부의 타입들을 다룰때 아예 타입을 재정의해버려야 하는 경우가 발생.</li></ul></li><li><ol start="3"><li>과한 사용은 오히려 독!</li></ol><ul><li>과도한 타입설정과 표시는 가독성을 해침.</li></ul></li></ul></li><li>결론<ul><li>장점: 코드의 명확, 주석없이 명세화 가능, 안전성, 편의성, ES3 지원</li><li>단점: 외부 모듈 사용이 불편(TypeScript 사용 환경이 아직 덜 보급), 과한 사용이 가독성을 떨어뜨림.</li><li>하지만 이 단점들이 대개 기존 시스템과의 이질감과 미진한 보급에서 비롯. 장점을 살려서 적절히 사용해보도록 해보아요~^^</li></ul></li></ul><hr><h2 id="김상원님-Tumblbug-코드-한-줄-없는-Typescript-사용기"><a href="#김상원님-Tumblbug-코드-한-줄-없는-Typescript-사용기" class="headerlink" title="김상원님 (Tumblbug) - 코드 한 줄 없는 Typescript 사용기"></a><a href="http://vichyssoise.io/" target="_blank" rel="noopener">김상원님</a> (Tumblbug) - 코드 한 줄 없는 Typescript 사용기</h2><ul><li>TypeScript: JavaScript의 offset(=superset).</li><li>TypeScript가 준 신뢰<ul><li>기억이 안나도 과거의 코드를 믿을 수 있게 되었다.</li><li><ol><li>빠른 디버깅</li></ol></li><li><ol start="2"><li>코드의 양이 줄어듦</li></ol></li><li><ol start="3"><li>코드 자체가 문서가 됨</li></ol></li><li><ol start="4"><li>팀원간의 신뢰도를 높여줌. 정해진 규칙, 즉 타입을 공유하고 있기 때문.</li></ol></li></ul></li><li>TypeScript가 준 실망<ul><li>세팅: 빌드 프로세스 수립 과정이 복잡</li><li><code>[변수] as any</code> =&gt; 해당 변수의 type을 무시. Type system의 장점을 희석시키지만 어쩔 수 없이 써야 하는 상황이 발생</li><li>코드와 타입이 불일치</li></ul></li></ul><hr><h2 id="한승호님-에멘탈-Typescript-개발-문화"><a href="#한승호님-에멘탈-Typescript-개발-문화" class="headerlink" title="한승호님 (에멘탈) - Typescript 개발 문화"></a>한승호님 (에멘탈) - Typescript 개발 문화</h2><h3 id="타입스크립트-도입을-위한-넓고-얕은-지식"><a href="#타입스크립트-도입을-위한-넓고-얕은-지식" class="headerlink" title="타입스크립트 도입을 위한 넓고 얕은 지식"></a>타입스크립트 도입을 위한 넓고 얕은 지식</h3><ul><li>Generic과 Decorator(를 활용한 깔끔한 Data Model)을 잘 활용하고 있음.</li><li>서버 관련해서 <a href="https://hapijs.com/" target="_blank" rel="noopener">hapi</a>라는게 있어요. express도 물론 있고.</li><li>타입스크립트로 백엔드도 구성할 수 있는 신세계가 있군요!</li><li><p>egghead.io/ typescriptlang.org/play/</p></li><li><p>사실 무슨 말을 하고 있는건지 이해하지 못함. </p></li><li>Node.js? 백엔드 기준으로 하고 있는 듯함.</li><li>백엔드에서 타입스크립트는 Node.js에서의 한계가 보이며 DevOps 구축시에도 손이 많이간다.</li></ul><hr><h2 id="최종욱님-후이서울-트릴리어네어-React-with-Typescript"><a href="#최종욱님-후이서울-트릴리어네어-React-with-Typescript" class="headerlink" title="최종욱님 (후이서울(트릴리어네어)) - React with Typescript"></a><a href="https://github.com/johnwook" target="_blank" rel="noopener">최종욱님</a> (후이서울(트릴리어네어)) - React with Typescript</h2><ul><li>React는 킹왕짱이에요.<ul><li>GraphQL이 뭐지..?</li><li>리엑트와 뷰js는 달라요. 리엑트는 선언적이고 효율적이며 어디든 적용할 수 있는 유연함을 갖고 있어요. </li></ul></li><li>TypeScript는 리엑트와 함께^^<ul><li>관련 레포(<a href="https://github.com/johnwook/ts-meetup-2018-1" target="_blank" rel="noopener">https://github.com/johnwook/ts-meetup-2018-1</a>)</li><li>interface를 정의하고 그를 따르는 것은 생각보다 큰 차이를 만들어낸다.</li><li>아마도… 코드와 컴포넌트에 대한 사전 설계에 대해 스스로 명확하게 인식한 이후 코딩을 할 수 있다는 게 그 차이가 아닐까 싶다. </li></ul></li><li>타입스크립트의 장점<ul><li>함수를 자기묘사를 할 수 있게끔 하고</li><li>인터페이스를 먼저 정의하고 이에 집중하게 한다.</li></ul></li><li>말 잘하고 재치가 있는 분인 듯</li></ul><hr>]]></content>
     
@@ -405,7 +407,7 @@
     
     </summary>
     
-      <category term="Conference" scheme="http://girin-dev.github.io/categories/Conference/"/>
+      <category term="ETC" scheme="http://girin-dev.github.io/categories/ETC/"/>
     
     
       <category term="Conference, TypeScript" scheme="http://girin-dev.github.io/tags/Conference-TypeScript/"/>
@@ -417,7 +419,7 @@
     <link href="http://girin-dev.github.io/2017/12/17/review-FC/"/>
     <id>http://girin-dev.github.io/2017/12/17/review-FC/</id>
     <published>2017-12-16T17:53:55.000Z</published>
-    <updated>2018-01-10T10:07:28.196Z</updated>
+    <updated>2019-01-03T03:22:41.567Z</updated>
     
     <content type="html"><![CDATA[<h1 id="패스트캠퍼스-프론트엔드-스쿨-6기-솔직-후기"><a href="#패스트캠퍼스-프론트엔드-스쿨-6기-솔직-후기" class="headerlink" title="패스트캠퍼스 프론트엔드 스쿨 6기 솔직 후기"></a>패스트캠퍼스 프론트엔드 스쿨 6기 솔직 후기</h1><p>패스트캠퍼스 프론트엔드 스쿨 6기를 다니고 있는 girin-dev입니다. 현재 반려동물을 관리하는 웹 어플리케이션 프로젝트를 진행하고 있습니다. 지난 4개월간 패스트캠퍼스를 다니면서 느꼈던 바와 패스트캠퍼스를 선택하게 된 이유와 과정과 솔직한 후기를 공유하고자 합니다.<br>학원이나 기관 등 프로그래밍 도움을 받고자 하는 많은 분들에게 좋은 정보가 되기를 바랍니다.</p><p>비전공자로서 프로그래밍을 배우는 것에 여러 어려움이 있었습니다. 특히 단순히 취미로 하는 코딩이 아니라 전문 개발자로서 커리어를 시작하려고 하지만, 내게 무엇이 필요하고 지금 무엇이 부족한지 정확히 알기가 어려웠습니다. 프로그래밍을 전혀 안 해본 것은 아니지만, 또 뭐 딱히 안다고도 할 수 없는 것이 바로 4개월 전의 제 상태였습니다. 이런 상황에서 벗어나고자 여러 방법을 찾고 있었고 패스트캠퍼스도 선택지 중 하나였습니다.</p><p>사실 예전과 달리 요즘은 패스트캠퍼스 뿐만 아니라 프로그래밍을 가르치는 다양한 기관과 학원이 존재하고, 또 여러 스터디가 시시각각 조직되고 있습니다. 이건 사실 좋은 환경이기도 하지만 너무 많은 선택지로 인해 혼란을 주기도 합니다. 제가 선택했던 과정과 배제되었던 다른 기관들은 어떤 이유에서였는지 말씀드리겠습니다.</p><h2 id="왜-패스트캠퍼스를-선택하게-되었나"><a href="#왜-패스트캠퍼스를-선택하게-되었나" class="headerlink" title="왜 패스트캠퍼스를 선택하게 되었나?"></a>왜 패스트캠퍼스를 선택하게 되었나?</h2><p><img src="/img/fc-logo.png" alt="ex_screenshot"></p><h3 id="최신-기술을-반영한-커리큘럼"><a href="#최신-기술을-반영한-커리큘럼" class="headerlink" title="최신 기술을 반영한 커리큘럼"></a>최신 기술을 반영한 커리큘럼</h3><p>첫째로 Angular와 같은 최신 프레임워크를 배우는 커리큘럼이었다는 것입니다. JavaScript를 가르치면서 프론트엔드 개발자를 양성한다는 학원은 많았습니다. 특히 국비지원 학원의 경우 수강생에게 용돈과 같은 성격의 돈을 주면서 심지어 무료로 가르친다고 하니 좋은 기회라고 생각이 들었습니다. 그러나 거의 대부분의 국비지원 학원은 프론트엔드의 최신 경향을 가르치기 보다는 jQuery와 같은 라이브러리를 가르치는 경우가 많았습니다. jQuery는 훌륭한 라이브러리지만, 오래되었고 컴포넌트 분리와 같은 최신의 프론트엔드 기술의 경향성과는 거리가 있는 기술입니다. 또한 과거 스타트업 인턴 면접에서 ‘요새는 jQuery 잘 안쓰는거 아시죠?’라는 말을 들은 적이 있어서 더욱 선택하기가 꺼려졌습니다. 다행히 패스트캠퍼스 프론트엔드 스쿨의 커리큘럼에는 현재 프론트엔드의 3대장 중 하나인 Angular를 가르친다고 되어 있었습니다. 이것은 기수마다 다르며 6기인 저는 Angular를 배웠고 7기의 경우 React, 4기의 경우 Vue.js를 배웠습니다. React와 Vue.js는 Angular와 함께 가장 인기있는 최신의 프론트엔드 프레임워크(혹은 라이브러리)라고 불립니다. 패스트캠퍼스가 최신의 기술을 다루고 도입하려는 학원이라는 점이 제게는 선택의 요인이 되었습니다.</p><h3 id="믿음직한-강사진"><a href="#믿음직한-강사진" class="headerlink" title="믿음직한 강사진"></a>믿음직한 강사진</h3><p>둘째로는 강사진이 믿음직했다는 점입니다. HTML과 CSS를 가르쳐주셨던 김데레사님의 경우 웹표준 핵심가이드북2 HTML5+CSS3의 저자입니다. 이 책은 프로그래밍을 공부하는 지인이 소개해 주어 평소 관심을 두었던 책이었기 때문에, 마치 저자의 직강을 들을 수 있다는 기대감을 주었습니다. 또한 프로그래밍 교육 책을 낼만큼 강의력과 실력이 증명되었다는 것을 기대할 수 있었습니다.<br><img src="/img/htmlcss.jpg" alt="ex_screenshot"><br><a href="http://webcafe2010.com/rwd/index.html" target="_blank" rel="noopener">웹표준 핵심가이드북2 HTML5+CSS3</a></p><p>JavaScript와 Angular를 가르쳐주신 웅모님의 경우 사실 데레사님만큼 사전에 잘 알지는 못했습니다. 그러나 poiemaweb이라는 프로그래밍 교육 사이트를 운영 중이셨고, 해당 사이트의 꼼꼼한 설명과 풍부한 예제는 웅모님의 강의에 대한 신뢰감을 심어주었습니다. 이후에 서술하겠지만 결국 웅모님은 현재 제 프로그래밍에 대한 생각에 가장 큰 영향을 주신 분이 되었습니다.</p><h3 id="지인의-추천과-비교적-공개된-하이어링-리포트"><a href="#지인의-추천과-비교적-공개된-하이어링-리포트" class="headerlink" title="지인의 추천과 비교적 공개된 하이어링 리포트"></a>지인의 추천과 비교적 공개된 하이어링 리포트</h3><p>셋째로는 지인의 추천이 있었고 채용 리포트가 공개되어 있었다는 점입니다. 스마트스터디에서 마케팅 직무로 일하고 있는 지인이 패스트캠퍼스의 디지털 마케팅 스쿨 출신이었습니다. 그 지인으로부터 패스트캠퍼스의 정보와 웹 프로그래밍 스쿨에 대한 정보, 학원 전반에 대한 추천을 들을 수 있었습니다. 그는 구직활동에 도움을 받았고 또 이를 바탕으로 실제 취업에 이르렀으니, 저 또한 이러한 기대감이 들었습니다. 또한 패스트캠퍼스 공식 홈페이지에 공개되어 있는 채용 리포트의 내용은 또한 제가 큰 기대감과 신뢰감을 주었습니다. 대개의 학원들이나 기관들이 자신들의 과정을 수료한 학생들의 취업률이나 정보를 비교적 덜 알리기 때문입니다. 그런 면에서 패스트캠퍼스는 신뢰도가 높았습니다.<br><a href="http://school.fastcampus.co.kr/dev_fds/#idx-7" target="_blank" rel="noopener">패스트캠퍼스 스쿨 하이어링 리포트</a></p><h3 id="사전과제의-난이도"><a href="#사전과제의-난이도" class="headerlink" title="사전과제의 난이도"></a>사전과제의 난이도</h3><p>넷째로 사전과제의 난이도에 신뢰감을 얻었습니다. 패스트캠퍼스의 경우 스쿨 등록 이전 사전과제가 주어지는데, 생각보다 난이도가 있는 과제였습니다. 다른 학원은 아예 사전과제가 없거나 있더라도 프로그램을 몇 개 까는게 전부였는데, 패스트캠퍼스는 달랐습니다. 난이도 있는 과제를 통해 본 스쿨의 커리큘럼이 단순하지 않고 배울 점이 있을 것이라는 기대감을 주었습니다.</p><h2 id="패스트캠퍼스-이외의-학원-기관들"><a href="#패스트캠퍼스-이외의-학원-기관들" class="headerlink" title="패스트캠퍼스 이외의 학원, 기관들"></a>패스트캠퍼스 이외의 학원, 기관들</h2><p>사실 패스트캠퍼스 뿐만 아니라 여러 국비지원 학원과 부트캠프를 돌아다니며 상담을 받곤 했습니다. 구체적인 이름을 언급하기는 좀 그래서 간략하게 선택하지 않은 이유를 적겠습니다. 위에서 언급했자시피 국비지원은 프론트엔드 개발자를 양성한다고 하지만 사실상 웹 퍼블리셔(HTML/CSS)과정과 간단한 자바스크립트와 라이브러리(jQuery)를 가르치는 정도였고, 거기에 Java의 spring을 가르침으로서 ‘풀스택 개발자’ 양성과 다름없다고 홍보를 했습니다. 풀스택 개발자가 3~6개월만에 양성된다는 것도 믿음이 가지 않았고 Java를 공부하고 싶은 마음도 없었습니다.</p><p>어떤 부트캠프는 JavaScript를 아예 가르치지 않거나(최근 JS를 가르치는 교육과정을 편성했다고 합니다.) 아니면 교육이 대부분 영어로 진행되는 단점을 갖고 있었습니다. 영어로 진행되는 수업의 경우 프로그래밍을 배우는게 아니라 영어를 배우러 가는 듯한 피로감을 느낄 것 같았습니다. 또 핑계를 찾기도 쉬울 것 같았습니다. 프로그래밍을 공부하지 않고 ‘영어’ 때문이라고 변명하고 싶지 않았습니다.</p><p>아니면 아예 인지도가 너무 떨어지거나 수료생들의 채용정보나 연봉정보가 공개되지 않은 것이 많았습니다. 이러한 이유들로 다른 학원과 기관들을 선택지에서 하나씩 제할 수 있었습니다.</p><h2 id="패스트캠퍼스-후기"><a href="#패스트캠퍼스-후기" class="headerlink" title="패스트캠퍼스 후기"></a>패스트캠퍼스 후기</h2><p>그렇다면 제가 처음에 기대했던 많은 내용을 패스트캠퍼스 프론트엔드 스쿨 과정이 전부 만족시켜줬느냐고 묻는다면 좀 어려운 질문이 될 것 같습니다. 그러나 굳이 고르라고 하면 NO 입니다. 만족스러웠던 부분도 있었고, 불만족스럽거나 실망스러웠던 부분도 있었습니다.</p><h3 id="강사진은-100-만족"><a href="#강사진은-100-만족" class="headerlink" title="강사진은 100% 만족"></a>강사진은 100% 만족</h3><p>데레사님과 웅모님에게 프로그래밍을 배운 것은 정말 소중한 경험이었습니다. 데레사님을 통해서 웹표준과 접근성을 고려한 시멘틱 마크업, 반응형 웹 디자인 등을 공부할 수 있었습니다. 같이 들었던 퍼블리셔 출신 6기생들도 감탄할 만큼 뛰어난 수업이었으며, 웹 퍼블리싱 및 프론트 개발에 대한 생각을 송두리째 바꿔주셨습니다. 특히 기억에 남는 것은 시멘틱 마크업과 접근성으로 웹개발의 질을 결정하는 요소라는 것을 알게 되었습니다.</p><!-- ![ex_screenshot](/img/poiemaweb.png) --><p><a href="http://poiemaweb.com/" target="_blank" rel="noopener">Poiemaweb</a><br>또한 웅모님을 통해 JavaScript를 배운 것은 프로그래밍에 대한 제 생각을 바꿔놓았습니다. 이전까지 ‘구현하면 된 거 아냐?’라는 생각이 프로그래밍을 대하는 제 자세였습니다. 세부적인 내용은 알면 좋고 아님 말고일 뿐이지, 결국은 현업에서 중요한 건 구현하는거 아니겠냐는 마음입니다. 하지만 실제 현업에서 일어나는 일은 유지보수가 많으며, 실제 구현하는 것조차도 이론적 지식이 없다면 효과적이고 퍼포먼스적으로 뛰어난 어플리케이션을 만들 수 없다는 것을 알게 되었습니다. 컴퓨터 메모리에 변수가 어떻게 저장되는지라든지 TypeScript에 let과 const가 왜 들어갔고 그 차이는 뭔지 등의 이론적 내용은 실제 현업에서 중요하게 생각하고 있는 것임을 알 수 있었습니다.</p><p>이외에도 기완 조교님과 특강 강사분들은 필요한 순간 적재적소에서 가려운 부위를 긁어주는 효자손과 같았습니다.</p><h3 id="전반적인-스쿨-운영과-설계의-미숙-시설이-아쉬워"><a href="#전반적인-스쿨-운영과-설계의-미숙-시설이-아쉬워" class="headerlink" title="전반적인 스쿨 운영과 설계의 미숙, 시설이 아쉬워"></a>전반적인 스쿨 운영과 설계의 미숙, 시설이 아쉬워</h3><ul><li>강사진은 믿음직했지만 스쿨 과정의 운영과정이나 프로젝트 팀 배정 절차 등은 다소 아쉬운 점이 있었습니다. 우선 스쿨 매니저님이 바빴습니다. 매니저님이 프론트엔드 6기만을 맡는게 아니라 여러 스쿨 기수를 맡고 있었기 때문에 온전히 저희에게 시간과 관심을 쏟을 수 없었습니다. 또한 업무가 많아 스쿨 기수들을 꼼꼼히 챙기기 어려웠던 것 같습니다. 강사님과 소통이 잘 되지 않아 커리큘럼 일정이 꼬이거나 수강생들과의 소통이 잘 이루어지지 못할 때가 있었고, 운영팀에서 준비한 여러 프로그램(페어프로그래밍, 애자인 방법론, 프로젝트 팀 배정 등)이 다소 프로페셔널하지 못한 느낌을 줄 때가 있었습니다. 마치 아마추어들이 한다는 느낌이 있었고 이것은 프로젝트 팀을 배정할 때 특히 두드러졌습니다. </li><li>각각의 건물들이 너무 떨어져서 자습이나 스터디를 위해 추운 겨울 밖으러 걸어나가야 할 때도 있었습니다. 그리고 편의시설이 거의 없다는 것이 많이 아쉬웠습니다.</li></ul><h2 id="총평"><a href="#총평" class="headerlink" title="총평"></a>총평</h2><p><img src="/img/3.jpg" alt="ex_screenshot"><br>패스트캠퍼스를 통해 바뀐 내 맥북(?)</p><p>비전공자로서 전문 개발자로서의 커리어를 시작하고 싶으신 분들에게 패스트캠퍼스는 나쁘지 않은 대안이라고 생각합니다. 많은 교육기관이 존재하지만 각각의 장단점이 있기 마련입니다. 패스트캠퍼스는 비교적 장점이 많고 단점이 적은 곳이라고 생각합니다. 그리고 무엇보다 강사진이 어느 교육기관에 꿀리지 않는 수준이라고 생각합니다. 스쿨과 기수마다 다르지만, 주변에서 시설이나 운영에 대해 불만족하는 분들은 있어도 강사진의 실력이나 강의력에 불만족하는 분은 보지 못했습니다.</p><p>한 가지 깨닫게 된 것은 개발자의 길은 끝이 없다는 것입니다. 패스트캠퍼스에 처음 들어오면서 기대했던 것은 ‘정답’이었습니다. 여기서 4개월 공부하여 전문 개발자가 되고 취업을 하는 것. 이것이 목표였습니다. 하지만 프로그래밍은 배우면 배울수록 알아야 하는 것이 많고 가야할 길이 구만리라는 것입니다. 돌이켜보면 4개월만에 개발자가 뚝딱 되어있는 것은 어불성설이라고 생각합니다. 혹시라도 4개월만에 2, 3년 경력에 준하는 개발자가 되길 바라는 분은 패스트캠퍼스에 실망하실 수도 있을 것 같습니다. 하지만 패스트캠퍼스는 제게 무엇을 모르고 무엇을 해야하는지를 명확히 보여준 곳이었습니다. 개발자에게 가장 필요한 명확한 자기 인식. 패스트캠퍼스는 이것을 가능하게 했습니다. 지난 4개월 간의 패스트캠퍼스에서의 공부는 전혀 후회없는 선택이었습니다. </p><p><img src="/img/1.jpg" alt="ex_screenshot"><br>지루한 글 읽어주셔서 감사합니다. 누군가에겐 도움이 되었으면 좋겠네요.<br>이상 girin-dev였습니다.</p>]]></content>
     
@@ -430,7 +432,7 @@
     
     </summary>
     
-      <category term="Self_Review" scheme="http://girin-dev.github.io/categories/Self-Review/"/>
+      <category term="ETC" scheme="http://girin-dev.github.io/categories/ETC/"/>
     
     
       <category term="Self_Review" scheme="http://girin-dev.github.io/tags/Self-Review/"/>
@@ -442,7 +444,7 @@
     <link href="http://girin-dev.github.io/2017/11/27/SL-git(Jay-jin)/"/>
     <id>http://girin-dev.github.io/2017/11/27/SL-git(Jay-jin)/</id>
     <published>2017-11-27T09:14:14.000Z</published>
-    <updated>2018-01-30T16:10:23.708Z</updated>
+    <updated>2019-01-03T03:22:57.541Z</updated>
     
     <content type="html"><![CDATA[<h1 id="진유림님-특강"><a href="#진유림님-특강" class="headerlink" title="진유림님 특강"></a>진유림님 특강</h1><h2 id="발표-중-나온-사이트"><a href="#발표-중-나온-사이트" class="headerlink" title="발표 중 나온 사이트"></a>발표 중 나온 사이트</h2><ul><li><a href="https://milooy.wordpress.com/" target="_blank" rel="noopener">Jay jin’s blog</a></li><li><a href="https://github.com/yeun/open-color" target="_blank" rel="noopener">open-color</a></li><li><a href="https://yop.cool/" target="_blank" rel="noopener">yop</a></li><li>slider에 공유한 발표자료들</li><li><a href="https://www.slideshare.net/jayjin0427/ss-61315271" target="_blank" rel="noopener">신입 개발자 생활백서</a></li><li><a href="https://github.com/e-/Hangul.js/" target="_blank" rel="noopener">Hangul.js</a></li><li><a href="https://firebase.google.com/" target="_blank" rel="noopener">firebase</a> vue와 친함.</li><li><a href="https://tutorial.djangogirls.org/ko/" target="_blank" rel="noopener">Django Girls</a></li></ul><h2 id="나는-왜-개발자가-되려고-하는가"><a href="#나는-왜-개발자가-되려고-하는가" class="headerlink" title="나는 왜 개발자가 되려고 하는가?"></a>나는 왜 개발자가 되려고 하는가?</h2><ul><li>높은 가지의 열매와 낮은 가지의 열매<ul><li>낮은 열매란?</li></ul></li><li>한 우물만 파야하는거 아니야?<ul><li>뭔가 손에 잡히지 않을 때 다른 분야에 대해 공부를 해도 심적으로 위안이 되더라</li><li>헤맸던 것도 나무를 오르는 과정이라고 생각하니까 마음이 편해요~</li></ul></li></ul><h2 id="낮은-열매-따먹기"><a href="#낮은-열매-따먹기" class="headerlink" title="낮은 열매 따먹기"></a>낮은 열매 따먹기</h2><ul><li>예쁜거 만들기<ul><li>자바와 자료구조보다 프론트엔드(HTML, CSS, JS)가 더 재미있더라</li><li>파이썬 &amp; 장고 꿀잼~!</li><li>해커톤 다수 참여</li></ul></li><li>9XD<ul><li>온오프라인 커뮤니티 활동</li></ul></li><li>일일커밋<ul><li>코딩하는 습관</li><li>어뷰징 금지</li><li>Codewars.com 타인의 코드를 보는 습관(일일코딩)</li><li>오픈소스 활동</li></ul></li><li>작은 발표<ul><li>20명 앞에서 10분 발표를 한 것을 시작으로 다양한 발표 활동과 슬라이드 공유</li></ul></li></ul><h2 id="면접과-Github"><a href="#면접과-Github" class="headerlink" title="면접과 Github"></a>면접과 Github</h2><ul><li>보는 것들<ul><li>코딩스타일, 탭과 스페이스 혼용여부</li><li>오픈소스 기여도</li><li>어떤 저장소에 Star를 찍고 Fork를 했는지</li></ul></li><li>단점<ul><li>저장소에 DB 아이디와 암호를 올리는 경우(env파일을 이용하는 방법 등으로 해결해야 함)</li><li>이메일을 네이버 쓰는 경우.</li><li>깃헙 주소를 내지 않아도 어떻게든 찾아내서 보더라</li></ul></li></ul><h2 id="github-패스트포워드가-아닌-상황에서-머지하는-법"><a href="#github-패스트포워드가-아닌-상황에서-머지하는-법" class="headerlink" title="github 패스트포워드가 아닌 상황에서 머지하는 법"></a>github 패스트포워드가 아닌 상황에서 머지하는 법</h2><ul><li>선머지 후풀리퀘<ul><li>???</li></ul></li><li>Rebase(히스토리 조작)<ul><li>force push?</li></ul></li></ul><h2 id="번외-팜므어-번역기"><a href="#번외-팜므어-번역기" class="headerlink" title="번외: 팜므어 번역기"></a>번외: 팜므어 번역기</h2><ul><li><h2 id="느낀-점"><a href="#느낀-점" class="headerlink" title="느낀 점"></a>느낀 점</h2></li><li>github의 pull request도 현업에서는 굉장히 자세하고 구체적으로 쓰는구나.</li></ul>]]></content>
     
@@ -454,6 +456,8 @@
       
     
     </summary>
+    
+      <category term="ETC" scheme="http://girin-dev.github.io/categories/ETC/"/>
     
     
       <category term="Special-Lecture" scheme="http://girin-dev.github.io/tags/Special-Lecture/"/>
