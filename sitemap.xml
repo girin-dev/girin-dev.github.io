@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://girin-dev.github.io/2017/09/26/JavaScript-04-Data_type&Variable/</loc>
+    
+    <lastmod>2019-01-03T03:46:52.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://girin-dev.github.io/2017/10/13/JavaScript-Exam-171010/</loc>
     
     <lastmod>2019-01-03T03:41:44.000Z</lastmod>
@@ -523,13 +530,6 @@
     <loc>http://girin-dev.github.io/2017/09/30/170930-171001-TIL/</loc>
     
     <lastmod>2017-10-02T02:59:25.023Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://girin-dev.github.io/2017/09/26/JavaScript-04-Data_type&Variable/</loc>
-    
-    <lastmod>2017-10-02T02:41:03.673Z</lastmod>
     
   </url>
   
