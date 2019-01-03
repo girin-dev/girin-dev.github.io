@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://girin-dev.github.io/"/>
-  <updated>2019-01-03T04:42:43.000Z</updated>
+  <updated>2019-01-03T04:47:31.610Z</updated>
   <id>http://girin-dev.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ECMAScript6-exception</title>
+    <title>ECMAScript6 예외와 예외처리</title>
     <link href="http://girin-dev.github.io/2019/01/03/ECMAScript6-exception/"/>
     <id>http://girin-dev.github.io/2019/01/03/ECMAScript6-exception/</id>
     <published>2019-01-03T04:41:46.000Z</published>
-    <updated>2019-01-03T04:42:43.000Z</updated>
+    <updated>2019-01-03T04:47:31.610Z</updated>
     
     <content type="html"><![CDATA[<h2 id="예외와-예외처리"><a href="#예외와-예외처리" class="headerlink" title="예외와 예외처리"></a>예외와 예외처리</h2><ul><li>예외와 예외처리<ul><li>에러 발생 가능성은 인정</li><li>에러를 예상하고 타당한 방법으로 처리</li></ul></li><li>예외처리(exception handling): 에러를 컨트롤하는 메커니즘</li><li><code>예상할 수 있는 에러</code>와 <code>예상치 못한 에러</code></li></ul><h2 id="11-1-Error-객체"><a href="#11-1-Error-객체" class="headerlink" title="11.1 Error 객체"></a>11.1 Error 객체</h2><ul><li><code>const err = new Error(‘invalid Error’);</code></li><li>내장된 Error 객체 활용해 에러메세지 지정 가능</li><li>252쪽 코드 구현해 볼 것</li></ul><h2 id="11-2-try-catch와-예외처리"><a href="#11-2-try-catch와-예외처리" class="headerlink" title="11.2 try/catch와 예외처리"></a>11.2 try/catch와 예외처리</h2><ul><li>뭔가를 시도(try)하고, 예외가 있으면 캐치(catch)함</li><li>이메일 주소를 받는 form에서 @를 빼먹는 것을 방지하는 것은 예상할 수 있는 에러이지만,</li><li>email에서 null 같은게 들어온다 등은 예상치 못한 에러</li><li>이때 <code>try…catch 문</code>을 사용<br>try {…실행부분} catch(err) {…에러감지시 실행}</li><li>즉, 에러를 캐치했다고 해서 프로그램이 멈추지 않고, 계속 진행되며 다만 에러를 기록함(문제가 해결된 건 아님)</li></ul><h2 id="11-3-에러-일으키기"><a href="#11-3-에러-일으키기" class="headerlink" title="11.3 에러 일으키기"></a>11.3 에러 일으키기</h2><ul><li>JavaScript는 에러가 일어날 때까지 기다릴 필요없이 직접 에러를 일으켜서(<code>throw</code>, <code>raise</code>) 예외처리 작업을 시작할 수 있음.</li><li>JavaScript는 에러를 일으킬 때, 꼭 객체만이 아니라 숫자, 문자열 등 어떤 값이든 catch절에 넘길 수 있음.(그러나 <code>Error 인스턴스</code>에 넘기는 것이 가장 편리함)</li><li><code>throw</code>를 호출하면 현재 함수는 즉시 실행을 멈춤.</li></ul><h2 id="11-4-예외처리와-호출스택"><a href="#11-4-예외처리와-호출스택" class="headerlink" title="11.4 예외처리와 호출스택"></a>11.4 예외처리와 호출스택</h2><ul><li>자바스크립트 인터프리터는 이런 과정을 모두 추적(스택에 차곡차곡)</li><li>호출스택: 완료되지 않은 함수가 쌓이는 것</li><li>에러는 캐치될 때까지 호출스택을 따라 올라감</li><li>에러는 호출스택 어디에서든 캐치가능, 어디에서도 캐치하지 않으면 자바스크립트 인터프리터는 프로그램을 멈춤<ul><li><code>unhandled</code> 예외(처리하지 않은), <code>uncaught</code> 예외(캐치하지 않은) =&gt; 프로그램 충돌의 원인</li></ul></li><li>에러를 캐치하면 호출스택에서 문제해결의 유용한 정보를 얻을 수 있다.</li><li><code>Error 인스턴스</code>에는 스택을 문자열로 표현한 <code>stack 프로퍼티</code> 존재(표준은 아니지만 대부분의 환경에서 지원)</li><li>255-256쪽 코드 참고(@가 있는 행은 스택추적)</li></ul><h2 id="11-5-try…catch…finally"><a href="#11-5-try…catch…finally" class="headerlink" title="11.5 try…catch…finally"></a>11.5 try…catch…finally</h2><ul><li>try 블록 코드가 HTTP연결파일과 같은 일종의 ‘자원’을 처리할 때가 있는데, 에러 여부와 관계없이 어느 시점에는 이 자원을 해제해야 할 때 <code>finally</code>를 써야 한다.</li><li>try 블록에 해제 구문을 쓴다면? <ul><li>try 블록 내에서 에러가 발생해 자원 해제의 기회를 잃을 수 있음</li></ul></li><li>catch 블록에 해제 구문을 쓴다면?<ul><li>에러가 발생하지 않으면 실행되지 않으니 해제의 기회가 없을 수 있음</li></ul></li><li>이때 필요한 것이 <code>finally 블록</code><ul><li>finally 블록은 에러가 일어나든 말든 반드시 호출.<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;…&#125; <span class="keyword">catch</span>(err) &#123;…&#125; <span class="keyword">finally</span> &#123;...&#125;</span><br></pre></td></tr></table></figure></li></ul></li></ul><h2 id="11-6-요약"><a href="#11-6-요약" class="headerlink" title="11.6 요약"></a>11.6 요약</h2><ul><li>이제 모든 에러를 잡으려고 예상가능한 에러나 예상불가한 예외 중 어느 쪽이든 예외처리를 사용하고 싶을 것이나 예외처리는 비용이 요구됨<ul><li>예외를 캐치하지 못할 수 있음</li><li>예외처리 자체도 연산비용 소요</li></ul></li><li>예상할 수 없는 상황에 대한 마지노선 =&gt; 예외처리</li><li>예상할 수 있는 에러는 조건문으로 처리할 것을 추천</li></ul>]]></content>
     
